@@ -1,0 +1,226 @@
+﻿/* ========================================
+   MEDICINE LIST CSS - Chỉ áp dụng cho Danh sách thuốc
+   File: wwwroot/css/medicine-list.css
+   ======================================== */
+
+/* Tất cả style được wrap trong .medicine-list-wrapper để tránh conflict */
+
+.medicine-list-wrapper {
+    --med-primary: #10b981;
+    --med-success: #10b981;
+    --med-warning: #f59e0b;
+    --med-danger: #ef4444;
+    --med-info: #3b82f6;
+}
+
+    /* ========================================
+   CARD EFFECTS
+   ======================================== */
+
+    .medicine-list-wrapper .med-hover-effect {
+        transition: all 0.3s ease;
+    }
+
+        .medicine-list-wrapper .med-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+
+    .medicine-list-wrapper .med-card-item {
+        transition: opacity 0.3s ease;
+    }
+
+    /* ========================================
+   CARD CONTENT
+   ======================================== */
+
+    .medicine-list-wrapper .med-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 1.4;
+        color: var(--med-primary);
+        margin-bottom: 1rem;
+        min-height: 2.8rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* ========================================
+   PRICE SECTION
+   ======================================== */
+
+    .medicine-list-wrapper .med-price-section {
+        border-left: 4px solid var(--med-success);
+        margin-bottom: 1rem;
+    }
+
+    /* ========================================
+   TEXT CONTENT
+   ======================================== */
+
+    .medicine-list-wrapper .med-indication,
+    .medicine-list-wrapper .med-side-effect,
+    .medicine-list-wrapper .med-interaction {
+        font-size: 0.875rem;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    /* ========================================
+   ALERTS
+   ======================================== */
+
+    .medicine-list-wrapper .alert {
+        font-size: 0.875rem;
+        border-radius: 8px;
+    }
+
+        .medicine-list-wrapper .alert strong {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+    /* ========================================
+   BADGES
+   ======================================== */
+
+    .medicine-list-wrapper .med-unit-badge {
+        font-size: 0.75rem;
+        padding: 0.35em 0.65em;
+        font-weight: 600;
+        border-radius: 6px;
+    }
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+@keyframes med-fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.medicine-list-wrapper .med-card-item {
+    animation: med-fadeInUp 0.5s ease-out;
+}
+
+    .medicine-list-wrapper .med-card-item:nth-child(1) {
+        animation-delay: 0.05s;
+    }
+
+    .medicine-list-wrapper .med-card-item:nth-child(2) {
+        animation-delay: 0.1s;
+    }
+
+    .medicine-list-wrapper .med-card-item:nth-child(3) {
+        animation-delay: 0.15s;
+    }
+
+    .medicine-list-wrapper .med-card-item:nth-child(4) {
+        animation-delay: 0.2s;
+    }
+
+    .medicine-list-wrapper .med-card-item:nth-child(5) {
+        animation-delay: 0.25s;
+    }
+
+    .medicine-list-wrapper .med-card-item:nth-child(6) {
+        animation-delay: 0.3s;
+    }
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 992px) {
+    .medicine-list-wrapper .med-title {
+        font-size: 1rem;
+        min-height: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .medicine-list-wrapper .med-title {
+        font-size: 0.95rem;
+        min-height: auto;
+        -webkit-line-clamp: 3;
+    }
+
+    .medicine-list-wrapper .med-price-section {
+        border-left-width: 3px;
+    }
+
+    .medicine-list-wrapper .alert {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .medicine-list-wrapper .med-hover-effect:hover {
+        transform: translateY(-3px);
+    }
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    .medicine-list-wrapper .med-hover-effect:hover {
+        transform: none;
+        box-shadow: none !important;
+    }
+
+    .medicine-list-wrapper .card-footer {
+        display: none;
+    }
+
+    .medicine-list-wrapper .btn {
+        display: none;
+    }
+
+    .medicine-list-wrapper #searchInput,
+    .medicine-list-wrapper #filterUnit,
+    .medicine-list-wrapper #refreshBtn {
+        display: none;
+    }
+}
+
+/* ========================================
+   CUSTOM SCROLLBAR (Optional)
+   ======================================== */
+
+.medicine-list-wrapper .card-body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--med-success) #f1f1f1;
+}
+
+    .medicine-list-wrapper .card-body::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .medicine-list-wrapper .card-body::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    .medicine-list-wrapper .card-body::-webkit-scrollbar-thumb {
+        background: var(--med-success);
+        border-radius: 10px;
+    }
+
+        .medicine-list-wrapper .card-body::-webkit-scrollbar-thumb:hover {
+            background: #059669;
+        }

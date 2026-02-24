@@ -1,0 +1,57 @@
+﻿@model DACS_web.Models.Thuoc
+
+@{
+    ViewData["Title"] = "Thêm thuốc mới";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2 class="mb-3">@ViewData["Title"]</h2>
+
+<form asp-action="Create" method="post">
+    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="TenThuoc" class="form-label"></label>
+        <input asp-for="TenThuoc" class="form-control" />
+        <span asp-validation-for="TenThuoc" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DonViTinh" class="form-label"></label>
+        <input asp-for="DonViTinh" class="form-control" />
+        <span asp-validation-for="DonViTinh" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ChiDinh" class="form-label"></label>
+        <textarea asp-for="ChiDinh" class="form-control"></textarea>
+        <span asp-validation-for="ChiDinh" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="DonGia" class="form-label"></label>
+        <textarea asp-for="DonGia" class="form-control"></textarea>
+        <span asp-validation-for="DonGia" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="TacDungPhu" class="form-label"></label>
+        <textarea asp-for="TacDungPhu" class="form-control"></textarea>
+        <span asp-validation-for="TacDungPhu" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="TuongTacThuoc" class="form-label"></label>
+        <textarea asp-for="TuongTacThuoc" class="form-control"></textarea>
+        <span asp-validation-for="TuongTacThuoc" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Lưu</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,252 @@
+﻿@{
+    // Widget này sẽ được load bởi DashboardController
+    var appointments = ViewBag.TodayAppointments as List<DACS_web.Models.CuocHenKham> ?? new List<DACS_web.Models.CuocHenKham>();
+}
+
+<div class="dash-section-header">
+    <h2 class="dash-section-title">
+        <i class="fas fa-calendar-check me-2"></i>
+        Cuộc Hẹn Khám Hôm Nay
+    </h2>
+    <p class="dash-section-subtitle">Danh sách bệnh nhân đã đặt lịch khám với bạn</p>
+</div>
+
+<div class="row g-4 mb-4">
+    <div class="col-12">
+        <div class="card dash-appointments-card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">
+                    <i class="fas fa-list-ul me-2"></i>
+                    Lịch Hẹn (@appointments.Count)
+                </h5>
+                <div>
+                    <a asp-area="Admin" asp-controller="CuocHenKhams" asp-action="LichKhamTheoCaTruc" class="btn btn-sm btn-primary">
+                        <i class="fas fa-calendar-week"></i> Xem đầy đủ
+                    </a>
+                    <a asp-area="Admin" asp-controller="CuocHenKhams" asp-action="Create" class="btn btn-sm btn-success">
+                        <i class="fas fa-plus"></i> Tạo lịch hẹn
+                    </a>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                @if (appointments.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-0 dash-appointments-table">
+                            <thead>
+                                <tr>
+                                    <th width="8%">Giờ</th>
+                                    <th width="15%">Mã BN</th>
+                                    <th width="20%">Bệnh nhân</th>
+                                    <th width="12%">Ca khám</th>
+                                    <th width="25%">Lý do khám</th>
+                                    <th width="12%">Trạng thái</th>
+                                    <th width="8%" class="text-center">Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var appointment in appointments.OrderBy(a => a.GioKhamDuKien ?? TimeSpan.Zero))
+                                {
+                                    <tr>
+                                        <td>
+                                            <strong class="text-primary">
+                                                @if (appointment.GioKhamDuKien.HasValue)
+                                                {
+                                                    @appointment.GioKhamDuKien.Value.ToString(@"hh\:mm")
+                                                }
+                                                else
+                                                {
+                                                    <span class="text-muted">--:--</span>
+                                                }
+                                            </strong>
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-secondary">@appointment.MaBenhNhan</span>
+                                        </td>
+                                        <td>
+                                            <strong>@appointment.BenhNhan?.HoTen</strong>
+                                            @if (appointment.BenhNhan?.NgaySinh != null)
+                                            {
+                                                <br />
+                                                <small class="text-muted">
+                                                    @((DateTime.Now.Year - appointment.BenhNhan.NgaySinh.Year)) tuổi
+                                                </small>
+                                            }
+                                        </td>
+                                        <td>
+                                            <span class="badge bg-info">Ca @appointment.CaKham</span>
+                                        </td>
+                                        <td>
+                                            <small>@(appointment.LyDoKham ?? "Chưa rõ")</small>
+                                        </td>
+                                        <td>
+                                            @switch (appointment.TrangThaiHen)
+                                            {
+                                                case "Chờ khám":
+                                                    <span class="badge bg-warning text-dark">
+                                                        <i class="fas fa-clock"></i> @appointment.TrangThaiHen
+                                                    </span>
+                                                    break;
+                                                case "Đã xác nhận":
+                                                    <span class="badge bg-info">
+                                                        <i class="fas fa-check-circle"></i> @appointment.TrangThaiHen
+                                                    </span>
+                                                    break;
+                                                case "Đã khám":
+                                                    <span class="badge bg-success">
+                                                        <i class="fas fa-check-double"></i> @appointment.TrangThaiHen
+                                                    </span>
+                                                    break;
+                                                case "Đã hủy":
+                                                    <span class="badge bg-danger">
+                                                        <i class="fas fa-times"></i> @appointment.TrangThaiHen
+                                                    </span>
+                                                    break;
+                                                default:
+                                                    <span class="badge bg-secondary">@appointment.TrangThaiHen</span>
+                                                    break;
+                                            }
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="btn-group btn-group-sm" role="group">
+                                                <a href="@Url.Action("Edit", "CuocHenKhams", new { area = "Admin", id = appointment.MaCuocHen })"
+                                                   class="btn btn-outline-primary"
+                                                   title="Chỉnh sửa">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
+                                                @if (appointment.TrangThaiHen != "Đã khám")
+                                                {
+                                                    <form asp-area="Admin" asp-controller="CuocHenKhams" asp-action="CapNhatDaKham" method="post" style="display:inline;"
+                                                          onsubmit="return confirm('Xác nhận bệnh nhân này đã khám xong?');">
+                                                        <input type="hidden" name="id" value="@appointment.MaCuocHen" />
+                                                        <button type="submit" class="btn btn-outline-success" title="Đánh dấu đã khám">
+                                                            <i class="fas fa-check"></i>
+                                                        </button>
+                                                    </form>
+                                                }
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <div class="p-5 text-center">
+                        <i class="fas fa-calendar-times fa-3x text-muted mb-3"></i>
+                        <h5 class="text-muted">Không có lịch hẹn nào hôm nay</h5>
+                        <p class="text-muted mb-3">Bạn chưa có cuộc hẹn khám nào được đặt cho hôm nay</p>
+                        <a asp-area="Admin" asp-controller="CuocHenKhams" asp-action="Create" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Tạo lịch hẹn mới
+                        </a>
+                    </div>
+                }
+            </div>
+            @if (appointments.Any())
+            {
+                <div class="card-footer bg-light">
+                    <div class="row text-center">
+                        <div class="col-md-3">
+                            <div class="dash-footer-stat">
+                                <i class="fas fa-clock text-warning"></i>
+                                <strong>@appointments.Count(a => a.TrangThaiHen == "Chờ khám")</strong>
+                                <small>Chờ khám</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dash-footer-stat">
+                                <i class="fas fa-check-circle text-info"></i>
+                                <strong>@appointments.Count(a => a.TrangThaiHen == "Đã xác nhận")</strong>
+                                <small>Đã xác nhận</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dash-footer-stat">
+                                <i class="fas fa-check-double text-success"></i>
+                                <strong>@appointments.Count(a => a.TrangThaiHen == "Đã khám")</strong>
+                                <small>Đã khám</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dash-footer-stat">
+                                <i class="fas fa-hourglass-half text-primary"></i>
+                                <strong>@appointments.Count(a => a.TrangThaiHen != "Đã khám" && a.TrangThaiHen != "Đã hủy")</strong>
+                                <small>Còn lại</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .dash-appointments-card {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+        overflow: hidden;
+    }
+
+        .dash-appointments-card .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.25rem 1.5rem;
+            border-bottom: none;
+        }
+
+            .dash-appointments-card .card-header h5 {
+                color: white;
+            }
+
+    .dash-appointments-table thead {
+        background: #f9fafb;
+    }
+
+        .dash-appointments-table thead th {
+            border-bottom: 2px solid #e5e7eb;
+            color: #374151;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 1rem;
+        }
+
+    .dash-appointments-table tbody td {
+        padding: 1rem;
+        vertical-align: middle;
+    }
+
+    .dash-appointments-table tbody tr {
+        transition: background-color 0.2s;
+    }
+
+        .dash-appointments-table tbody tr:hover {
+            background-color: #f9fafb;
+        }
+
+    .dash-footer-stat {
+        padding: 0.75rem;
+    }
+
+        .dash-footer-stat i {
+            font-size: 1.25rem;
+            margin-right: 0.5rem;
+        }
+
+        .dash-footer-stat strong {
+            display: block;
+            font-size: 1.5rem;
+            margin: 0.25rem 0;
+        }
+
+        .dash-footer-stat small {
+            display: block;
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+</style>

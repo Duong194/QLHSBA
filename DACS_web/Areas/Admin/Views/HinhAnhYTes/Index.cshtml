@@ -1,0 +1,49 @@
+﻿@model IEnumerable<DACS_web.Models.HinhAnhYTe>
+
+@{
+    ViewData["Title"] = "Danh sách Hình ảnh Y tế";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2 class="mb-4">@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">➕ Thêm ảnh mới</a>
+</p>
+
+<table class="table table-striped align-middle">
+    <thead class="table-primary">
+        <tr>
+            <th>Loại hình</th>
+            <th>Ảnh</th>
+            <th>Mô tả</th>
+            <th>Mã Hồ sơ</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.LoaiHinh</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.FileURL))
+                    {
+                        <img src="@item.FileURL" alt="Ảnh" style="max-height: 80px; max-width: 120px; object-fit:cover; border-radius:6px;" />
+                    }
+                    else
+                    {
+                        <span>Không có ảnh</span>
+                    }
+                </td>
+                <td>@item.MoTa</td>
+                <td>@item.HoSoBenhAn?.MaHoSo</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.MaAnh" class="btn btn-sm btn-warning">Sửa</a>
+                    <a asp-action="Delete" asp-route-id="@item.MaAnh" class="btn btn-sm btn-danger">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

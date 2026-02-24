@@ -1,0 +1,35 @@
+﻿@model DACS_web.Models.ChanDoan
+
+@{
+    ViewData["Title"] = "Xóa chẩn đoán";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Bạn có chắc chắn muốn xóa chẩn đoán này không?</h4>
+
+<div class="card shadow-sm mb-3">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Mã chẩn đoán</dt>
+            <dd class="col-sm-9">@Model.MaChanDoan</dd>
+
+            <dt class="col-sm-3">Mã hồ sơ</dt>
+            <dd class="col-sm-9">@Model.MaHoSo</dd>
+
+            <dt class="col-sm-3">Tên bệnh (ICD)</dt>
+            <dd class="col-sm-9">@Model.DanhMucICD?.TenBenh (@Model.MaICD)</dd>
+
+            <dt class="col-sm-3">Loại chẩn đoán</dt>
+            <dd class="col-sm-9">@Model.LoaiChanDoan</dd>
+        </dl>
+    </div>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="MaChanDoan" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-action="Details" asp-controller="HoSoBenhAns" asp-route-id="@ViewBag.MaHoSo" class="btn btn-secondary">Hủy</a>
+</form>

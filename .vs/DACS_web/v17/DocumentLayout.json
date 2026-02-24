@@ -1,0 +1,2563 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DACS\\DACS_web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\benhnhanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\benhnhanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\baibaoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\baibaoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\nhanvienytescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\nhanvienytescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\nhanvienytes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\nhanvienytes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\dotkhams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\dotkhams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\nhanvienyte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\nhanvienyte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\nhanvienytes\\danhsachbacsi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\nhanvienytes\\danhsachbacsi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\css\\dotkham-create.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\css\\dotkham-create.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\dotkhams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\dotkhams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\css\\dashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\hosobenhans\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\hosobenhans\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\hosobenhanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\hosobenhanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\xetnghiemclsscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\xetnghiemclsscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\css\\medical-record-list.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\css\\medical-record-list.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\hosobenhans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\hosobenhans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\css\\patient-detail.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\css\\patient-detail.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\benhnhans\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\benhnhans\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\css\\cuochenkham-index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\css\\cuochenkham-index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\cuochenkhams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\cuochenkhams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\benhnhans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\benhnhans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\xetnghiemclss\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\xetnghiemclss\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\hosobenhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\hosobenhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\xetnghiemclss\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\xetnghiemclss\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\views\\shared\\_doctorappointmentswidget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\views\\shared\\_doctorappointmentswidget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\views\\shared\\_adminshiftstoday.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\views\\shared\\_adminshiftstoday.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\cuochenkhams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\cuochenkhams\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\cuochenkhams\\datlichtheocatruc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\cuochenkhams\\datlichtheocatruc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\cuochenkhams\\lichkhamtheocatruc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\cuochenkhams\\lichkhamtheocatruc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\catruc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\catruc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\benhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\benhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\cuochenkhams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\cuochenkhams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\cuochenkhams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\cuochenkhams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\cuochenkhams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\cuochenkhams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\chandoans\\createmultiple.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\chandoans\\createmultiple.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\catrucs\\myshifts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\catrucs\\myshifts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\catrucscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\catrucscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\catrucoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\catrucoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\chandoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\chandoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\catrucs\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\catrucs\\calendar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\js\\dropdown-fix.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\js\\dropdown-fix.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\catrucs\\createmultiple.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\catrucs\\createmultiple.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\catrucs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\catrucs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\catrucs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\catrucs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\catrucs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\catrucs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\catrucs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\catrucs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\css\\doctorlist.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\css\\doctorlist.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\nhanvienytes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\nhanvienytes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\dotkhamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\dotkhamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\hosobenhans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\hosobenhans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\benhnhans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\benhnhans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\dotkhams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\dotkhams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\ketquakhammat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\ketquakhammat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\dotkham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\dotkham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\migrations\\20251115070903_v15.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\migrations\\20251115070903_v15.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\khoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\khoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\css\\medical-record.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\css\\medical-record.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\thuocs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\thuocs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\css\\medicine-list.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\css\\medicine-list.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\chandoans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\chandoans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\baibaos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\baibaos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\css\\consistency-fix.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\css\\consistency-fix.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\tuvans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\tuvans\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\thuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\thuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\donthuocs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\donthuocs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\chandoanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\chandoanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\donthuocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\donthuocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\benhnhans\\noinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\benhnhans\\noinfo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\css\\iden.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\css\\iden.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\baibaos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\baibaos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\donthuocs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\donthuocs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\baibaos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\baibaos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\danhmucicds\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\danhmucicds\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\danhmucicds\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\danhmucicds\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\danhmucicds\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\danhmucicds\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\donthuocs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\donthuocs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\donthuocs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\donthuocs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\ketquakhammatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\ketquakhammatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\ketquakhammats\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\ketquakhammats\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\danhmucicd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\danhmucicd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\nhanvienytes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\nhanvienytes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\khoascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\khoascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\thuocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\thuocscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\khoas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\khoas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\khoas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\khoas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\khoas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\khoas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\css\\user-list.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\css\\user-list.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\css\\user-list.css||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\css\\user-list.css||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\baibaos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\baibaos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\wwwroot\\css\\user_edit.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\wwwroot\\css\\user_edit.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\user\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\user\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\thongtinbenhnhanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\thongtinbenhnhanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\phuongphapdieutriscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\phuongphapdieutriscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\baibaos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\baibaos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\baibaos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\baibaos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\donthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\donthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\chitietdonthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\chitietdonthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\createmultiplechandoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\createmultiplechandoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\thongtinbenhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\thongtinbenhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\phuongphapdieutri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\phuongphapdieutri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\tuvanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\tuvanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Picture\\Trang Ch\u1EE7 - B\u1EC7nh Vi\u1EC7n M\u1EAFt S\u00E0i G\u00F2n.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\tuvans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\tuvans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\tuvan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\tuvan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\ketquakhammats\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\ketquakhammats\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\donthuocs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\donthuocs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\hosobenhans\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\hosobenhans\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\thuocs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\thuocs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\thuocs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\thuocs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\thuocs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\thuocs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\nhanvienytes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\nhanvienytes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\thongtinbenhnhans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\thongtinbenhnhans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\danhmucicdscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\danhmucicdscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\phuongphapdieutris\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\phuongphapdieutris\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\phuongphapdieutris\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\phuongphapdieutris\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\phuongphapdieutris\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\phuongphapdieutris\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\phuongphapdieutris\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\phuongphapdieutris\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\phuongphapdieutris\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\phuongphapdieutris\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\nhanvienytes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\nhanvienytes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\khoas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\khoas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\khoas\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\khoas\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\ketquakhammats\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\ketquakhammats\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\hosobenhans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\hosobenhans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\hinhanhytes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\hinhanhytes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\hinhanhytes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\hinhanhytes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\hinhanhytes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\hinhanhytes\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\dotkhams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\dotkhams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\dotkhams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\dotkhams\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\danhmucicds\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\danhmucicds\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\danhmucicds\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\danhmucicds\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\chandoans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\chandoans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\chandoans\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\chandoans\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\chandoans\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\chandoans\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\chandoans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\chandoans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\benhnhans\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\benhnhans\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\views\\benhnhans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\views\\benhnhans\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20250426143905_v5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DACS_web\\Migrations\\20250426143905_v5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\migrations\\20250426052957_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\migrations\\20250426052957_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\migrations\\20250504102144_iv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\migrations\\20250504102144_iv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\migrations\\20251130033209_v18.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\migrations\\20251130033209_v18.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NhanVienYTe.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\NhanVienYTe.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\NhanVienYTe.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\NhanVienYTe.cs",
+              "RelativeToolTip": "DACS_web\\Models\\NhanVienYTe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T02:46:57.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NhanVienYTesController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\NhanVienYTesController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\NhanVienYTesController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\NhanVienYTesController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\NhanVienYTesController.cs",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAYwPQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T06:32:42.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Edit.cshtml",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAYwLcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T06:41:08.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaiBaosController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\BaiBaosController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\BaiBaosController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\BaiBaosController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\BaiBaosController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwA4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T04:29:51.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BenhNhansController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\BenhNhansController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\BenhNhansController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\BenhNhansController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\BenhNhansController.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAQwOMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T02:50:10.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Edit.cshtml",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAYwBwBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T03:03:10.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "DACS_web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAtwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T03:13:53.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dashboard.css",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\dashboard.css",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\dashboard.css",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\dashboard.css",
+              "RelativeToolTip": "DACS_web\\wwwroot\\css\\dashboard.css",
+              "ViewState": "AgIAALQBAAAAAAAAAAAiwAECAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-25T04:44:54.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "patient-detail.css",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\patient-detail.css",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\patient-detail.css",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\patient-detail.css",
+              "RelativeToolTip": "DACS_web\\wwwroot\\css\\patient-detail.css",
+              "ViewState": "AgIAABkDAAAAAAAAAAAAACsDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-28T06:05:27.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DanhSachBacSi.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\DanhSachBacSi.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\DanhSachBacSi.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\DanhSachBacSi.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\DanhSachBacSi.cshtml",
+              "ViewState": "AgIAACkBAAAAAAAAAAAtwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-29T00:44:55.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "dotkham-create.css",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\dotkham-create.css",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\dotkham-create.css",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\dotkham-create.css",
+              "RelativeToolTip": "DACS_web\\wwwroot\\css\\dotkham-create.css",
+              "ViewState": "AgIAACsCAAAAAAAAAAAAAD0CAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-29T00:42:38.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "medical-record-list.css",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\medical-record-list.css",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\medical-record-list.css",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\medical-record-list.css",
+              "RelativeToolTip": "DACS_web\\wwwroot\\css\\medical-record-list.css",
+              "ViewState": "AgIAAHUCAAAAAAAAAAAAAIcCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-28T06:21:46.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Create.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAYwOwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T10:35:46.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Details.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Details.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Details.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T05:36:41.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HoSoBenhAnsController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\HoSoBenhAnsController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\HoSoBenhAnsController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\HoSoBenhAnsController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\HoSoBenhAnsController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwEoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:37:50.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "XetNghiemCLSsController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\XetNghiemCLSsController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\XetNghiemCLSsController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\XetNghiemCLSsController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\XetNghiemCLSsController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAiwDoBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-28T06:24:55.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\XetNghiemCLSs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\XetNghiemCLSs\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\XetNghiemCLSs\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\XetNghiemCLSs\\Delete.cshtml",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwEgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T07:35:55.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\XetNghiemCLSs\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\XetNghiemCLSs\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\XetNghiemCLSs\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\XetNghiemCLSs\\Create.cshtml",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAYwIsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T07:35:28.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T07:11:50.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "cuochenkham-index.css",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\cuochenkham-index.css",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\cuochenkham-index.css",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\cuochenkham-index.css",
+              "RelativeToolTip": "DACS_web\\wwwroot\\css\\cuochenkham-index.css",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAK8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-21T04:14:53.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Details.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Details.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Details.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Details.cshtml",
+              "ViewState": "AgIAAE4BAAAAAAAAAAAYwHcBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T08:58:11.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T04:35:52.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HoSoBenhAn.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\HoSoBenhAn.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\HoSoBenhAn.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\HoSoBenhAn.cs",
+              "RelativeToolTip": "DACS_web\\Models\\HoSoBenhAn.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvzEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T07:30:55.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Index.cshtml",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAYwN4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-29T10:57:15.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_DoctorAppointmentsWidget.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Views\\Shared\\_DoctorAppointmentsWidget.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Views\\Shared\\_DoctorAppointmentsWidget.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Views\\Shared\\_DoctorAppointmentsWidget.cshtml",
+              "RelativeToolTip": "DACS_web\\Views\\Shared\\_DoctorAppointmentsWidget.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-03T14:12:10.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAuwGQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T05:17:59.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAFYBAAAAAAAAAAAAAGoBAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-26T02:26:15.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_AdminShiftsToday.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Views\\Shared\\_AdminShiftsToday.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Views\\Shared\\_AdminShiftsToday.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Views\\Shared\\_AdminShiftsToday.cshtml",
+              "RelativeToolTip": "DACS_web\\Views\\Shared\\_AdminShiftsToday.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-26T02:29:39.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DatLichTheoCaTruc.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\DatLichTheoCaTruc.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\DatLichTheoCaTruc.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\DatLichTheoCaTruc.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\DatLichTheoCaTruc.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-29T11:21:29.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LichKhamTheoCaTruc.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\LichKhamTheoCaTruc.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\LichKhamTheoCaTruc.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\LichKhamTheoCaTruc.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\LichKhamTheoCaTruc.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-29T11:22:05.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Create.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T14:26:59.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "SD.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\SD.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\SD.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\SD.cs",
+              "RelativeToolTip": "DACS_web\\Models\\SD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T02:29:07.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\appsettings.json",
+              "RelativeDocumentMoniker": "DACS_web\\appsettings.json",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\appsettings.json",
+              "RelativeToolTip": "DACS_web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-26T03:52:18.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CaTruc.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\CaTruc.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\CaTruc.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\CaTruc.cs",
+              "RelativeToolTip": "DACS_web\\Models\\CaTruc.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T07:19:42.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "BenhNhan.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\BenhNhan.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\BenhNhan.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\BenhNhan.cs",
+              "RelativeToolTip": "DACS_web\\Models\\BenhNhan.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-29T11:23:06.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 158,
+              "Title": "20251130033209_v18.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20251130033209_v18.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Migrations\\20251130033209_v18.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20251130033209_v18.cs",
+              "RelativeToolTip": "DACS_web\\Migrations\\20251130033209_v18.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-30T03:32:09.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Delete.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T15:17:07.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Details.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Details.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Details.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T15:02:37.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Edit.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T03:02:25.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CreateMultiple.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\CreateMultiple.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\CreateMultiple.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\CreateMultiple.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\CreateMultiple.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T05:58:54.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAN4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T04:27:16.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "MyShifts.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\MyShifts.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\MyShifts.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\MyShifts.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\MyShifts.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-26T02:24:57.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "DACS_web\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T05:05:39.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "CaTrucsController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\CaTrucsController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\CaTrucsController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\CaTrucsController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\CaTrucsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T07:29:13.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CaTrucOptions.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\CaTrucOptions.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\CaTrucOptions.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\CaTrucOptions.cs",
+              "RelativeToolTip": "DACS_web\\Models\\CaTrucOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T04:57:11.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ChanDoan.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ChanDoan.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\ChanDoan.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ChanDoan.cs",
+              "RelativeToolTip": "DACS_web\\Models\\ChanDoan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T04:59:07.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowDMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T04:06:45.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Calendar.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Calendar.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Calendar.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Calendar.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Calendar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T05:05:23.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "dropdown-fix.js",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\js\\dropdown-fix.js",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\js\\dropdown-fix.js",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\js\\dropdown-fix.js",
+              "RelativeToolTip": "DACS_web\\wwwroot\\js\\dropdown-fix.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-18T07:23:53.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "DACS_web\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-17T03:39:16.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CreateMultiple.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\CreateMultiple.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\CreateMultiple.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\CreateMultiple.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\CreateMultiple.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T05:02:22.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Edit.cshtml",
+              "ViewState": "AgIAACkAAAAAAAAAAAAuwEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T05:02:54.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Delete.cshtml",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAuwE0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T05:03:27.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T05:01:54.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Index.cshtml",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAuwJIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-23T05:01:22.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "DoctorList.css",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\DoctorList.css",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\DoctorList.css",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\DoctorList.css",
+              "RelativeToolTip": "DACS_web\\wwwroot\\css\\DoctorList.css",
+              "ViewState": "AgIAAEABAAAAAAAAAAAAAFIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-19T02:36:15.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Create.cshtml",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAANsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T03:04:00.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T06:33:27.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "DotKhamsController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\DotKhamsController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\DotKhamsController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\DotKhamsController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\DotKhamsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T06:33:28.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Create.cshtml",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAuwLAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T04:22:45.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Details.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Details.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Details.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Details.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T10:37:20.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "DotKham.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\DotKham.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\DotKham.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\DotKham.cs",
+              "RelativeToolTip": "DACS_web\\Models\\DotKham.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA2wCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T02:13:47.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "KetQuaKhamMat.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\KetQuaKhamMat.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\KetQuaKhamMat.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\KetQuaKhamMat.cs",
+              "RelativeToolTip": "DACS_web\\Models\\KetQuaKhamMat.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwA4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T02:13:25.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "20251115070903_v15.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20251115070903_v15.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Migrations\\20251115070903_v15.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20251115070903_v15.cs",
+              "RelativeToolTip": "DACS_web\\Migrations\\20251115070903_v15.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T07:09:04.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Khoa.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\Khoa.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\Khoa.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\Khoa.cs",
+              "RelativeToolTip": "DACS_web\\Models\\Khoa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T05:12:58.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "medical-record.css",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\medical-record.css",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\medical-record.css",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\medical-record.css",
+              "RelativeToolTip": "DACS_web\\wwwroot\\css\\medical-record.css",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAAANUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-15T06:39:23.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Thuocs\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Thuocs\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Thuocs\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\Thuocs\\Index.cshtml",
+              "ViewState": "AgIAANcAAAAAAAAAAAAuwOQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T14:14:14.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "BaiBaos.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\BaiBaos.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\BaiBaos.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\BaiBaos.cs",
+              "RelativeToolTip": "DACS_web\\Models\\BaiBaos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T04:26:21.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "consistency-fix.css",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\consistency-fix.css",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\consistency-fix.css",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\consistency-fix.css",
+              "RelativeToolTip": "DACS_web\\wwwroot\\css\\consistency-fix.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-17T03:43:24.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "medicine-list.css",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\medicine-list.css",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\medicine-list.css",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\medicine-list.css",
+              "RelativeToolTip": "DACS_web\\wwwroot\\css\\medicine-list.css",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAiwOIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-09T13:02:43.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\TuVans\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\TuVans\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\TuVans\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\TuVans\\Create.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T02:30:03.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T05:57:55.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "ChanDoansController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\ChanDoansController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\ChanDoansController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\ChanDoansController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\ChanDoansController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwK4AAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T06:20:02.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "DonThuocsController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\DonThuocsController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\DonThuocsController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\DonThuocsController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\DonThuocsController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T12:02:50.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Thuoc.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\Thuoc.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\Thuoc.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\Thuoc.cs",
+              "RelativeToolTip": "DACS_web\\Models\\Thuoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T12:11:28.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Create.cshtml",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-08T03:15:09.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "iden.css",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\iden.css",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\iden.css",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\iden.css",
+              "RelativeToolTip": "DACS_web\\wwwroot\\css\\iden.css",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-20T12:27:09.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "NoInfo.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\NoInfo.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\NoInfo.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\NoInfo.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\NoInfo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T03:40:24.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "DACS_web\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-11T10:09:32.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAIYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-04T10:23:03.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T14:22:17.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Details.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Details.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Details.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T02:32:54.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T12:19:56.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T08:10:26.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Index.cshtml",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAAMwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T07:05:55.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Details.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Details.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Details.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Details.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T04:37:48.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Edit.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T08:14:10.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T08:10:20.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Index.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAADwv1YAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-08T03:21:38.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-20T06:09:47.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "DanhMucICD.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\DanhMucICD.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\DanhMucICD.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\DanhMucICD.cs",
+              "RelativeToolTip": "DACS_web\\Models\\DanhMucICD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T03:33:41.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Create.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T05:59:01.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "KetQuaKhamMatsController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\KetQuaKhamMatsController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\KetQuaKhamMatsController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\KetQuaKhamMatsController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\KetQuaKhamMatsController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAA1wJIAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T06:05:28.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T06:40:53.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "KhoasController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\KhoasController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\KhoasController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\KhoasController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\KhoasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T02:56:33.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "ThuocsController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\ThuocsController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\ThuocsController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\ThuocsController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\ThuocsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T12:56:19.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Edit.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAADwv4gAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T06:11:29.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Index.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAIBJwBgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T06:11:20.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Create.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwGcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T06:10:01.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "user-list.css",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\user-list.css",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\user-list.css",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\user-list.css",
+              "RelativeToolTip": "DACS_web\\wwwroot\\css\\user-list.css",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAiwKoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-19T03:02:17.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "user-list.css",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\user-list.css",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\user-list.css",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\user-list.css",
+              "RelativeToolTip": "DACS_web\\wwwroot\\css\\user-list.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-19T02:52:58.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-19T02:50:01.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "user_edit.css",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\user_edit.css",
+              "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\user_edit.css",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\user_edit.css",
+              "RelativeToolTip": "DACS_web\\wwwroot\\css\\user_edit.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-18T07:03:02.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Create.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T04:51:37.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\User\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\User\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\User\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\User\\Delete.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBJwAMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T04:30:17.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "ThongTinBenhNhansController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\ThongTinBenhNhansController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\ThongTinBenhNhansController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\ThongTinBenhNhansController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\ThongTinBenhNhansController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T06:31:42.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "PhuongPhapDieuTrisController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\PhuongPhapDieuTrisController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\PhuongPhapDieuTrisController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\PhuongPhapDieuTrisController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\PhuongPhapDieuTrisController.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAwwIwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T05:52:03.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Edit.cshtml",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAuwHgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T04:51:52.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 107,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T04:53:39.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 108,
+              "Title": "DonThuoc.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\DonThuoc.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\DonThuoc.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\DonThuoc.cs",
+              "RelativeToolTip": "DACS_web\\Models\\DonThuoc.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T03:26:12.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 110,
+              "Title": "CreateMultipleChanDoan.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\CreateMultipleChanDoan.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\CreateMultipleChanDoan.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\CreateMultipleChanDoan.cs",
+              "RelativeToolTip": "DACS_web\\Models\\CreateMultipleChanDoan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T02:13:32.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 109,
+              "Title": "ChiTietDonThuoc.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ChiTietDonThuoc.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\ChiTietDonThuoc.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ChiTietDonThuoc.cs",
+              "RelativeToolTip": "DACS_web\\Models\\ChiTietDonThuoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T13:30:34.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 111,
+              "Title": "ThongTinBenhNhan.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ThongTinBenhNhan.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\ThongTinBenhNhan.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ThongTinBenhNhan.cs",
+              "RelativeToolTip": "DACS_web\\Models\\ThongTinBenhNhan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T08:21:47.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 114,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T04:04:23.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 112,
+              "Title": "PhuongPhapDieuTri.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\PhuongPhapDieuTri.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\PhuongPhapDieuTri.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\PhuongPhapDieuTri.cs",
+              "RelativeToolTip": "DACS_web\\Models\\PhuongPhapDieuTri.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T05:05:38.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 115,
+              "Title": "Trang Ch\u1EE7 - B\u1EC7nh Vi\u1EC7n M\u1EAFt S\u00E0i G\u00F2n.html",
+              "DocumentMoniker": "D:\\Picture\\Trang Ch\u1EE7 - B\u1EC7nh Vi\u1EC7n M\u1EAFt S\u00E0i G\u00F2n.html",
+              "RelativeDocumentMoniker": "..\\..\\Picture\\Trang Ch\u1EE7 - B\u1EC7nh Vi\u1EC7n M\u1EAFt S\u00E0i G\u00F2n.html",
+              "ToolTip": "D:\\Picture\\Trang Ch\u1EE7 - B\u1EC7nh Vi\u1EC7n M\u1EAFt S\u00E0i G\u00F2n.html",
+              "RelativeToolTip": "..\\..\\Picture\\Trang Ch\u1EE7 - B\u1EC7nh Vi\u1EC7n M\u1EAFt S\u00E0i G\u00F2n.html",
+              "ViewState": "AgIAAA8CAAAAAAAAAABRwCQCAACTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-11T02:46:05.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 113,
+              "Title": "TuVansController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\TuVansController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\TuVansController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\TuVansController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\TuVansController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T02:11:56.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 118,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\TuVans\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\TuVans\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\TuVans\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\TuVans\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T02:30:52.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 116,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T04:04:36.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 117,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T04:04:36.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 119,
+              "Title": "TuVan.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\TuVan.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\TuVan.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\TuVan.cs",
+              "RelativeToolTip": "DACS_web\\Models\\TuVan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T01:57:53.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 120,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T02:41:59.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 122,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T07:12:08.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 121,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T02:28:07.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 123,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Thuocs\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Thuocs\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Thuocs\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\Thuocs\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T14:20:08.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 124,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Thuocs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Thuocs\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Thuocs\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\Thuocs\\Edit.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwCAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T14:27:23.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 125,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Thuocs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Thuocs\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Thuocs\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\Thuocs\\Delete.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-07T14:28:02.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 126,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Delete.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T06:41:00.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 127,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ThongTinBenhNhans\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ThongTinBenhNhans\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ThongTinBenhNhans\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\ThongTinBenhNhans\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T08:24:34.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 128,
+              "Title": "DanhMucICDsController.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\DanhMucICDsController.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\DanhMucICDsController.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\DanhMucICDsController.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\DanhMucICDsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T02:56:32.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 129,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T03:32:44.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 132,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Details.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Details.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Details.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T04:53:50.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 133,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T04:53:44.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 134,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Create.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Create.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Create.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-01T03:22:47.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 130,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T03:05:55.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 135,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Details.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Details.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Details.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T06:41:15.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 131,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T05:49:22.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 136,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Details.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Details.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Details.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T06:11:36.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 137,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T06:10:44.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 138,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T04:15:29.159Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 139,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T07:12:22.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 141,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T05:56:38.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 142,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T03:30:50.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 143,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T10:35:48.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 144,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T10:37:32.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 140,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-27T03:30:47.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 145,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Details.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Details.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Details.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T08:14:23.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 146,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T08:14:34.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 147,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Index.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Index.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Index.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T08:53:47.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 148,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T09:00:15.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 149,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Details.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Details.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Details.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T09:03:21.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 150,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T02:37:31.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 151,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Edit.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Edit.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T05:17:12.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 152,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Delete.cshtml",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Delete.cshtml",
+              "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T04:22:50.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 157,
+              "Title": "20250504102144_Iv2.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20250504102144_Iv2.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Migrations\\20250504102144_Iv2.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20250504102144_Iv2.cs",
+              "RelativeToolTip": "DACS_web\\Migrations\\20250504102144_Iv2.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T10:21:44.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 153,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "DACS_web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAjwKEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T10:23:05.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 154,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "DACS_web\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T06:34:59.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 155,
+              "Title": "20250426143905_v5.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20250426143905_v5.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Migrations\\20250426143905_v5.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20250426143905_v5.cs",
+              "RelativeToolTip": "DACS_web\\Migrations\\20250426143905_v5.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T14:39:05.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 156,
+              "Title": "20250426052957_v2.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20250426052957_v2.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Migrations\\20250426052957_v2.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20250426052957_v2.cs",
+              "RelativeToolTip": "DACS_web\\Migrations\\20250426052957_v2.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T06:21:14.035Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

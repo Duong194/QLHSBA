@@ -1,0 +1,25 @@
+﻿@model DACS_web.Models.DanhMucICD
+
+@{
+    ViewData["Title"] = "Xóa bệnh ICD";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Bạn có chắc chắn muốn xóa bệnh này?</h4>
+
+<dl class="row">
+    <dt class="col-sm-3">Mã ICD</dt>
+    <dd class="col-sm-9">@Model.MaICD</dd>
+
+    <dt class="col-sm-3">Tên bệnh</dt>
+    <dd class="col-sm-9">@Model.TenBenh</dd>
+</dl>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="MaICD" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

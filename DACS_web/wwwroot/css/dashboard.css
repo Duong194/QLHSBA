@@ -1,0 +1,535 @@
+﻿/* ========================================
+   DASHBOARD CSS - Chỉ áp dụng cho Dashboard
+   File: wwwroot/css/dashboard.css
+   ======================================== */
+
+/* Tất cả style được wrap trong .dashboard-wrapper để tránh conflict */
+
+.dashboard-wrapper {
+    --dash-primary: #4f46e5;
+    --dash-success: #10b981;
+    --dash-danger: #ef4444;
+    --dash-warning: #f59e0b;
+    --dash-info: #3b82f6;
+    --dash-teal: #14b8a6;
+    --dash-purple: #8b5cf6;
+    --dash-dark: #1f2937;
+    --dash-light-bg: #f9fafb;
+}
+
+    .dashboard-wrapper .dashboard-main {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        padding-bottom: 2rem;
+    }
+
+    /* ========================================
+   HEADER SECTION
+   ======================================== */
+
+    .dashboard-wrapper .dash-header {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        padding: 2rem 0;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .dashboard-wrapper .dash-welcome {
+        color: white;
+    }
+
+    .dashboard-wrapper .dash-greeting {
+        font-size: 1.2rem;
+        font-weight: 400;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .dashboard-wrapper .dash-username {
+        font-size: 2.5rem;
+        font-weight: 700;
+        display: block;
+    }
+
+    .dashboard-wrapper .dash-subtitle {
+        font-size: 1rem;
+        opacity: 0.9;
+        margin: 0;
+    }
+
+    .dashboard-wrapper .dash-header-info {
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .dashboard-wrapper .dash-time {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 0.75rem 1.25rem;
+        border-radius: 12px;
+        color: white;
+        font-weight: 500;
+        backdrop-filter: blur(10px);
+    }
+
+        .dashboard-wrapper .dash-time i {
+            margin-right: 0.5rem;
+        }
+
+    .dashboard-wrapper .dash-role {
+        padding: 0.75rem 1.5rem;
+        border-radius: 12px;
+        color: white;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        backdrop-filter: blur(10px);
+    }
+
+        .dashboard-wrapper .dash-role.role-admin {
+            background: rgba(239, 68, 68, 0.9);
+        }
+
+        .dashboard-wrapper .dash-role.role-doctor {
+            background: rgba(16, 185, 129, 0.9);
+        }
+
+        .dashboard-wrapper .dash-role.role-nurse {
+            background: rgba(59, 130, 246, 0.9);
+        }
+
+    /* ========================================
+   STATS CARDS
+   ======================================== */
+
+    .dashboard-wrapper .dash-stats-card {
+        background: white;
+        border-radius: 16px;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+        transition: all 0.3s ease;
+        height: 100%;
+    }
+
+        .dashboard-wrapper .dash-stats-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+    .dashboard-wrapper .dash-stats-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.75rem;
+        color: white;
+        flex-shrink: 0;
+    }
+
+    .dashboard-wrapper .dash-stats-card.stats-primary .dash-stats-icon {
+        background: linear-gradient(135deg, var(--dash-primary), #6366f1);
+    }
+
+    .dashboard-wrapper .dash-stats-card.stats-success .dash-stats-icon {
+        background: linear-gradient(135deg, var(--dash-success), #34d399);
+    }
+
+    .dashboard-wrapper .dash-stats-card.stats-info .dash-stats-icon {
+        background: linear-gradient(135deg, var(--dash-info), #60a5fa);
+    }
+
+    .dashboard-wrapper .dash-stats-card.stats-warning .dash-stats-icon {
+        background: linear-gradient(135deg, var(--dash-warning), #fbbf24);
+    }
+
+    .dashboard-wrapper .dash-stats-content {
+        flex: 1;
+    }
+
+    .dashboard-wrapper .dash-stats-number {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0;
+        color: var(--dash-dark);
+    }
+
+    .dashboard-wrapper .dash-stats-label {
+        font-size: 0.9rem;
+        color: #6b7280;
+        margin: 0.25rem 0 0.5rem 0;
+    }
+
+    .dashboard-wrapper .dash-stats-trend {
+        font-size: 0.8rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+        .dashboard-wrapper .dash-stats-trend.positive {
+            color: var(--dash-success);
+        }
+
+        .dashboard-wrapper .dash-stats-trend.negative {
+            color: var(--dash-danger);
+        }
+
+        .dashboard-wrapper .dash-stats-trend.neutral {
+            color: #6b7280;
+        }
+
+    /* ========================================
+   SECTION HEADERS
+   ======================================== */
+
+    .dashboard-wrapper .dash-section-header {
+        margin: 3rem 0 1.5rem 0;
+    }
+
+    .dashboard-wrapper .dash-section-title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: white;
+        margin: 0;
+    }
+
+    .dashboard-wrapper .dash-section-subtitle {
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0.5rem 0 0 0;
+    }
+
+    /* ========================================
+   FEATURE CARDS
+   ======================================== */
+
+    .dashboard-wrapper .dash-feature-card {
+        background: white;
+        border-radius: 16px;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+        height: 100%;
+    }
+
+        .dashboard-wrapper .dash-feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            text-decoration: none;
+        }
+
+    .dashboard-wrapper .dash-feature-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: white;
+        flex-shrink: 0;
+    }
+
+        .dashboard-wrapper .dash-feature-icon.bg-primary {
+            background: linear-gradient(135deg, var(--dash-primary), #6366f1);
+        }
+
+        .dashboard-wrapper .dash-feature-icon.bg-success {
+            background: linear-gradient(135deg, var(--dash-success), #34d399);
+        }
+
+        .dashboard-wrapper .dash-feature-icon.bg-danger {
+            background: linear-gradient(135deg, var(--dash-danger), #f87171);
+        }
+
+        .dashboard-wrapper .dash-feature-icon.bg-warning {
+            background: linear-gradient(135deg, var(--dash-warning), #fbbf24);
+        }
+
+        .dashboard-wrapper .dash-feature-icon.bg-info {
+            background: linear-gradient(135deg, var(--dash-info), #60a5fa);
+        }
+
+        .dashboard-wrapper .dash-feature-icon.bg-teal {
+            background: linear-gradient(135deg, var(--dash-teal), #2dd4bf);
+        }
+
+        .dashboard-wrapper .dash-feature-icon.bg-purple {
+            background: linear-gradient(135deg, var(--dash-purple), #a78bfa);
+        }
+
+        .dashboard-wrapper .dash-feature-icon.bg-secondary {
+            background: linear-gradient(135deg, #6b7280, #9ca3af);
+        }
+
+        .dashboard-wrapper .dash-feature-icon.bg-dark {
+            background: linear-gradient(135deg, var(--dash-dark), #374151);
+        }
+
+    .dashboard-wrapper .dash-feature-content {
+        flex: 1;
+    }
+
+    .dashboard-wrapper .dash-feature-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0 0 0.5rem 0;
+        color: var(--dash-dark);
+    }
+
+    .dashboard-wrapper .dash-feature-desc {
+        font-size: 0.875rem;
+        color: #6b7280;
+        margin: 0;
+    }
+
+    .dashboard-wrapper .dash-feature-arrow {
+        color: #d1d5db;
+        font-size: 1.25rem;
+        transition: all 0.3s ease;
+    }
+
+    .dashboard-wrapper .dash-feature-card:hover .dash-feature-arrow {
+        color: var(--dash-primary);
+        transform: translateX(5px);
+    }
+
+    /* ========================================
+   SYSTEM INFO CARD
+   ======================================== */
+
+    .dashboard-wrapper .dash-system-info {
+        background: white;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    .dashboard-wrapper .dash-info-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+        .dashboard-wrapper .dash-info-item i {
+            font-size: 1.75rem;
+            color: var(--dash-primary);
+        }
+
+        .dashboard-wrapper .dash-info-item small {
+            display: block;
+            font-size: 0.75rem;
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .dashboard-wrapper .dash-info-item strong {
+            display: block;
+            font-size: 1rem;
+            color: var(--dash-dark);
+            margin-top: 0.25rem;
+        }
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+@keyframes dash-fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dashboard-wrapper .dash-stats-card,
+.dashboard-wrapper .dash-feature-card {
+    animation: dash-fadeInUp 0.5s ease-out;
+}
+
+    .dashboard-wrapper .dash-stats-card:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .dashboard-wrapper .dash-stats-card:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .dashboard-wrapper .dash-stats-card:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+
+    .dashboard-wrapper .dash-stats-card:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+    .dashboard-wrapper .dash-username {
+        font-size: 2rem;
+    }
+
+    .dashboard-wrapper .dash-header-info {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dashboard-wrapper .dash-stats-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dashboard-wrapper .dash-info-item {
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .dashboard-wrapper .dash-section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .dashboard-wrapper .dash-header {
+        padding: 1.5rem 0;
+    }
+
+    .dashboard-wrapper .dash-username {
+        font-size: 1.75rem;
+    }
+
+    .dashboard-wrapper .dash-stats-number {
+        font-size: 1.75rem;
+    }
+
+    .dashboard-wrapper .dash-feature-card {
+        padding: 1.25rem;
+    }
+
+    .dashboard-wrapper .dash-feature-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.25rem;
+    }
+}
+
+/* ========================================
+   PRINT STYLES (Optional)
+   ======================================== */
+
+@media print {
+    .dashboard-wrapper .dashboard-main {
+        background: white !important;
+    }
+
+    .dashboard-wrapper .dash-header {
+        background: white !important;
+        color: black !important;
+    }
+
+    .dashboard-wrapper .dash-feature-card:hover,
+    .dashboard-wrapper .dash-stats-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/* ========================================
+   APPOINTMENTS WIDGET - THÊM MỚI
+   ======================================== */
+
+.dashboard-wrapper .dash-appointments-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+    .dashboard-wrapper .dash-appointments-card .card-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1.25rem 1.5rem;
+        border-bottom: none;
+    }
+
+        .dashboard-wrapper .dash-appointments-card .card-header h5 {
+            color: white;
+            font-weight: 600;
+        }
+
+.dashboard-wrapper .dash-appointments-table {
+    margin-bottom: 0;
+}
+
+    .dashboard-wrapper .dash-appointments-table thead {
+        background: #f9fafb;
+    }
+
+        .dashboard-wrapper .dash-appointments-table thead th {
+            border-bottom: 2px solid #e5e7eb;
+            color: #374151;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 1rem;
+        }
+
+    .dashboard-wrapper .dash-appointments-table tbody td {
+        padding: 1rem;
+        vertical-align: middle;
+        border-bottom: 1px solid #f3f4f6;
+    }
+
+    .dashboard-wrapper .dash-appointments-table tbody tr {
+        transition: background-color 0.2s;
+    }
+
+        .dashboard-wrapper .dash-appointments-table tbody tr:hover {
+            background-color: #f9fafb;
+        }
+
+.dashboard-wrapper .dash-footer-stat {
+    padding: 0.75rem;
+}
+
+    .dashboard-wrapper .dash-footer-stat i {
+        font-size: 1.25rem;
+        margin-right: 0.5rem;
+    }
+
+    .dashboard-wrapper .dash-footer-stat strong {
+        display: block;
+        font-size: 1.5rem;
+        margin: 0.25rem 0;
+        color: var(--dash-dark);
+    }
+
+    .dashboard-wrapper .dash-footer-stat small {
+        display: block;
+        color: #6b7280;
+        font-size: 0.875rem;
+    }

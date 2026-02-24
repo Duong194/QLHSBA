@@ -1,0 +1,104 @@
+﻿@{
+    var myShifts = ViewBag.MyShifts as List<DACS_web.Models.CaTruc>;
+}
+
+<div class="dash-section-header">
+    <div class="d-flex justify-content-between align-items-center">
+        <div>
+            <h2 class="dash-section-title">
+                <i class="fas fa-calendar-week me-2"></i>
+                Lịch trực của tôi
+            </h2>
+            <p class="dash-section-subtitle">Ca trực trong tuần này</p>
+        </div>
+        <a asp-area="Admin" asp-controller="CaTrucs" asp-action="MyShifts" class="btn btn-light">
+            <i class="fas fa-calendar-alt me-2"></i>Xem chi tiết
+        </a>
+    </div>
+</div>
+
+<div class="row g-3">
+    @if (myShifts != null && myShifts.Any())
+    {
+        @foreach (var shift in myShifts.OrderBy(s => s.NgayTruc).ThenBy(s => s.GioBatDau).Take(7))
+        {
+            var badgeClass = shift.TenCa switch
+            {
+                "Sáng" => "bg-warning text-dark",
+                "Chiều" => "bg-info",
+                "Tối" => "bg-primary",
+                "Đêm" => "bg-dark",
+                _ => "bg-secondary"
+            };
+
+            var isToday = shift.NgayTruc.Date == DateTime.Today;
+            var isPast = shift.NgayTruc.Date < DateTime.Today;
+
+            <div class="col-lg-12">
+                <div class="card border-0 shadow-sm @(isToday ? "border-start border-warning border-4" : "") @(isPast ? "opacity-75" : "")">
+                    <div class="card-body p-3">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-calendar-day fa-2x text-primary me-3"></i>
+                                    <div>
+                                        <h6 class="mb-0 fw-bold">@shift.NgayTruc.ToString("dd/MM/yyyy")</h6>
+                                        <small class="text-muted">@shift.NgayTruc.ToString("dddd", new System.Globalization.CultureInfo("vi-VN"))</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <span class="badge @badgeClass">
+                                    <i class="fas fa-clock me-1"></i>@shift.TenCa
+                                </span>
+                            </div>
+                            <div class="col-md-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>
+                                    @shift.GioBatDau.ToString(@"hh\:mm") - @shift.GioKetThuc.ToString(@"hh\:mm")
+                                </small>
+                            </div>
+                            <div class="col-md-3 text-end">
+                                @if (isToday)
+                                {
+                                    <span class="badge bg-success">
+                                        <i class="fas fa-circle me-1"></i>Hôm nay
+                                    </span>
+                                }
+                                else if (isPast)
+                                {
+                                    <span class="badge bg-secondary">
+                                        <i class="fas fa-check me-1"></i>Đã qua
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-info">
+                                        <i class="fas fa-clock me-1"></i>Sắp tới
+                                    </span>
+                                }
+                            </div>
+                        </div>
+                        @if (!string.IsNullOrEmpty(shift.GhiChu))
+                        {
+                            <div class="mt-2 pt-2 border-top">
+                                <small class="text-muted">
+                                    <i class="fas fa-sticky-note me-1"></i>@shift.GhiChu
+                                </small>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="col-12">
+            <div class="alert alert-info mb-0">
+                <i class="fas fa-info-circle me-2"></i>
+                Bạn chưa có lịch trực nào trong tuần này
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,123 @@
+﻿@model DACS_web.Models.CuocHenKham
+
+@{
+    ViewData["Title"] = "Đặt Lịch Khám";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var caTruc = ViewBag.CaTruc as DACS_web.Models.CaTruc;
+    var soLuongHen = (int)ViewBag.SoLuongHen;
+    var gioKhamGoiY = ViewBag.GioKhamGoiY as List<TimeSpan> ?? new List<TimeSpan>();
+}
+
+<div class="container px-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">
+                        <i class="fas fa-calendar-plus"></i> Đặt Lịch Khám
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <!-- Thông tin ca trực -->
+                    <div class="alert alert-info">
+                        <h5><i class="fas fa-info-circle"></i> Thông tin ca trực</h5>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <p><strong>Bác sĩ:</strong> @caTruc?.NhanVien?.HoTen</p>
+                                <p><strong>Khoa:</strong> @caTruc?.NhanVien?.Khoa?.TenKhoa</p>
+                                @if (!string.IsNullOrEmpty(caTruc?.NhanVien?.HocVi))
+                                {
+                                    <p><strong>Học vị:</strong> <span class="badge bg-info">@caTruc.NhanVien.HocVi</span></p>
+                                }
+                                @if (!string.IsNullOrEmpty(caTruc?.NhanVien?.ChuyenKhoa))
+                                {
+                                    <p><strong>Chuyên khoa:</strong> @caTruc.NhanVien.ChuyenKhoa</p>
+                                }
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>Ngày khám:</strong> @caTruc?.NgayTruc.ToString("dd/MM/yyyy")</p>
+                                <p><strong>Ca trực:</strong> Ca @caTruc?.TenCa</p>
+                                <p><strong>Thời gian:</strong> @caTruc?.GioBatDau.ToString(@"hh\:mm") - @caTruc?.GioKetThuc.ToString(@"hh\:mm")</p>
+                                <p>
+                                    <strong>Số lượng đã đặt:</strong>
+                                    <span class="badge @(soLuongHen < 7 ? "bg-success" : "bg-warning")">
+                                        @soLuongHen / 10 người
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form đặt lịch -->
+                    <form asp-action="DatLichTheoCaTruc" method="post">
+                        <input type="hidden" asp-for="MaCaTruc" />
+                        <input type="hidden" asp-for="MaBenhNhan" />
+                        <input type="hidden" asp-for="MaBacSiDuKien" />
+                        <input type="hidden" asp-for="NgayGioHen" />
+                        <input type="hidden" asp-for="CaKham" />
+                        <input type="hidden" asp-for="TrangThaiHen" value="Chờ khám" />
+
+                        <div class="mb-3">
+                            <label asp-for="GioKhamDuKien" class="form-label">
+                                <i class="fas fa-clock"></i> Chọn giờ khám dự kiến
+                            </label>
+                            <select asp-for="GioKhamDuKien" class="form-select" required>
+                                <option value="">-- Chọn giờ khám --</option>
+                                @foreach (var gio in gioKhamGoiY)
+                                {
+                                    <option value="@gio">@gio.ToString(@"hh\:mm")</option>
+                                }
+                            </select>
+                            <small class="form-text text-muted">
+                                Giờ khám thực tế có thể thay đổi tùy vào tình trạng bệnh nhân trước đó
+                            </small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="LyDoKham" class="form-label">
+                                <i class="fas fa-notes-medical"></i> Lý do khám <span class="text-danger">*</span>
+                            </label>
+                            <textarea asp-for="LyDoKham" class="form-control" rows="3"
+                                      placeholder="Mô tả triệu chứng, lý do khám bệnh..." required></textarea>
+                            <span asp-validation-for="LyDoKham" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="GhiChu" class="form-label">
+                                <i class="fas fa-comment"></i> Ghi chú thêm
+                            </label>
+                            <textarea asp-for="GhiChu" class="form-control" rows="2"
+                                      placeholder="Các thông tin bổ sung khác (nếu có)..."></textarea>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <strong>Lưu ý:</strong>
+                            <ul class="mb-0 mt-2">
+                                <li>Vui lòng đến trước giờ hẹn 15 phút để làm thủ tục</li>
+                                <li>Nếu không thể đến khám, vui lòng hủy lịch trước ít nhất 2 giờ</li>
+                                <li>Mang theo CMND/CCCD và các kết quả xét nghiệm liên quan (nếu có)</li>
+                            </ul>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a href="@Url.Action("XemLichTrucBacSi")" class="btn btn-secondary">
+                                <i class="fas fa-arrow-left"></i> Quay lại
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-check"></i> Xác nhận đặt lịch
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,38 @@
+﻿@model DACS_web.Models.ChanDoan
+
+@{
+    ViewData["Title"] = "Chi tiết chẩn đoán";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Mã chẩn đoán</dt>
+            <dd class="col-sm-9">@Model.MaChanDoan</dd>
+
+            <dt class="col-sm-3">Mã hồ sơ</dt>
+            <dd class="col-sm-9">@Model.MaHoSo</dd>
+
+            <dt class="col-sm-3">Bệnh (ICD)</dt>
+            <dd class="col-sm-9">@Model.DanhMucICD?.TenBenh (@Model.MaICD)</dd>
+
+            <dt class="col-sm-3">Loại chẩn đoán</dt>
+            <dd class="col-sm-9">@Model.LoaiChanDoan</dd>
+
+            <dt class="col-sm-3">Vị trí</dt>
+            <dd class="col-sm-9">@Model.ViTri</dd>
+
+            <dt class="col-sm-3">Mô tả</dt>
+            <dd class="col-sm-9">@Model.MoTa</dd>
+        </dl>
+    </div>
+</div>
+
+<div class="mt-4">
+    <a asp-action="Edit" asp-route-id="@Model.MaChanDoan" class="btn btn-warning">Sửa</a>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</div>

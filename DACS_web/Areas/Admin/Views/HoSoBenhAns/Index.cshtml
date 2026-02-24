@@ -1,0 +1,246 @@
+﻿@model IEnumerable<DACS_web.Models.HoSoBenhAn>
+
+@{
+    ViewData["Title"] = "Danh sách hồ sơ bệnh án";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+<link href="~/css/medical-record-list.css" rel="stylesheet" />
+
+<div class="medical-record-page">
+    <div class="modern-container">
+
+        <div class="page-header">
+            <div class="header-left">
+                <div class="icon-box">
+                    <span class="material-symbols-outlined">clinical_notes</span>
+                </div>
+                <div>
+                    <h1>@ViewData["Title"]</h1>
+                    <p class="breadcrumb">Dashboard &gt; Hồ sơ bệnh án</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-filter-card">
+            <div class="search-filter-content">
+                <div class="search-group">
+                    <div class="search-input-wrapper">
+                        <span class="material-symbols-outlined">search</span>
+                        <input type="text" id="searchInput" placeholder="Tìm theo tên bệnh nhân, mã hồ sơ..." />
+                    </div>
+
+                    <div class="filter-select-wrapper">
+                        <span class="material-symbols-outlined">filter_list</span>
+                        <select id="filterStatus">
+                            <option value="">Tất cả trạng thái</option>
+                            <option value="Đang điều trị">Đang điều trị</option>
+                            <option value="Đã ra viện">Đã ra viện</option>
+                            <option value="Chuyển viện">Chuyển viện</option>
+                        </select>
+                        <span class="material-symbols-outlined dropdown-icon">expand_more</span>
+                    </div>
+
+                    <button class="btn-refresh" id="refreshBtn" title="Làm mới">
+                        <span class="material-symbols-outlined">refresh</span>
+                    </button>
+                </div>
+
+                <div class="action-group">
+                    <div class="total-count">
+                        <span class="material-symbols-outlined">folder_shared</span>
+                        <p>Tổng số hồ sơ: <span id="recordCount">@Model.Count()</span></p>
+                    </div>
+
+                    @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                    {
+                        <a asp-action="Create" class="btn-add-new">
+                            <span class="material-symbols-outlined">add_circle</span>
+                            <span>Thêm hồ sơ mới</span>
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="cards-grid" id="cardContainer">
+            @foreach (var item in Model)
+            {
+                <div class="medical-card" data-status="@item.TrangThaiRaVien">
+                    <div class="card-header-section">
+                        <div class="card-id">
+                            <span class="id-badge">MÃ: #@item.MaHoSo</span>
+                        </div>
+
+                        @if (item.TrangThaiRaVien == "Đang điều trị")
+                        {
+                            <span class="status-badge treating">Đang điều trị</span>
+                        }
+                        else if (item.TrangThaiRaVien == "Đã ra viện")
+                        {
+                            <span class="status-badge discharged">Đã ra viện</span>
+                        }
+                        else if (item.TrangThaiRaVien == "Chuyển viện")
+                        {
+                            <span class="status-badge transferred">Chuyển viện</span>
+                        }
+                        else
+                        {
+                            <span class="status-badge other">@item.TrangThaiRaVien</span>
+                        }
+                    </div>
+
+                    <h3 class="patient-name">@item.BenhNhan?.HoTen</h3>
+
+                    <div class="card-info-list">
+                        <div class="info-row">
+                            <div class="info-icon patient">
+                                <span class="material-symbols-outlined">person</span>
+                            </div>
+                            <div class="info-content">
+                                <p class="info-label">Bệnh nhân</p>
+                                <p class="info-value">@item.BenhNhan?.HoTen</p>
+                            </div>
+                        </div>
+
+                        <div class="info-row">
+                            <div class="info-icon doctor">
+                                <span class="material-symbols-outlined">stethoscope</span>
+                            </div>
+                            <div class="info-content">
+                                <p class="info-label">Bác sĩ điều trị</p>
+                                <p class="info-value">@item.BacSiDieuTri?.HoTen</p>
+                            </div>
+                        </div>
+
+                        <div class="info-row">
+                            <div class="info-icon created">
+                                <span class="material-symbols-outlined">edit_document</span>
+                            </div>
+                            <div class="info-content">
+                                <p class="info-label">Bác sĩ lập bệnh án</p>
+                                <p class="info-value">@item.BacSiLapBenhAn?.HoTen</p>
+                            </div>
+                        </div>
+
+                        <div class="info-row">
+                            <div class="info-icon date">
+                                <span class="material-symbols-outlined">event</span>
+                            </div>
+                            <div class="info-content">
+                                <p class="info-label">Ngày tạo</p>
+                                <p class="info-value">@item.NgayTao.ToString("dd/MM/yyyy")</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions">
+                        <a asp-action="Details" asp-route-id="@item.MaHoSo" class="btn-card-action view">
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span>Chi tiết</span>
+                        </a>
+
+                        @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi) || User.IsInRole(SD.Role_YTa))
+                        {
+                            <a asp-action="Edit" asp-route-id="@item.MaHoSo" class="btn-card-action edit">
+                                <span class="material-symbols-outlined">edit</span>
+                                <span>Sửa</span>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.MaHoSo" class="btn-card-action-icon delete" title="Xóa">
+                                <span class="material-symbols-outlined">delete</span>
+                            </a>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="empty-state" id="emptyState" style="display: none;">
+            <span class="material-symbols-outlined empty-icon">folder_open</span>
+            <p class="empty-text">Không tìm thấy hồ sơ nào</p>
+            <p class="empty-subtext">Thử thay đổi bộ lọc hoặc tìm kiếm khác</p>
+        </div>
+
+        <div class="pagination-card">
+            <p class="pagination-info">
+                Hiển thị <span class="font-bold" id="showingCount">@Model.Count()</span> trên tổng số <span class="font-bold">@Model.Count()</span> hồ sơ
+            </p>
+            <div class="pagination-controls">
+                <button class="pagination-btn" disabled>
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <span class="pagination-dots">...</span>
+                <button class="pagination-btn">10</button>
+                <button class="pagination-btn">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const filterStatus = document.getElementById('filterStatus');
+            const refreshBtn = document.getElementById('refreshBtn');
+            const cards = document.querySelectorAll('.medical-card');
+            const recordCount = document.getElementById('recordCount');
+            const showingCount = document.getElementById('showingCount');
+            const emptyState = document.getElementById('emptyState');
+            const cardsGrid = document.getElementById('cardContainer');
+
+            // Hàm cập nhật hiển thị
+            function updateDisplay() {
+                const searchText = searchInput.value.toLowerCase();
+                const statusFilter = filterStatus.value;
+                let visibleCount = 0;
+
+                cards.forEach(card => {
+                    const cardText = card.textContent.toLowerCase();
+                    const cardStatus = card.getAttribute('data-status');
+
+                    const matchSearch = searchText === '' || cardText.includes(searchText);
+                    const matchStatus = statusFilter === '' || cardStatus === statusFilter;
+
+                    if (matchSearch && matchStatus) {
+                        card.style.display = '';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                // Cập nhật số lượng hiển thị
+                showingCount.textContent = visibleCount;
+
+                // Hiển thị empty state nếu không có kết quả
+                if (visibleCount === 0) {
+                    emptyState.style.display = 'flex';
+                    cardsGrid.style.display = 'none';
+                } else {
+                    emptyState.style.display = 'none';
+                    cardsGrid.style.display = 'grid';
+                }
+            }
+
+            // Xử lý tìm kiếm
+            searchInput.addEventListener('keyup', updateDisplay);
+
+            // Xử lý lọc
+            filterStatus.addEventListener('change', updateDisplay);
+
+            // Xử lý làm mới
+            refreshBtn.addEventListener('click', function() {
+                searchInput.value = '';
+                filterStatus.selectedIndex = 0;
+                updateDisplay();
+            });
+        });
+    </script>
+}

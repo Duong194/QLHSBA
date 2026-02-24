@@ -1,0 +1,36 @@
+﻿@model DACS_web.Models.Thuoc
+@{
+    ViewData["Title"] = "Xoá thuốc";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2 class="mb-4 text-danger">Bạn có chắc chắn muốn xoá thuốc này?</h2>
+
+<div class="border p-3">
+    <dl class="row">
+        <dt class="col-sm-3">Mã thuốc</dt>
+        <dd class="col-sm-9">@Model.MaThuoc</dd>
+
+        <dt class="col-sm-3">Tên thuốc</dt>
+        <dd class="col-sm-9">@Model.TenThuoc</dd>
+
+        <dt class="col-sm-3">Đơn vị tính</dt>
+        <dd class="col-sm-9">@Model.DonViTinh</dd>
+
+        <dt class="col-sm-3">Chỉ định</dt>
+        <dd class="col-sm-9">@Model.ChiDinh</dd>
+
+        <dt class="col-sm-3">Tác dụng phụ</dt>
+        <dd class="col-sm-9">@Model.TacDungPhu</dd>
+
+        <dt class="col-sm-3">Tương tác thuốc</dt>
+        <dd class="col-sm-9">@Model.TuongTacThuoc</dd>
+    </dl>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="MaThuoc" />
+        <button type="submit" class="btn btn-danger">Xoá</button>
+        <a asp-action="Index" class="btn btn-secondary">Huỷ</a>
+    </form>
+</div>

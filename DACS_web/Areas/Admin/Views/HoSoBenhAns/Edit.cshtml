@@ -1,0 +1,219 @@
+﻿@model DACS_web.Models.HoSoBenhAn
+@{
+    ViewData["Title"] = "Chỉnh sửa hồ sơ bệnh án";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="container-fluid py-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0"><i class="fas fa-edit me-2"></i>@ViewData["Title"]</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit" class="needs-validation" novalidate>
+                <input type="hidden" asp-for="MaHoSo" />
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                <div class="row g-3">
+                    <!-- Thông tin cơ bản -->
+                    <div class="col-12 mb-3">
+                        <div class="card bg-light">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="fas fa-user-circle me-2"></i>Thông tin cơ bản</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label asp-for="MaBenhNhan" class="form-label fw-bold"><i class="fas fa-hospital-user me-1"></i>Bệnh nhân</label>
+                                        <select asp-for="MaBenhNhan" class="form-select" asp-items="ViewBag.MaBenhNhan" disabled></select>
+                                        <input type="hidden" asp-for="MaBenhNhan" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label asp-for="NgayTao" class="form-label fw-bold"><i class="far fa-calendar-plus me-1"></i>Ngày tạo</label>
+                                        <input asp-for="NgayTao" class="form-control" type="date" />
+                                        <span asp-validation-for="NgayTao" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thông tin bác sĩ -->
+                    <div class="col-12 mb-3">
+                        <div class="card bg-light">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="fas fa-user-md me-2"></i>Thông tin bác sĩ</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label asp-for="MaBacSiLapBenhAn" class="form-label fw-bold"><i class="fas fa-file-medical me-1"></i>Bác sĩ lập bệnh án</label>
+                                        <select asp-for="MaBacSiLapBenhAn" class="form-select" asp-items="ViewBag.MaBacSiLapBenhAn"></select>
+                                        <span asp-validation-for="MaBacSiLapBenhAn" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label asp-for="MaBacSiDieuTri" class="form-label fw-bold"><i class="fas fa-stethoscope me-1"></i>Bác sĩ điều trị</label>
+                                        <select asp-for="MaBacSiDieuTri" class="form-select" asp-items="ViewBag.MaBacSiDieuTri"></select>
+                                        <span asp-validation-for="MaBacSiDieuTri" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tình trạng bệnh nhân -->
+                    <div class="col-12 mb-3">
+                        <div class="card bg-light">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="fas fa-heartbeat me-2"></i>Tình trạng và tiên lượng</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label asp-for="TienLuongGan" class="form-label fw-bold"><i class="fas fa-chart-line me-1"></i>Tiên lượng gần</label>
+                                        <select asp-for="TienLuongGan" class="form-select">
+                                            <option value="Tốt">Tốt</option>
+                                            <option value="Khá">Khá</option>
+                                            <option value="Trung bình">Trung bình</option>
+                                            <option value="Xấu">Xấu</option>
+                                        </select>
+                                        <span asp-validation-for="TienLuongGan" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label asp-for="TienLuongXa" class="form-label fw-bold"><i class="far fa-chart-bar me-1"></i>Tiên lượng xa</label>
+                                        <select asp-for="TienLuongXa" class="form-select">
+                                            <option value="Tốt">Tốt</option>
+                                            <option value="Khá">Khá</option>
+                                            <option value="Trung bình">Trung bình</option>
+                                            <option value="Xấu">Xấu</option>
+                                        </select>
+                                        <span asp-validation-for="TienLuongXa" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thông tin ra viện -->
+                    <div class="col-12 mb-3">
+                        <div class="card bg-light">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="fas fa-clipboard-check me-2"></i>Thông tin ra viện</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label asp-for="TrangThaiRaVien" class="form-label fw-bold"><i class="fas fa-door-open me-1"></i>Trạng thái ra viện</label>
+                                        <select asp-for="TrangThaiRaVien" class="form-select">
+                                            <option value="Đang điều trị">Đang điều trị</option>
+                                            <option value="Đã ra viện">Đã ra viện</option>
+                                            <option value="Chuyển viện">Chuyển viện</option>
+                                            <option value="Tự xuất viện">Tự xuất viện</option>
+                                        </select>
+                                        <span asp-validation-for="TrangThaiRaVien" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label asp-for="KetQuaRaVien" class="form-label fw-bold"><i class="fas fa-notes-medical me-1"></i>Kết quả ra viện</label>
+                                        <input asp-for="KetQuaRaVien" class="form-control" />
+                                        <span asp-validation-for="KetQuaRaVien" class="text-danger"></span>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label asp-for="ChanDoanRaVien" class="form-label fw-bold"><i class="fas fa-diagnosis me-1"></i>Chẩn đoán ra viện</label>
+                                        <textarea asp-for="ChanDoanRaVien" class="form-control" rows="3"></textarea>
+                                        <span asp-validation-for="ChanDoanRaVien" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end gap-2 mt-3">
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-1"></i> Quay lại
+                    </a>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-1"></i> Lưu thay đổi
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        // Hiển thị validation ngay khi người dùng nhập liệu
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+}
+
+@section Styles {
+    <style>
+        .card {
+            border-radius: 0.5rem;
+            transition: all 0.2s;
+        }
+
+        .card-header {
+            border-radius: 0.5rem 0.5rem 0 0 !important;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #86b7fe;
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        }
+
+        .btn {
+            border-radius: 0.25rem;
+            padding: 0.5rem 1rem;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+
+            .btn-primary:hover {
+                background-color: #0b5ed7;
+                border-color: #0a58ca;
+            }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+            .btn-secondary:hover {
+                background-color: #5c636a;
+                border-color: #565e64;
+            }
+
+        label {
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control, .form-select {
+            padding: 0.5rem 0.75rem;
+        }
+    </style>
+}

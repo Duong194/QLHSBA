@@ -1,0 +1,312 @@
+﻿@model IEnumerable<DACS_web.Models.NhanVienYTe>
+@{
+    ViewData["Title"] = "Danh sách bác sĩ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/DoctorList.css" asp-append-version="true" />
+}
+
+<div class="doctor-list-page">
+    <div class="container py-4">
+        <!-- Header -->
+        <div class="doctor-header animate-fadeInUp">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold"><i class="fas fa-user-md me-3"></i>Đội ngũ bác sĩ</h1>
+                    <p class="lead mb-0">Gặp gỡ những chuyên gia hàng đầu trong lĩnh vực nhãn khoa tại Bệnh viện Mắt Sài Gòn</p>
+                </div>
+                <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                    <h4 class="mb-0">Tổng số: <span class="badge bg-white text-primary" id="doctorCount">@Model.Count()</span> bác sĩ</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="row mb-4">
+            <div class="col-lg-8">
+                <div class="search-container animate-fadeInUp" style="animation-delay: 0.1s">
+                    <i class="fas fa-search search-icon me-2"></i>
+                    <input type="text" id="searchBox" placeholder="Tìm kiếm bác sĩ theo tên, chuyên khoa..." />
+                </div>
+            </div>
+            <div class="col-lg-4 mt-3 mt-lg-0">
+                <div class="d-flex justify-content-lg-end">
+                    <button class="btn btn-outline-primary rounded-pill" id="viewSwitcher">
+                        <i class="fas fa-th me-2"></i>Chuyển đổi hiển thị
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Display (Mặc định) -->
+        <div class="doctor-grid" id="cardView">
+            @foreach (var bs in Model)
+            {
+                <div class="doctor-card animate-fadeInUp"
+                     data-name="@bs.HoTen.ToLower()"
+                     data-specialty="@(bs.ChuyenKhoa?.ToLower() ?? "")"
+                     style="animation-delay: @(0.1 + Model.ToList().IndexOf(bs) * 0.05)s">
+
+                    <div class="doctor-image-container">
+                        @if (!string.IsNullOrEmpty(bs.HinhAnh))
+                        {
+                            <img src="@bs.HinhAnh" alt="@bs.HoTen" class="doctor-image" />
+                        }
+                        else
+                        {
+                            <img src="~/images/default-doctor.png" alt="@bs.HoTen" class="doctor-image" />
+                        }
+                        <div class="doctor-badge">
+                            @if (!string.IsNullOrEmpty(bs.HocVi))
+                            {
+                                <span class="badge-degree">@bs.HocVi</span>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">@bs.HoTen</h3>
+
+                        @if (!string.IsNullOrEmpty(bs.ChuyenKhoa))
+                        {
+                            <span class="doctor-specialty">
+                                <i class="fas fa-stethoscope me-2"></i>@bs.ChuyenKhoa
+                            </span>
+                        }
+
+                        <div class="doctor-details">
+                            <div class="doctor-meta">
+                                <i class="fas fa-hospital me-2"></i>
+                                <span>@bs.Khoa?.TenKhoa</span>
+                            </div>
+
+                            @if (bs.NamKinhNghiem.HasValue && bs.NamKinhNghiem > 0)
+                            {
+                                <div class="doctor-meta">
+                                    <i class="fas fa-briefcase me-2"></i>
+                                    <span>@bs.NamKinhNghiem năm kinh nghiệm</span>
+                                </div>
+                            }
+
+                            <div class="doctor-meta">
+                                <i class="fas fa-phone-alt me-2"></i>
+                                <span>@bs.SoDienThoai</span>
+                            </div>
+                        </div>
+
+                        <button class="btn-book-appointment">
+                            <i class="fas fa-calendar-check me-2"></i>Đặt lịch khám
+                        </button>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Table Display -->
+        <div id="tableView" style="display: none">
+            <div class="table-responsive">
+                <table class="doctor-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 80px;">Ảnh</th>
+                            <th>Họ tên</th>
+                            <th>Học vị</th>
+                            <th>Chuyên khoa</th>
+                            <th>Khoa</th>
+                            <th>Kinh nghiệm</th>
+                            <th>Số điện thoại</th>
+                            <th style="width: 120px;">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="doctorTableBody">
+                        @foreach (var bs in Model)
+                        {
+                            <tr class="doctor-row"
+                                data-name="@bs.HoTen.ToLower()"
+                                data-specialty="@(bs.ChuyenKhoa?.ToLower() ?? "")">
+                                <td>
+                                    <div class="table-doctor-image">
+                                        @if (!string.IsNullOrEmpty(bs.HinhAnh))
+                                        {
+                                            <img src="@bs.HinhAnh" alt="@bs.HoTen" />
+                                        }
+                                        else
+                                        {
+                                            <img src="~/images/default-doctor.png" alt="@bs.HoTen" />
+                                        }
+                                    </div>
+                                </td>
+                                <td>
+                                    <strong>@bs.HoTen</strong>
+                                </td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(bs.HocVi))
+                                    {
+                                        <span class="badge bg-info text-white">@bs.HocVi</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">---</span>
+                                    }
+                                </td>
+                                <td>@(bs.ChuyenKhoa ?? "---")</td>
+                                <td>@bs.Khoa?.TenKhoa</td>
+                                <td>
+                                    @if (bs.NamKinhNghiem.HasValue && bs.NamKinhNghiem > 0)
+                                    {
+                                        <span>@bs.NamKinhNghiem năm</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted">---</span>
+                                    }
+                                </td>
+                                <td>@bs.SoDienThoai</td>
+                                <td>
+                                    <button class="btn btn-sm btn-primary">
+                                        <i class="fas fa-calendar-check"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- No Results Message -->
+        <div class="no-results d-none" id="noResults">
+            <i class="fas fa-search"></i>
+            <h3>Không tìm thấy bác sĩ</h3>
+            <p class="text-muted">Vui lòng thử lại với từ khóa khác</p>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination-container" id="pagination">
+            <div class="pagination">
+                <div class="page-item active">1</div>
+                <div class="page-item">2</div>
+                <div class="page-item">3</div>
+                <div class="page-item">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="page-item">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Các phần tử DOM
+            const searchBox = document.getElementById('searchBox');
+            const doctorCardRows = document.querySelectorAll('.doctor-card');
+            const doctorTableRows = document.querySelectorAll('.doctor-row');
+            const noResults = document.getElementById('noResults');
+            const doctorCount = document.getElementById('doctorCount');
+            const tableView = document.getElementById('tableView');
+            const cardView = document.getElementById('cardView');
+            const viewSwitcher = document.getElementById('viewSwitcher');
+
+            let isCardView = true;
+
+            // Hàm lọc và tìm kiếm bác sĩ
+            function filterDoctors() {
+                const searchTerm = searchBox.value.toLowerCase();
+                let visibleCount = 0;
+
+                // Lọc trong card
+                doctorCardRows.forEach(card => {
+                    const doctorName = card.getAttribute('data-name');
+                    const specialty = card.getAttribute('data-specialty');
+
+                    if (doctorName.includes(searchTerm) || specialty.includes(searchTerm)) {
+                        card.style.display = '';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                // Lọc trong bảng
+                doctorTableRows.forEach(row => {
+                    const doctorName = row.getAttribute('data-name');
+                    const specialty = row.getAttribute('data-specialty');
+
+                    if (doctorName.includes(searchTerm) || specialty.includes(searchTerm)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+
+                // Hiển thị thông báo không có kết quả nếu cần
+                if (visibleCount === 0) {
+                    noResults.classList.remove('d-none');
+                    if (isCardView) {
+                        cardView.style.display = 'none';
+                    } else {
+                        tableView.style.display = 'none';
+                    }
+                } else {
+                    noResults.classList.add('d-none');
+                    if (isCardView) {
+                        cardView.style.display = 'grid';
+                    } else {
+                        tableView.style.display = 'block';
+                    }
+                }
+
+                doctorCount.textContent = visibleCount;
+            }
+
+            // Sự kiện tìm kiếm
+            searchBox.addEventListener('input', filterDoctors);
+
+            // Chuyển đổi chế độ hiển thị
+            viewSwitcher.addEventListener('click', function() {
+                if (isCardView) {
+                    // Chuyển sang chế độ bảng
+                    cardView.style.display = 'none';
+                    tableView.style.display = 'block';
+                    viewSwitcher.innerHTML = '<i class="fas fa-th me-2"></i>Xem dạng thẻ';
+                    isCardView = false;
+                } else {
+                    // Chuyển sang chế độ card
+                    tableView.style.display = 'none';
+                    cardView.style.display = 'grid';
+                    viewSwitcher.innerHTML = '<i class="fas fa-list me-2"></i>Xem dạng bảng';
+                    isCardView = true;
+                }
+            });
+
+            // Phân trang (demo)
+            const paginationItems = document.querySelectorAll('.page-item');
+
+            paginationItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    if (!this.classList.contains('active') && this.textContent.trim() !== '...' && !this.querySelector('.fa-chevron-right')) {
+                        paginationItems.forEach(i => i.classList.remove('active'));
+                        this.classList.add('active');
+                        // Xử lý phân trang thực tế nếu cần
+                    }
+                });
+            });
+
+            // Xử lý nút đặt lịch
+            const bookButtons = document.querySelectorAll('.btn-book-appointment');
+            bookButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    alert('Chức năng đặt lịch đang được phát triển!');
+                    // Có thể chuyển hướng đến trang đặt lịch
+                    // window.location.href = '/DatLichKham/Create';
+                });
+            });
+        });
+    </script>
+}

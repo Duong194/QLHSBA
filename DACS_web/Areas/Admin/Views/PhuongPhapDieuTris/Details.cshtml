@@ -1,0 +1,31 @@
+﻿@model DACS_web.Models.PhuongPhapDieuTri
+
+@{
+    ViewData["Title"] = "Chi tiết phương pháp điều trị";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Mã phương pháp:</dt>
+        <dd class="col-sm-10">@Model.MaPhuongPhap</dd>
+
+        <dt class="col-sm-2">Nội khoa:</dt>
+        <dd class="col-sm-10">@Model.NoiKhoa</dd>
+
+        <dt class="col-sm-2">Ngoại khoa:</dt>
+        <dd class="col-sm-10">@Model.NgoaiKhoa</dd>
+
+        <dt class="col-sm-2">Mô tả chi tiết:</dt>
+        <dd class="col-sm-10">@Model.MoTaChiTiet</dd>
+
+        <dt class="col-sm-2">Hồ sơ bệnh án:</dt>
+        <dd class="col-sm-10">@Model.HoSoBenhAn?.MaHoSo</dd>
+    </dl>
+
+    <a asp-action="Edit" asp-route-id="@Model.MaPhuongPhap" class="btn btn-warning">Chỉnh sửa</a> |
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</div>

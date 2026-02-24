@@ -1,0 +1,58 @@
+﻿@model DACS_web.Models.ChanDoan
+
+@{
+    ViewData["Title"] = "Thêm chẩn đoán mới";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Create">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label asp-for="MaChanDoan" class="form-label"></label>
+        <input asp-for="MaChanDoan" class="form-control" />
+        <span asp-validation-for="MaChanDoan" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="MaHoSo" class="form-label"></label>
+        <select asp-for="MaHoSo" class="form-control" asp-items="ViewBag.MaHoSo"></select>
+        <span asp-validation-for="MaHoSo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="MaICD" class="form-label"></label>
+        <select asp-for="MaICD" class="form-control" asp-items="ViewBag.MaICD"></select>
+        <span asp-validation-for="MaICD" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="LoaiChanDoan" class="form-label"></label>
+        <input asp-for="LoaiChanDoan" class="form-control" />
+        <span asp-validation-for="LoaiChanDoan" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ViTri" class="form-label"></label>
+        <input asp-for="ViTri" class="form-control" />
+        <span asp-validation-for="ViTri" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="MoTa" class="form-label"></label>
+        <textarea asp-for="MoTa" class="form-control"></textarea>
+        <span asp-validation-for="MoTa" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Thêm mới</button>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

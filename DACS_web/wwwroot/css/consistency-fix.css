@@ -1,0 +1,45 @@
+﻿/* Đảm bảo kiểu dáng nút nhất quán trên tất cả trang */
+.btn-outline-dark,
+.btn-success,
+.btn-warning {
+    border-radius: 30px !important;
+    padding: 8px 20px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Thêm class mới cho dashboard button */
+.dashboard-btn {
+    background-color: white !important;
+    border: 1px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+    .dashboard-btn:hover {
+        background-color: var(--primary-color) !important;
+        color: white !important;
+    }
+
+/* Sửa lỗi hiển thị doctor list button */
+.hotline-btn {
+    background-color: var(--primary-color) !important;
+    border: none !important;
+    color: white !important;
+}
+
+/* Đảm bảo navbar không bị nhảy dòng */
+.navbar-nav {
+    flex-direction: row !important;
+    align-items: center !important;
+}
+
+/* Sửa lỗi dropdown menu user */
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown.show .dropdown-menu {
+    display: block !important;
+}
+
+/* Đảm bảo JS toggle dropdown hoạt động trên mọi trang */

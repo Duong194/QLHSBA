@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DACS_web</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DACS_web.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    @RenderSection("Styles", required: false)
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <div class="header-left d-flex align-items-center">
+                        <a class="navbar-brand me-4" asp-area="" asp-controller="Home" asp-action="Index">
+                            <img src="~/uploads/msg-logo.png" alt="Bệnh Viện Mắt Sài Gòn" class="logo-img">
+                        </a>
+                        <img src="~/uploads/LOGO-Matcos-moi.png" alt="Badge" class="badge-img ms-3 d-none d-md-block">
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                            </li>
+                            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi) || User.IsInRole(SD.Role_YTa) || User.IsInRole(SD.Role_BenhNhan))
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dichVuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dữ liệu
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dichVuDropdown">
+                                        @if (User.IsInRole(SD.Role_BenhNhan))
+                                        {
+                                            <!-- Logic đặc biệt cho bệnh nhân -->
+                                            <li><a class="dropdown-item" asp-area="Admin" asp-controller="BenhNhans" asp-action="BenhNhanDetails">Thông tin bệnh nhân</a></li>
+                                        }
+                                        else
+                                        {
+                                            <!-- Logic cho admin, bác sĩ, y tá -->
+                                            <li><a class="dropdown-item" asp-area="Admin" asp-controller="BenhNhans" asp-action="Index">Thông tin bệnh nhân</a></li>
+                                        }
+                                        <li><a class="dropdown-item" asp-area="Admin" asp-controller="HoSoBenhAns" asp-action="Index">Danh sách bệnh án</a></li>
+                                        <li><a class="dropdown-item" asp-area="Admin" asp-controller="CuocHenKhams" asp-action="Index">Cuộc hẹn khám</a></li>
+                                    </ul>
+                                </li>
+                            }
+
+                        </ul>
+
+                        <div class="d-flex align-items-center">
+                            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi) || User.IsInRole(SD.Role_YTa))
+                            {
+                                <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="btn btn-outline-dark me-2">
+                                    <i class="fas fa-tachometer-alt me-1"></i> Dashboard
+                                </a>
+                            }
+                            <div class="d-flex gap-2">
+                                <a asp-area="Admin" asp-controller="NhanVienYTes" asp-action="DanhSachBacSi"
+                                   class="btn btn-success d-none d-md-flex align-items-center hotline-btn">
+                                    <i class="fas fa-user-md me-2"></i>
+                                    <span>Danh Sách Bác Sĩ</span>
+                                </a>
+
+                                <a asp-area="Admin" asp-controller="TuVans" asp-action="Create" class="btn btn-warning d-flex align-items-center text-white">
+                                    <i class="far fa-calendar-alt me-2"></i>
+                                    <span>Đặt lịch</span>
+                                </a>
+                            </div>
+                            <partial name="_LoginPartial" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>Bệnh viện Mắt Sài Gòn</h5>
+                    <p>Hệ thống chăm sóc mắt chuyên nghiệp hàng đầu Việt Nam với đội ngũ y bácS sĩ giàu kinh nghiệm và trang thiết bị hiện đại.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Liên hệ</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Phạm Hùng, Quận 8, TP.HCM</li>
+                        <li><i class="fas fa-phone-alt me-2"></i> Hotline: 1900 9000</li>
+                        <li><i class="far fa-envelope me-2"></i> info@matsg.com</li>
+                        <li><i class="far fa-clock me-2"></i> Giờ làm việc: 7:00 - 20:00</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Hỗ trợ</h5>
+                    <ul>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Hướng dẫn đặt lịch</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 - Bệnh viện Mắt Sài Gòn - Tất cả quyền được bảo lưu</p>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

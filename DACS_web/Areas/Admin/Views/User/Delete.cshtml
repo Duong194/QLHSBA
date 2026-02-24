@@ -1,0 +1,29 @@
+﻿@model DACS_web.Models.ApplicationUser
+@{
+    ViewData["Title"] = "Xoá người dùng";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mb-3">@ViewData["Title"]</h2>
+
+<h5>Bạn có chắc chắn muốn xoá tài khoản này?</h5>
+<hr />
+<dl class="row">
+    <dt class="col-sm-3">Email</dt>
+    <dd class="col-sm-9">@Model.Email</dd>
+
+    <dt class="col-sm-3">Họ tên</dt>
+    <dd class="col-sm-9">@Model.FullName</dd>
+
+    <dt class="col-sm-3">Địa chỉ</dt>
+    <dd class="col-sm-9">@Model.Address</dd>
+
+    <dt class="col-sm-3">Mã bệnh nhân</dt>
+    <dd class="col-sm-9">@Model.MaBenhNhan</dd>
+</dl>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Xoá</button>
+    <a asp-action="Index" class="btn btn-secondary">Huỷ</a>
+</form>

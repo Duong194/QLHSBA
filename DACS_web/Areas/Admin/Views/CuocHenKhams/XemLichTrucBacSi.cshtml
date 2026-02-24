@@ -1,0 +1,200 @@
+﻿@model IEnumerable<DACS_web.Models.CaTruc>
+
+@{
+    ViewData["Title"] = "Lịch Trực Bác Sĩ - Đặt Lịch Khám";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var lichHenCount = ViewBag.LichHenCount as Dictionary<int, int> ?? new Dictionary<int, int>();
+    var tuNgay = (DateTime)ViewBag.TuNgay;
+}
+
+<div class="container-fluid px-4">
+    <h2 class="mt-4 mb-4">
+        <i class="fas fa-calendar-alt"></i> Lịch Trực Bác Sĩ - Đặt Lịch Khám
+    </h2>
+
+    <!-- Bộ lọc -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <form method="get" class="row g-3">
+                <div class="col-md-4">
+                    <label class="form-label">Chọn Bác Sĩ</label>
+                    <select name="maBacSi" class="form-select">
+                        <option value="">-- Tất cả bác sĩ --</option>
+                        @foreach (var item in ViewBag.BacSiList)
+                        {
+                            <option value="@item.Value" selected="@(item.Value == ViewBag.MaBacSi)">@item.Text</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Từ Ngày</label>
+                    <input type="date" name="tuNgay" class="form-control" value="@tuNgay.ToString("yyyy-MM-dd")" />
+                </div>
+                <div class="col-md-4 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary me-2">
+                        <i class="fas fa-search"></i> Tìm kiếm
+                    </button>
+                    <a href="@Url.Action("XemLichTrucBacSi")" class="btn btn-secondary">
+                        <i class="fas fa-redo"></i> Làm mới
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show">
+            <i class="fas fa-check-circle"></i> @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show">
+            <i class="fas fa-exclamation-circle"></i> @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <!-- Hiển thị lịch trực theo ngày -->
+    <div class="row">
+        @if (Model.Any())
+        {
+            var groupedByDate = Model.GroupBy(c => c.NgayTruc.Date).OrderBy(g => g.Key);
+
+            foreach (var dateGroup in groupedByDate)
+            {
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">
+                                <i class="far fa-calendar"></i>
+                                @dateGroup.Key.ToString("dddd, dd/MM/yyyy")
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                @foreach (var caTruc in dateGroup.OrderBy(c => c.GioBatDau))
+                                {
+                                    var soLuongHen = lichHenCount.ContainsKey(caTruc.MaCaTruc) ? lichHenCount[caTruc.MaCaTruc] : 0;
+                                    var maxHen = 10; // Giới hạn số lượng hẹn mỗi ca
+                                    var conCho = maxHen - soLuongHen;
+                                    var isExpired = caTruc.NgayTruc.Date.Add(caTruc.GioBatDau) < DateTime.Now;
+                                    var isFull = soLuongHen >= maxHen;
+
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="card h-100 @(isExpired ? "border-secondary" : isFull ? "border-warning" : "border-success")">
+                                            <div class="card-body">
+                                                <div class="d-flex align-items-center mb-3">
+                                                    @if (!string.IsNullOrEmpty(caTruc.NhanVien?.HinhAnh))
+                                                    {
+                                                        <img src="@caTruc.NhanVien.HinhAnh"
+                                                             alt="@caTruc.NhanVien.HoTen"
+                                                             class="rounded-circle me-3"
+                                                             style="width: 60px; height: 60px; object-fit: cover;">
+                                                    }
+                                                    else
+                                                    {
+                                                        <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center me-3"
+                                                             style="width: 60px; height: 60px; font-size: 24px;">
+                                                            <i class="fas fa-user-md"></i>
+                                                        </div>
+                                                    }
+                                                    <div>
+                                                        <h6 class="mb-0">@caTruc.NhanVien?.HoTen</h6>
+                                                        <small class="text-muted">@caTruc.NhanVien?.Khoa?.TenKhoa</small>
+                                                        @if (!string.IsNullOrEmpty(caTruc.NhanVien?.HocVi))
+                                                        {
+                                                            <br />
+
+                                                            <small class="badge bg-info">@caTruc.NhanVien.HocVi</small>
+                                                        }
+                                                    </div>
+                                                </div>
+
+                                                <div class="mb-2">
+                                                    <strong><i class="fas fa-clock"></i> Ca @caTruc.TenCa</strong>
+                                                    <p class="mb-0 text-muted">
+                                                        @caTruc.GioBatDau.ToString(@"hh\:mm") - @caTruc.GioKetThuc.ToString(@"hh\:mm")
+                                                    </p>
+                                                </div>
+
+                                                @if (!string.IsNullOrEmpty(caTruc.GhiChu))
+                                                {
+                                                    <div class="mb-2">
+                                                        <small class="text-muted">
+                                                            <i class="fas fa-info-circle"></i> @caTruc.GhiChu
+                                                        </small>
+                                                    </div>
+                                                }
+
+                                                <div class="mb-3">
+                                                    <span class="badge @(conCho > 3 ? "bg-success" : conCho > 0 ? "bg-warning" : "bg-danger")">
+                                                        <i class="fas fa-users"></i>
+                                                        @if (conCho > 0)
+                                                        {
+                                                            <text>Còn @conCho chỗ</text>
+                                                        }
+                                                        else
+                                                        {
+                                                            <text>Đã đầy</text>
+                                                        }
+                                                    </span>
+                                                </div>
+
+                                                @if (isExpired)
+                                                {
+                                                    <button class="btn btn-secondary w-100" disabled>
+                                                        <i class="fas fa-times"></i> Đã qua
+                                                    </button>
+                                                }
+                                                else if (isFull)
+                                                {
+                                                    <button class="btn btn-warning w-100" disabled>
+                                                        <i class="fas fa-users"></i> Đã đầy
+                                                    </button>
+                                                }
+                                                else
+                                                {
+                                                    <a href="@Url.Action("DatLichTheoCaTruc", new { maCaTruc = caTruc.MaCaTruc })"
+                                                       class="btn btn-primary w-100">
+                                                        <i class="fas fa-calendar-plus"></i> Đặt lịch khám
+                                                    </a>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="col-12">
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle"></i> Không có lịch trực nào trong khoảng thời gian này.
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .card {
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .card-header {
+        font-weight: 600;
+    }
+</style>

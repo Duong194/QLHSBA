@@ -1,0 +1,278 @@
+﻿@model IEnumerable<DACS_web.Models.BenhNhan>
+
+@{
+    ViewData["Title"] = "Danh sách bệnh nhân";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+<link href="~/css/patient-list.css" rel="stylesheet" />
+
+<div class="patient-list-page">
+    <div class="modern-container">
+        <div class="modern-card">
+
+            @* --- Phần Header và nút Thêm mới (Chỉ hiển thị cho Admin/BS/YT) --- *@
+            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi) || User.IsInRole(SD.Role_YTa))
+            {
+                <div class="modern-header">
+                    <h4>
+                        <span class="material-symbols-outlined">local_hospital</span>
+                        @ViewData["Title"]
+                    </h4>
+                    <a asp-action="Create" class="btn-primary-modern">
+                        <span class="material-symbols-outlined">add</span>
+                        <span>Thêm bệnh nhân mới</span>
+                    </a>
+                </div>
+            }
+
+            @* --- Thanh tìm kiếm và lọc --- *@
+            <div class="search-section">
+                <div class="search-row">
+                    <div class="search-input-group">
+                        <span class="material-symbols-outlined">search</span>
+                        <input type="text" id="searchName" placeholder="Tìm theo họ tên...">
+                    </div>
+                    <div class="search-input-group">
+                        <span class="material-symbols-outlined">calendar_today</span>
+                        <input type="date" id="searchDob">
+                    </div>
+                    <button class="btn-search" id="btnSearch">
+                        <span class="material-symbols-outlined">search</span>
+                        <span>Tìm kiếm</span>
+                    </button>
+                    <button class="btn-refresh" id="refreshBtn">
+                        <span class="material-symbols-outlined">refresh</span>
+                        <span>Làm mới</span>
+                    </button>
+                </div>
+            </div>
+
+            @* --- Thống kê --- *@
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon primary">
+                        <span class="material-symbols-outlined">groups</span>
+                    </div>
+                    <div class="stat-content">
+                        <p>Tổng bệnh nhân</p>
+                        <p id="totalPatients">@Model.Count()</p>
+                    </div>
+                </div>
+            </div>
+
+            @* --- Bảng dữ liệu Bệnh nhân --- *@
+            <div class="modern-table-wrapper">
+                <table class="modern-table" id="benhnhanTable">
+                    <thead>
+                        <tr>
+                            <th>Mã BN</th>
+                            <th>Họ tên</th>
+                            <th>Ngày sinh</th>
+                            <th>Giới tính</th>
+                            <th>CMND</th>
+                            <th>SĐT</th>
+                            <th>Địa chỉ</th>
+                            <th>Đối tượng</th>
+                            <th>BHYT</th>
+                            <th style="text-align: right;">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td><span style="color: var(--text-secondary); font-weight: 600;">#@item.MaBenhNhan</span></td>
+                                <td>
+                                    <div class="patient-info">
+                                        <div class="patient-avatar">
+                                            @item.HoTen.Substring(0, 1).ToUpper()
+                                        </div>
+                                        <div>
+                                            <p class="patient-name">@item.HoTen</p>
+                                            <p class="patient-id">ID: @item.MaBenhNhan</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>@item.NgaySinh.ToString("dd/MM/yyyy")</td>
+                                <td>@item.GioiTinh</td>
+                                <td>@item.CMND</td>
+                                <td>@item.SoDienThoai</td>
+                                <td>@item.DiaChi</td>
+                                <td>
+                                    @* Logic hiển thị badge màu theo Đối tượng *@
+                                    @if (item.DoiTuong == "Ngoại trú")
+                                    {
+                                        <span class="badge-type outpatient">@item.DoiTuong</span>
+                                    }
+                                    else if (item.DoiTuong == "Nội trú")
+                                    {
+                                        <span class="badge-type inpatient">@item.DoiTuong</span>
+                                    }
+                                    else if (item.DoiTuong == "Cấp cứu")
+                                    {
+                                        <span class="badge-type emergency">@item.DoiTuong</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge-type outpatient">@item.DoiTuong</span>
+                                    }
+                                </td>
+                                <td>
+                                    @* Logic hiển thị trạng thái BHYT *@
+                                    @if (item.BHYT == "Đang hiệu lực" || item.BHYT == "Active")
+                                    {
+                                        <div class="insurance-status active">
+                                            <span class="material-symbols-outlined">check_circle</span>
+                                            <span>Còn hạn</span>
+                                        </div>
+                                    }
+                                    else if (item.BHYT == "Hết hạn" || item.BHYT == "Expired")
+                                    {
+                                        <div class="insurance-status expired">
+                                            <span class="material-symbols-outlined">cancel</span>
+                                            <span>Hết hạn</span>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="insurance-status pending">
+                                            <span class="material-symbols-outlined">pending</span>
+                                            <span>Chờ xử lý</span>
+                                        </div>
+                                    }
+                                </td>
+                                <td>
+                                    <div class="action-buttons">
+                                        <a asp-action="Details" asp-route-id="@item.MaBenhNhan" class="btn-action view" title="Chi tiết">
+                                            <span class="material-symbols-outlined">visibility</span>
+                                        </a>
+                                        @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi) || User.IsInRole(SD.Role_YTa))
+                                        {
+                                            <a asp-action="Edit" asp-route-id="@item.MaBenhNhan" class="btn-action edit" title="Sửa">
+                                                <span class="material-symbols-outlined">edit</span>
+                                            </a>
+                                            <a asp-action="Delete" asp-route-id="@item.MaBenhNhan" class="btn-action delete" title="Xóa">
+                                                <span class="material-symbols-outlined">delete</span>
+                                            </a>
+                                        }
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            @* --- Phân trang (Mẫu tĩnh) --- *@
+            <div class="pagination-wrapper">
+                <p class="pagination-info">
+                    Hiển thị <span class="fw-bold" id="showingCount">@Model.Count()</span> bản ghi
+                </p>
+                <div class="pagination">
+                    <button disabled>
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lấy các phần tử DOM
+            const searchNameInput = document.getElementById('searchName');
+            const searchDobInput = document.getElementById('searchDob');
+            const btnSearch = document.getElementById('btnSearch');
+            const refreshBtn = document.getElementById('refreshBtn');
+            const tableRows = document.querySelectorAll('#benhnhanTable tbody tr');
+            const showingCount = document.getElementById('showingCount');
+            // const totalPatients = document.getElementById('totalPatients'); // Không cần dùng trong logic tìm kiếm
+
+            // Hàm cập nhật số lượng hiển thị
+            function updateCount() {
+                const visibleRows = Array.from(tableRows).filter(row => row.style.display !== 'none');
+                showingCount.textContent = visibleRows.length;
+            }
+
+            // Hàm tìm kiếm chính
+            function searchPatients() {
+                const searchName = searchNameInput.value.toLowerCase().trim();
+                const searchDob = searchDobInput.value;
+
+                // Chuẩn hóa định dạng ngày tháng đầu vào (YYYY-MM-DD) sang định dạng hiển thị (DD/MM/YYYY)
+                let formattedSearchDob = '';
+                if (searchDob) {
+                    // Cần xử lý cẩn thận múi giờ, ở đây ta dùng mẹo thêm T00:00:00
+                    const dateObj = new Date(searchDob + 'T00:00:00');
+                    if (!isNaN(dateObj)) {
+                        const day = String(dateObj.getDate()).padStart(2, '0');
+                        const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+                        const year = dateObj.getFullYear();
+                        formattedSearchDob = `${day}/${month}/${year}`;
+                    }
+                }
+
+                // Duyệt qua từng dòng trong bảng
+                tableRows.forEach(row => {
+                    // Lấy nội dung từ cột Họ tên (cột 2) và Ngày Sinh (cột 3)
+                    const nameCell = row.querySelector('td:nth-child(2) .patient-name').textContent.toLowerCase().trim();
+                    const dobCell = row.querySelector('td:nth-child(3)').textContent.trim();
+
+                    // Điều kiện để hiển thị dòng
+                    const nameMatch = searchName === '' || nameCell.includes(searchName);
+                    const dobMatch = formattedSearchDob === '' || dobCell === formattedSearchDob;
+
+                    // Hiển thị hoặc ẩn dòng
+                    if (nameMatch && dobMatch) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+
+                updateCount();
+            }
+
+            // --- Đăng ký sự kiện ---
+
+            // 1. Tìm kiếm khi nhấn nút
+            btnSearch.addEventListener('click', searchPatients);
+
+            // 2. Tìm kiếm khi nhấn Enter trên ô Họ tên
+            searchNameInput.addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    searchPatients();
+                }
+            });
+
+            // 3. Tìm kiếm khi thay đổi Ngày sinh
+            searchDobInput.addEventListener('change', searchPatients);
+
+            // 4. Xử lý nút làm mới
+            refreshBtn.addEventListener('click', function() {
+                searchNameInput.value = '';
+                searchDobInput.value = '';
+
+                // Hiển thị lại tất cả các dòng
+                tableRows.forEach(row => {
+                    row.style.display = '';
+                });
+
+                updateCount();
+            });
+
+            // Khởi tạo số lượng bản ghi hiển thị ban đầu
+            updateCount();
+        });
+    </script>
+}

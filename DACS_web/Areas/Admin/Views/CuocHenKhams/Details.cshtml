@@ -1,0 +1,33 @@
+﻿@model DACS_web.Models.CuocHenKham
+
+@{
+    ViewData["Title"] = "Chi tiết cuộc hẹn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="card p-4 shadow-sm">
+    <dl class="row">
+        <dt class="col-sm-3">Mã cuộc hẹn</dt>
+        <dd class="col-sm-9">@Model.MaCuocHen</dd>
+
+        <dt class="col-sm-3">Bệnh nhân</dt>
+        <dd class="col-sm-9">@Model.BenhNhan?.HoTen</dd>
+
+        <dt class="col-sm-3">Ngày giờ hẹn</dt>
+        <dd class="col-sm-9">@Model.NgayGioHen.ToString("dd/MM/yyyy HH:mm")</dd>
+
+        <dt class="col-sm-3">Bác sĩ dự kiến</dt>
+        <dd class="col-sm-9">@Model.BacSiDuKien?.HoTen</dd>
+
+        <dt class="col-sm-3">Trạng thái hẹn</dt>
+        <dd class="col-sm-9">@Model.TrangThaiHen</dd>
+    </dl>
+
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.MaCuocHen" class="btn btn-warning">Sửa</a>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </div>
+</div>

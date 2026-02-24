@@ -1,0 +1,147 @@
+﻿@model DACS_web.Models.Khoa
+@{
+    ViewData["Title"] = "Chỉnh sửa thông tin khoa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+    <!-- Header với hiệu ứng đổ bóng nhẹ -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2 class="card-title mb-0 text-primary">
+                    <i class="fas fa-edit me-2"></i>@ViewData["Title"]
+                </h2>
+                <a asp-action="Index" class="btn btn-outline-secondary">
+                    <i class="fas fa-arrow-left me-1"></i>Quay về danh sách
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card chứa form -->
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert">
+                    <p class="mb-0"><strong><i class="fas fa-exclamation-triangle me-1"></i>Vui lòng kiểm tra lại thông tin:</strong></p>
+                </div>
+
+                <input type="hidden" asp-for="MaKhoa" />
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="mb-4">
+                            <label asp-for="TenKhoa" class="form-label fw-medium">Tên khoa <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-university"></i></span>
+                                <input asp-for="TenKhoa" class="form-control" placeholder="Nhập tên khoa..." />
+                            </div>
+                            <span asp-validation-for="TenKhoa" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="MoTa" class="form-label fw-medium">Mô tả</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-info-circle"></i></span>
+                                <textarea asp-for="MoTa" class="form-control" rows="4" placeholder="Nhập mô tả chi tiết về khoa..."></textarea>
+                            </div>
+                            <span asp-validation-for="MoTa" class="text-danger"></span>
+                        </div>
+
+                        <div class="card bg-light-subtle border-warning mb-4">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="me-2 text-warning">
+                                        <i class="fas fa-info-circle fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Thông tin quan trọng</h6>
+                                        <p class="mb-0 small">Việc chỉnh sửa tên khoa có thể ảnh hưởng đến các dữ liệu liên quan. Vui lòng kiểm tra kỹ trước khi lưu thay đổi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <hr />
+                            <div class="d-flex">
+                                <button type="submit" class="btn btn-warning me-2">
+                                    <i class="fas fa-save me-1"></i>Lưu thay đổi
+                                </button>
+                                <a asp-action="Details" asp-route-id="@Model.MaKhoa" class="btn btn-info me-2">
+                                    <i class="fas fa-info-circle me-1"></i>Xem chi tiết
+                                </a>
+                                <a asp-action="Index" class="btn btn-outline-secondary">
+                                    <i class="fas fa-times me-1"></i>Hủy
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card bg-light mb-4">
+                            <div class="card-header bg-light">
+                                <i class="fas fa-id-card me-1"></i>Thông tin khoa
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-2">
+                                    <strong>Mã khoa:</strong>
+                                    <span class="badge bg-secondary">@Model.MaKhoa</span>
+                                </div>
+                                <div class="mb-0">
+                                    <strong>Ngày cập nhật:</strong>
+                                    <span>@DateTime.Now.ToString("dd/MM/yyyy HH:mm")</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-lightbulb me-2"></i>Hướng dẫn</h5>
+                                <p class="card-text small">
+                                    Khi chỉnh sửa thông tin khoa:
+                                </p>
+                                <ul class="small">
+                                    <li>Kiểm tra thông tin hiện tại trước khi thay đổi</li>
+                                    <li>Đảm bảo tên khoa không trùng lặp</li>
+                                    <li>Mô tả chi tiết sẽ giúp sinh viên và giảng viên hiểu rõ hơn về khoa</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        // Kiểm tra trường đã được điền chưa khi người dùng rời khỏi trường nhập liệu
+        $(document).ready(function() {
+            $('input, textarea').blur(function() {
+                if ($(this).val().trim() === '' && $(this).attr('required')) {
+                    $(this).addClass('is-invalid');
+                } else {
+                    $(this).removeClass('is-invalid').addClass('is-valid');
+                }
+            });
+
+            // Hiển thị confirm trước khi hủy nếu đã sửa dữ liệu
+            let originalForm = $('form').serialize();
+
+            $('a[class*="btn-outline-secondary"]').click(function(e) {
+                let currentForm = $('form').serialize();
+                if (currentForm !== originalForm) {
+                    if (!confirm('Dữ liệu đã thay đổi nhưng chưa lưu. Bạn có chắc chắn muốn rời khỏi trang?')) {
+                        e.preventDefault();
+                    }
+                }
+            });
+        });
+    </script>
+}

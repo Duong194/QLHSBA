@@ -1,0 +1,43 @@
+﻿@model IEnumerable<DACS_web.Models.PhuongPhapDieuTri>
+
+@{
+    ViewData["Title"] = "Danh sách Phương pháp điều trị";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Thêm phương pháp mới</a>
+</p>
+
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Mã PP</th>
+            <th>Nội khoa</th>
+            <th>Ngoại khoa</th>
+            <th>Mô tả chi tiết</th>
+            <th>Hồ sơ bệnh án</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaPhuongPhap</td>
+                <td>@item.NoiKhoa</td>
+                <td>@item.NgoaiKhoa</td>
+                <td>@item.MoTaChiTiet</td>
+                <td>@item.HoSoBenhAn?.MaHoSo</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.MaPhuongPhap" class="btn btn-warning btn-sm">Sửa</a> |
+                    <a asp-action="Details" asp-route-id="@item.MaPhuongPhap" class="btn btn-info btn-sm">Chi tiết</a> |
+                    <a asp-action="Delete" asp-route-id="@item.MaPhuongPhap" class="btn btn-danger btn-sm">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

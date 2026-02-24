@@ -1,0 +1,18 @@
+﻿@model DACS_web.Models.PhuongPhapDieuTri
+
+@{
+    ViewData["Title"] = "Xóa phương pháp điều trị";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Bạn có chắc chắn muốn xóa phương pháp điều trị: <strong>@Model.MaPhuongPhap</strong> không?</h4>
+
+<form asp-action="Delete">
+    
+    <input type="hidden" asp-for="MaPhuongPhap" />
+    <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+    <a asp-action="Details" asp-controller="HoSoBenhAns" asp-route-id="@ViewBag.MaHoSo" class="btn btn-secondary">Hủy</a>
+</form>

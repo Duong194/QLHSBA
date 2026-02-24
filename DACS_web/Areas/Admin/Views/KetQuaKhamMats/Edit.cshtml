@@ -1,0 +1,72 @@
+﻿@model DACS_web.Models.KetQuaKhamMat
+
+@{
+    ViewData["Title"] = "Chỉnh sửa kết quả khám mắt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+    <h2 class="text-center text-primary mb-4">@ViewData["Title"]</h2>
+
+    <div class="card shadow-sm rounded-4">
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="MaKQ" />
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="MaHoSo" class="form-label fw-bold">Mã hồ sơ</label>
+                    <input asp-for="MaHoSo" class="form-control" readonly />
+                    <span asp-validation-for="MaHoSo" class="text-danger"></span>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="ViTriMat" class="form-label fw-bold">Vị trí mắt</label>
+                        <input asp-for="ViTriMat" class="form-control" />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="ThiLucKhongKinh" class="form-label fw-bold">Thị lực không kính</label>
+                        <input asp-for="ThiLucKhongKinh" class="form-control" />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="ThiLucCoKinh" class="form-label fw-bold">Thị lực có kính</label>
+                        <input asp-for="ThiLucCoKinh" class="form-control" />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="NhanAp" class="form-label fw-bold">Nhãn áp</label>
+                        <input asp-for="NhanAp" class="form-control" type="number" step="0.1" />
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="TongTrangMat" class="form-label fw-bold">Tổng trạng mắt</label>
+                        <input asp-for="TongTrangMat" class="form-control" />
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <label asp-for="MoTaBoPhanMat" class="form-label fw-bold">Mô tả bộ phận mắt</label>
+                        <textarea asp-for="MoTaBoPhanMat" class="form-control" rows="3"></textarea>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-4 gap-3">
+                    <button type="submit" class="btn btn-primary px-4">
+                        <i class="fas fa-save me-2"></i>Lưu thay đổi
+                    </button>
+                    <a asp-action="Details" asp-controller="HoSoBenhAns" asp-route-id="@ViewBag.MaHoSo" class="btn btn-secondary px-4">
+                        <i class="fas fa-times me-2"></i>Hủy
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

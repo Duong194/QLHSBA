@@ -1,0 +1,81 @@
+﻿@model DACS_web.Models.DonThuoc
+
+@{
+    ViewData["Title"] = "Chi tiết đơn thuốc";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+    <h2 class="text-primary mb-4">
+        <i class="fas fa-prescription-bottle-alt me-2"></i> Chi tiết đơn thuốc
+    </h2>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-light">
+            <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>Thông tin đơn thuốc</h5>
+        </div>
+        <div class="card-body">
+            <dl class="row mb-0">
+                <dt class="col-sm-3">Mã đơn thuốc</dt>
+                <dd class="col-sm-9">@Model.MaDon</dd>
+
+                <dt class="col-sm-3">Mã hồ sơ bệnh án</dt>
+                <dd class="col-sm-9">@Model.MaHoSo</dd>
+
+                <dt class="col-sm-3">Ngày kê</dt>
+                <dd class="col-sm-9">@Model.NgayKe.ToString("dd/MM/yyyy")</dd>
+
+                <dt class="col-sm-3">Bác sĩ kê đơn</dt>
+                <dd class="col-sm-9">@Model.NhanVienYTe?.HoTen</dd>
+
+                <dt class="col-sm-3">Hướng dẫn sử dụng</dt>
+                <dd class="col-sm-9">@Model.HuongDanSuDung</dd>
+
+                <dt class="col-sm-3">Tổng tiền</dt>
+                <dd class="col-sm-9">@Model.TongTien.ToString("N0") VNĐ</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-secondary text-white">
+            <h5 class="mb-0"><i class="fas fa-pills me-2"></i>Danh sách thuốc</h5>
+        </div>
+        <div class="card-body">
+            @if (Model.ChiTietDonThuocs?.Any() == true)
+            {
+                <table class="table table-bordered table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Tên thuốc</th>
+                            <th>Số lượng</th>
+                            <th>Liều dùng</th>
+                            <th>Thời gian dùng</th>
+                            <th>Ghi chú</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var ct in Model.ChiTietDonThuocs)
+                        {
+                            <tr>
+                                <td>@ct.Thuoc?.TenThuoc</td>
+                                <td>@ct.SoLuong</td>
+                                <td>@ct.LieuDung</td>
+                                <td>@ct.ThoiGianDung</td>
+                                <td>@ct.GhiChu</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <div class="text-muted">Không có thuốc nào trong đơn này.</div>
+            }
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <a asp-action="Index" class="btn btn-secondary"><i class="fas fa-arrow-left me-1"></i> Quay lại danh sách</a>
+    </div>
+</div>

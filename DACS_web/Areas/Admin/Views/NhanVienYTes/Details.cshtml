@@ -1,0 +1,31 @@
+﻿@model DACS_web.Models.NhanVienYTe
+
+@{
+    ViewData["Title"] = "Thông tin nhân viên y tế";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h1 class="mb-4">@ViewData["Title"]</h1>
+
+<dl class="row">
+    <dt class="col-sm-4">Mã nhân viên</dt>
+    <dd class="col-sm-8">@Model.MaNhanVien</dd>
+
+    <dt class="col-sm-4">Họ tên</dt>
+    <dd class="col-sm-8">@Model.HoTen</dd>
+
+    <dt class="col-sm-4">Vai trò</dt>
+    <dd class="col-sm-8">@Model.VaiTro</dd>
+
+    <dt class="col-sm-4">Số điện thoại</dt>
+    <dd class="col-sm-8">@Model.SoDienThoai</dd>
+
+    <dt class="col-sm-4">Khoa</dt>
+    <dd class="col-sm-8">@Model.Khoa?.TenKhoa</dd>
+</dl>
+
+<div class="mt-3">
+    <a asp-action="Edit" asp-route-id="@Model.MaNhanVien" class="btn btn-warning">Sửa</a>
+    <a asp-action="Index" class="btn btn-secondary">Quay về danh sách</a>
+</div>

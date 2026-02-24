@@ -1,0 +1,225 @@
+﻿@model DACS_web.Models.ApplicationUser
+@{
+    ViewData["Title"] = "Chỉnh sửa người dùng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/user_edit.css" asp-append-version="true" />
+}
+
+<div class="user-edit-page">
+    <div class="container py-4">
+        <div class="card border-0 shadow-lg rounded-3 overflow-hidden">
+            <div class="card-header bg-gradient-primary text-white p-4 border-0">
+                <div class="d-flex align-items-center">
+                    <div class="rounded-circle bg-white p-2 me-3">
+                        <i class="fas fa-user-edit text-primary fa-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="mb-0 fw-bold">@ViewData["Title"]</h4>
+                        <p class="mb-0 opacity-75">Cập nhật thông tin người dùng</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-body p-4">
+                <form asp-action="Edit" method="post">
+                    <input type="hidden" asp-for="Id" />
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-floating mb-4">
+                                <input asp-for="FullName" class="form-control border-0 bg-light" id="floatingFullName" placeholder="Họ tên" />
+                                <label asp-for="FullName" for="floatingFullName">
+                                    <i class="fas fa-user me-2 text-primary"></i>Họ tên
+                                </label>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <input asp-for="Email" class="form-control border-0 bg-light" id="floatingEmail" placeholder="Email" />
+                                <label asp-for="Email" for="floatingEmail">
+                                    <i class="fas fa-envelope me-2 text-primary"></i>Email
+                                </label>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <input asp-for="Address" class="form-control border-0 bg-light" id="floatingAddress" placeholder="Địa chỉ" />
+                                <label asp-for="Address" for="floatingAddress">
+                                    <i class="fas fa-map-marker-alt me-2 text-primary"></i>Địa chỉ
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating mb-4">
+                                <input asp-for="Age" class="form-control border-0 bg-light" id="floatingAge" type="number" placeholder="Tuổi" />
+                                <label asp-for="Age" for="floatingAge">
+                                    <i class="fas fa-birthday-cake me-2 text-primary"></i>Tuổi
+                                </label>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <select asp-for="MaBenhNhan" class="form-select border-0 bg-light" id="floatingMaBenhNhan" asp-items="ViewBag.MaBenhNhanList">
+                                    <option value="">-- Chưa gán mã bệnh nhân --</option>
+                                </select>
+                                <label for="floatingMaBenhNhan">
+                                    <i class="fas fa-procedures me-2 text-primary"></i>Mã bệnh nhân
+                                </label>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <select id="MaNhanVien" name="MaNhanVien" class="form-select border-0 bg-light">
+                                    <option value="">-- Chọn mã nhân viên --</option>
+                                    @foreach (var item in ViewBag.MaNhanVienList as SelectList)
+                                    {
+
+                                        if (item.Selected)
+                                        {
+                                            <option value="@item.Value" selected>@item.Text</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@item.Value">@item.Text</option>
+                                        }
+                                    }
+                                </select>
+                                <label for="MaNhanVien">
+                                    <i class="fas fa-user-md me-2 text-primary"></i>Mã nhân viên
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mb-4 border-0 bg-light">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">
+                                        <i class="fas fa-user-shield me-2 text-primary"></i>
+                                        Cấp quyền người dùng
+                                    </h5>
+                                    <div class="form-floating mb-4">
+                                        <select id="newRole" name="newRole" class="form-select border-0 bg-light">
+                                            @foreach (var role in ViewBag.AllRoles as List<string>)
+                                            {
+                                                if (role == ViewBag.CurrentRole)
+                                                {
+                                                    <option value="@role" selected>@role</option>
+                                                }
+                                                else
+                                                {
+                                                    <option value="@role">@role</option>
+                                                }
+                                            }
+                                        </select>
+                                        <label for="newRole">
+                                            <i class="fas fa-user-tag me-2 text-primary"></i>Vai trò
+                                        </label>
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <div class="me-3"><i class="fas fa-info-circle text-primary"></i></div>
+                                            <div class="small text-muted">Vai trò sẽ quyết định các chức năng người dùng có thể truy cập.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <a asp-action="Index" class="btn btn-outline-secondary btn-lg px-4">
+                                        <i class="fas fa-arrow-left me-2"></i>Quay lại
+                                    </a>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        <i class="fas fa-save me-2"></i>Lưu thay đổi
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@section Scripts {
+    <script>
+                $(document).ready(function () {
+            // Đảm bảo các label hiển thị chính xác khi trang tải
+            checkAndUpdateLabels();
+
+            // Xử lý khi thay đổi vai trò
+            $('#newRole').change(function () {
+                var selectedRole = $(this).val();
+                updateNhanVienList(selectedRole);
+            });
+
+            // Thêm xử lý cho dropdown để đảm bảo label vị trí đúng
+            $('.form-select').on('change', function() {
+                checkAndUpdateLabels();
+            });
+
+            // Hàm cập nhật trạng thái của các label
+            function checkAndUpdateLabels() {
+                $('.form-select').each(function() {
+                    if ($(this).val() !== '') {
+                        $(this).addClass('filled');
+                        $(this).parent('.form-floating').addClass('focused');
+                    } else {
+                        $(this).removeClass('filled');
+                        $(this).parent('.form-floating').removeClass('focused');
+                    }
+                });
+            }
+
+            // Hàm cập nhật danh sách nhân viên dựa trên vai trò
+            function updateNhanVienList(role) {
+                $.ajax({
+                    url: '@Url.Action("GetNhanVienByRole", "User")',
+                    type: 'GET',
+                    data: { role: role },
+                    success: function (data) {
+                        // Lưu lại giá trị đã chọn trước đó (nếu có)
+                        var currentSelectedValue = $('#MaNhanVien').val();
+
+                        // Xóa tất cả các option cũ
+                        $('#MaNhanVien').empty();
+
+                        // Thêm option mặc định
+                        $('#MaNhanVien').append($('<option>', {
+                            value: '',
+                            text: '-- Chọn mã nhân viên --'
+                        }));
+
+                        // Thêm các option mới từ dữ liệu nhận được
+                        $.each(data, function (i, item) {
+                            if (item.maNhanVien == currentSelectedValue) {
+                                $('#MaNhanVien').append('<option value="' + item.maNhanVien + '" selected>' + item.hoTen + '</option>');
+                            } else {
+                                $('#MaNhanVien').append('<option value="' + item.maNhanVien + '">' + item.hoTen + '</option>');
+                            }
+                        });
+
+                        // Đảm bảo các label được cập nhật sau khi thay đổi dữ liệu dropdown
+                        setTimeout(checkAndUpdateLabels, 100);
+                    },
+                    error: function (error) {
+                        console.error('Lỗi khi lấy dữ liệu nhân viên:', error);
+                    }
+                });
+            }
+        });
+    </script>
+}

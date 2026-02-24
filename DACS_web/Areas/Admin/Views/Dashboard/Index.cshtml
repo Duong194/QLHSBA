@@ -1,0 +1,547 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+    var role = ViewBag.Role as string;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/dashboard.css" />
+
+<div class="dashboard-wrapper">
+    <div class="dashboard-main">
+        <!-- Header Section -->
+        <div class="dash-header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="dash-welcome">
+                            <h1 class="dash-title">
+                                <span class="dash-greeting">Xin chào,</span>
+                                <span class="dash-username">@ViewBag.UserName</span>
+                            </h1>
+                            <p class="dash-subtitle">Chào mừng bạn quay trở lại hệ thống quản lý bệnh viện</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="dash-header-info">
+                            <div class="dash-time">
+                                <i class="far fa-clock"></i>
+                                <span id="current-time"></span>
+                            </div>
+                            <div class="dash-role @(role == "Admin" ? "role-admin" : role == "BacSi" ? "role-doctor" : "role-nurse")">
+                                <i class="fas @(role == "Admin" ? "fa-user-shield" : role == "BacSi" ? "fa-user-md" : "fa-user-nurse")"></i>
+                                <span>@role</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-4">
+            @if (role == "Admin")
+            {
+                <!-- Admin Stats Cards -->
+                <div class="row g-4 mb-4">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="dash-stats-card stats-primary">
+                            <div class="dash-stats-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="dash-stats-content">
+                                <h3 class="dash-stats-number">1,234</h3>
+                                <p class="dash-stats-label">Tổng người dùng</p>
+                                <div class="dash-stats-trend positive">
+                                    <i class="fas fa-arrow-up"></i> 12% so với tháng trước
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="dash-stats-card stats-success">
+                            <div class="dash-stats-icon">
+                                <i class="fas fa-user-injured"></i>
+                            </div>
+                            <div class="dash-stats-content">
+                                <h3 class="dash-stats-number">856</h3>
+                                <p class="dash-stats-label">Bệnh nhân đang điều trị</p>
+                                <div class="dash-stats-trend positive">
+                                    <i class="fas fa-arrow-up"></i> 8% tuần này
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="dash-stats-card stats-info">
+                            <div class="dash-stats-icon">
+                                <i class="fas fa-file-medical"></i>
+                            </div>
+                            <div class="dash-stats-content">
+                                <h3 class="dash-stats-number">342</h3>
+                                <p class="dash-stats-label">Hồ sơ mới hôm nay</p>
+                                <div class="dash-stats-trend neutral">
+                                    <i class="fas fa-minus"></i> Không đổi
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="dash-stats-card stats-warning">
+                            <div class="dash-stats-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="dash-stats-content">
+                                <h3 class="dash-stats-number">127</h3>
+                                <p class="dash-stats-label">Lịch hẹn hôm nay</p>
+                                <div class="dash-stats-trend negative">
+                                    <i class="fas fa-arrow-down"></i> 5% so với hôm qua
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Access Section -->
+                <div class="dash-section-header">
+                    <h2 class="dash-section-title">
+                        <i class="fas fa-th-large me-2"></i>
+                        Truy cập nhanh
+                    </h2>
+                    <p class="dash-section-subtitle">Các chức năng quản trị chính của hệ thống</p>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <a asp-controller="User" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-primary">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Quản lý người dùng</h5>
+                                <p class="dash-feature-desc">Quản lý tài khoản và phân quyền</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <a asp-controller="NhanVienYTes" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-success">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Quản lý nhân viên</h5>
+                                <p class="dash-feature-desc">Bác sĩ, y tá và nhân viên y tế</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <a asp-controller="BenhNhans" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-danger">
+                                <i class="fas fa-user-injured"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Danh sách bệnh nhân</h5>
+                                <p class="dash-feature-desc">Quản lý hồ sơ bệnh nhân</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <a asp-controller="CaTrucs" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-info">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Quản lý ca trực</h5>
+                                <p class="dash-feature-desc">Phân công lịch làm việc</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <a asp-controller="HoSoBenhAns" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-warning">
+                                <i class="fas fa-file-medical"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Hồ sơ bệnh án</h5>
+                                <p class="dash-feature-desc">Lịch sử khám chữa bệnh</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <a asp-controller="Thuocs" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-teal">
+                                <i class="fas fa-capsules"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Quản lý thuốc</h5>
+                                <p class="dash-feature-desc">Danh sách thuốc điều trị</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <a asp-controller="Khoas" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-secondary">
+                                <i class="fas fa-hospital"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Các khoa</h5>
+                                <p class="dash-feature-desc">Thông tin các khoa</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <a asp-controller="BaiBaos" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-dark">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Bài báo</h5>
+                                <p class="dash-feature-desc">Quản lý bài viết</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ca Trực Hôm Nay Section -->
+                @await Html.PartialAsync("_AdminShiftsToday")
+            }
+            else if (role == "BacSi")
+            {
+                <!-- Doctor Dashboard -->
+                <div class="row g-4 mb-4">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="dash-stats-card stats-info">
+                            <div class="dash-stats-icon">
+                                <i class="fas fa-user-injured"></i>
+                            </div>
+                            <div class="dash-stats-content">
+                                <h3 class="dash-stats-number">45</h3>
+                                <p class="dash-stats-label">Bệnh nhân của tôi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="dash-stats-card stats-success">
+                            <div class="dash-stats-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="dash-stats-content">
+                                <h3 class="dash-stats-number">12</h3>
+                                <p class="dash-stats-label">Lịch hẹn hôm nay</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="dash-stats-card stats-warning">
+                            <div class="dash-stats-icon">
+                                <i class="fas fa-pills"></i>
+                            </div>
+                            <div class="dash-stats-content">
+                                <h3 class="dash-stats-number">28</h3>
+                                <p class="dash-stats-label">Đơn thuốc tuần này</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="dash-stats-card stats-primary">
+                            <div class="dash-stats-icon">
+                                <i class="fas fa-file-medical"></i>
+                            </div>
+                            <div class="dash-stats-content">
+                                <h3 class="dash-stats-number">156</h3>
+                                <p class="dash-stats-label">Hồ sơ đã xử lý</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-section-header">
+                    <h2 class="dash-section-title">
+                        <i class="fas fa-stethoscope me-2"></i>
+                        Công cụ làm việc
+                    </h2>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-xl-3 col-lg-6">
+                        <a asp-controller="HoSoBenhAns" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-info">
+                                <i class="fas fa-file-medical"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Hồ sơ bệnh án</h5>
+                                <p class="dash-feature-desc">Quản lý hồ sơ bệnh nhân</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <a asp-controller="BenhNhans" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-danger">
+                                <i class="fas fa-user-injured"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Danh sách bệnh nhân</h5>
+                                <p class="dash-feature-desc">Xem thông tin bệnh nhân</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <a asp-controller="CuocHenKhams" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-primary">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Lịch hẹn</h5>
+                                <p class="dash-feature-desc">Quản lý lịch hẹn khám</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <a asp-area="Admin" asp-controller="CaTrucs" asp-action="MyShifts" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-warning">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Ca trực của tôi</h5>
+                                <p class="dash-feature-desc">Xem lịch trực cá nhân</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ca Trực Của Bác Sĩ -->
+                @await Html.PartialAsync("_DoctorAppointmentsWidget")
+                @await Html.PartialAsync("_MyShiftsWidget")
+            }
+            else if (role == "YTa")
+            {
+                <!-- Nurse Dashboard -->
+                <div class="row g-4 mb-4">
+                    <div class="col-md-4">
+                        <div class="dash-stats-card stats-info">
+                            <div class="dash-stats-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="dash-stats-content">
+                                <h3 class="dash-stats-number">18</h3>
+                                <p class="dash-stats-label">Tư vấn chờ xử lý</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="dash-stats-card stats-success">
+                            <div class="dash-stats-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="dash-stats-content">
+                                <h3 class="dash-stats-number">24</h3>
+                                <p class="dash-stats-label">Lịch hẹn hôm nay</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="dash-stats-card stats-primary">
+                            <div class="dash-stats-icon">
+                                <i class="fas fa-user-injured"></i>
+                            </div>
+                            <div class="dash-stats-content">
+                                <h3 class="dash-stats-number">67</h3>
+                                <p class="dash-stats-label">Bệnh nhân theo dõi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-section-header">
+                    <h2 class="dash-section-title">
+                        <i class="fas fa-tasks me-2"></i>
+                        Nhiệm vụ hàng ngày
+                    </h2>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-3">
+                        <a asp-controller="TuVans" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-purple">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Danh sách tư vấn</h5>
+                                <p class="dash-feature-desc">Yêu cầu tư vấn bệnh nhân</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <a asp-controller="BenhNhans" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-danger">
+                                <i class="fas fa-user-injured"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Danh sách bệnh nhân</h5>
+                                <p class="dash-feature-desc">Quản lý thông tin bệnh nhân</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <a asp-controller="CuocHenKhams" asp-action="Index" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-primary">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Lịch hẹn</h5>
+                                <p class="dash-feature-desc">Quản lý lịch hẹn khám</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <a asp-area="Admin" asp-controller="CaTrucs" asp-action="MyShifts" class="dash-feature-card">
+                            <div class="dash-feature-icon bg-warning">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="dash-feature-content">
+                                <h5 class="dash-feature-title">Ca trực của tôi</h5>
+                                <p class="dash-feature-desc">Xem lịch trực cá nhân</p>
+                            </div>
+                            <div class="dash-feature-arrow">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ca Trực Của Y Tá -->
+                @await Html.PartialAsync("_MyShiftsWidget")
+            }
+
+            <!-- System Info -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="dash-system-info">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <div class="dash-info-item">
+                                    <i class="fas fa-code-branch"></i>
+                                    <div>
+                                        <small>Phiên bản</small>
+                                        <strong>v1.2.0</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="dash-info-item">
+                                    <i class="fas fa-clock"></i>
+                                    <div>
+                                        <small>Cập nhật</small>
+                                        <strong>25/11/2024</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="dash-info-item">
+                                    <i class="fas fa-headset"></i>
+                                    <div>
+                                        <small>Hỗ trợ</small>
+                                        <strong>support@hospital.com</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="dash-info-item">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <div>
+                                        <small>Trạng thái</small>
+                                        <strong class="text-success">Hoạt động bình thường</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        function updateClock() {
+            const now = new Date();
+            const options = {
+                weekday: 'short',
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            };
+            document.getElementById('current-time').textContent = now.toLocaleDateString('vi-VN', options);
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
+    });
+</script>

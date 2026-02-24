@@ -1,0 +1,376 @@
+﻿@model DACS_web.Models.BenhNhan
+
+@{
+    ViewData["Title"] = "Chi tiết bệnh nhân";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+<link href="~/css/patient-detail.css" rel="stylesheet" />
+
+<div class="patient-detail-page">
+    <div class="modern-container">
+
+        <div class="breadcrumb-section">
+            <div class="breadcrumb-text">
+                <span class="material-symbols-outlined">home</span>
+                <span>Dashboard</span>
+                <span class="material-symbols-outlined">chevron_right</span>
+                <span>Bệnh nhân</span>
+                <span class="material-symbols-outlined">chevron_right</span>
+                <span class="current">@Model.HoTen</span>
+            </div>
+
+            @if (User.IsInRole(SD.Role_BenhNhan))
+            {
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="btn-back">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    <span>Quay về trang chính</span>
+                </a>
+            }
+            else
+            {
+                <a asp-area="Admin" asp-controller="BenhNhans" asp-action="Index" class="btn-back">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    <span>Quay lại danh sách</span>
+                </a>
+            }
+        </div>
+
+        <div class="patient-header-card">
+            <div class="patient-main-info">
+                <div class="patient-avatar-large">
+                    @Model.HoTen.Substring(0, 1).ToUpper()
+                </div>
+                <div class="patient-header-details">
+                    <div class="name-status-row">
+                        <h2 class="patient-name-large">@Model.HoTen</h2>
+                        <span class="badge-active">Bệnh nhân đang hoạt động</span>
+                    </div>
+                    <p class="patient-id-large">Mã bệnh nhân: #@Model.MaBenhNhan</p>
+
+                    <div class="quick-info-badges">
+                        <span class="info-badge">
+                            <span class="material-symbols-outlined">cake</span>
+                            @Model.NgaySinh.ToString("dd/MM/yyyy") (@(DateTime.Now.Year - Model.NgaySinh.Year) tuổi)
+                        </span>
+                        <span class="info-badge">
+                            <span class="material-symbols-outlined">@(Model.GioiTinh == "Nam" ? "male" : "female")</span>
+                            @Model.GioiTinh
+                        </span>
+                        <span class="info-badge">
+                            <span class="material-symbols-outlined">call</span>
+                            @Model.SoDienThoai
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons-header">
+                @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                {
+                    <a asp-action="Edit" asp-route-id="@Model.MaBenhNhan" class="btn-action-outline">
+                        <span class="material-symbols-outlined">edit</span>
+                        <span>Chỉnh sửa</span>
+                    </a>
+                }
+
+                <button class="btn-action-outline" onclick="window.print()">
+                    <span class="material-symbols-outlined">print</span>
+                    <span>In hồ sơ</span>
+                </button>
+
+                @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                {
+                    <a asp-action="Create" asp-controller="DotKhams" asp-route-maBenhNhan="@Model.MaBenhNhan" class="btn-primary-action">
+                        <span class="material-symbols-outlined">add_circle</span>
+                        <span>Tạo đợt khám</span>
+                    </a>
+                }
+            </div>
+        </div>
+
+        <div class="content-grid">
+
+            <div class="left-column">
+                <div class="info-card">
+                    <div class="card-header">
+                        <div class="header-title">
+                            <span class="material-symbols-outlined">person_book</span>
+                            <h3>Thông tin hành chính</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <p class="info-label">Họ và tên</p>
+                                <p class="info-value">@Model.HoTen</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="info-label">Ngày sinh</p>
+                                <p class="info-value">@Model.NgaySinh.ToString("dd/MM/yyyy")</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="info-label">Giới tính</p>
+                                <p class="info-value">@Model.GioiTinh</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="info-label">Số điện thoại</p>
+                                <div class="info-value-with-action">
+                                    <p class="info-value">@Model.SoDienThoai</p>
+                                    <a href="tel:@Model.SoDienThoai" class="call-button" title="Gọi điện">
+                                        <span class="material-symbols-outlined">call</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <p class="info-label">CMND/CCCD</p>
+                                <p class="info-value">@Model.CMND</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="info-label">Quốc tịch</p>
+                                <p class="info-value">@Model.QuocTich</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="info-label">Dân tộc</p>
+                                <p class="info-value">@Model.DanToc</p>
+                            </div>
+                            <div class="info-item">
+                                <p class="info-label">Nghề nghiệp</p>
+                                <p class="info-value">@Model.NgheNghiep</p>
+                            </div>
+                            <div class="info-item full-width">
+                                <p class="info-label">Địa chỉ</p>
+                                <p class="info-value">@Model.DiaChi</p>
+                            </div>
+                        </div>
+
+                        <div class="divider-dashed"></div>
+
+                        <div class="insurance-section">
+                            <div class="info-item">
+                                <p class="info-label">Đối tượng</p>
+                                @{
+                                    var doiTuongClass = Model.DoiTuong switch
+                                    {
+                                        "Ngoại trú" => "outpatient",
+                                        "Nội trú" => "inpatient",
+                                        "Cấp cứu" => "emergency",
+                                        _ => "outpatient"
+                                    };
+                                }
+                                <span class="patient-type-badge @doiTuongClass">
+                                    <span class="badge-dot"></span>
+                                    @Model.DoiTuong
+                                </span>
+                            </div>
+                            <div class="info-item">
+                                <p class="info-label">Bảo hiểm y tế</p>
+                                <div class="insurance-card">
+                                    <div class="insurance-icon">
+                                        <span class="material-symbols-outlined">health_and_safety</span>
+                                    </div>
+                                    <div>
+                                        <p class="insurance-name">Mã số thẻ BHYT</p>
+                                        <p class="insurance-number">@Model.BHYT</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="info-card medical-card">
+                    <div class="card-header">
+                        <div class="header-title">
+                            <span class="material-symbols-outlined">medical_information</span>
+                            <h3>Tiền sử y khoa</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="medical-sections">
+                            <div class="medical-section">
+                                <div class="section-header">
+                                    <p class="section-label">Dị ứng</p>
+                                    @if (!string.IsNullOrEmpty(Model.TienSuDiUng))
+                                    {
+                                        <span class="count-badge">1</span>
+                                    }
+                                </div>
+                                @if (!string.IsNullOrEmpty(Model.TienSuDiUng))
+                                {
+                                    <div class="allergy-tags">
+                                        <span class="allergy-tag">
+                                            <span class="material-symbols-outlined">warning</span>
+                                            @Model.TienSuDiUng
+                                        </span>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <p class="no-data">Không có ghi nhận dị ứng</p>
+                                }
+                            </div>
+
+                            <div class="medical-section bordered">
+                                <p class="section-label">Tiền sử bệnh bản thân</p>
+                                @if (!string.IsNullOrEmpty(Model.TienSuBenhBanThan))
+                                {
+                                    <ul class="history-list">
+                                        @foreach (var item in Model.TienSuBenhBanThan.Split(new[] { ",", ";" }, StringSplitOptions.RemoveEmptyEntries))
+                                        {
+                                            <li>
+                                                <span class="material-symbols-outlined">check_circle</span>
+                                                <span>@item.Trim()</span>
+                                            </li>
+                                        }
+                                    </ul>
+                                }
+                                else
+                                {
+                                    <p class="no-data">Không có tiền sử bệnh</p>
+                                }
+                            </div>
+
+                            <div class="medical-section bordered">
+                                <p class="section-label">Tiền sử bệnh gia đình</p>
+                                @if (!string.IsNullOrEmpty(Model.TienSuBenhGiaDinh))
+                                {
+                                    <ul class="history-list">
+                                        @foreach (var item in Model.TienSuBenhGiaDinh.Split(new[] { ",", ";" }, StringSplitOptions.RemoveEmptyEntries))
+                                        {
+                                            <li>
+                                                <span class="material-symbols-outlined">family_history</span>
+                                                <span>@item.Trim()</span>
+                                            </li>
+                                        }
+                                    </ul>
+                                }
+                                else
+                                {
+                                    <p class="no-data">Không ghi nhận tiền sử gia đình</p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="exam-history-card">
+            <div class="exam-header">
+                <div class="header-left">
+                    <div class="header-title">
+                        <span class="material-symbols-outlined">history</span>
+                        <h3>Lịch sử các đợt khám bệnh</h3>
+                    </div>
+                </div>
+                <div class="header-right">
+                    @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                    {
+                        <a asp-action="Create" asp-controller="DotKhams" asp-route-maBenhNhan="@Model.MaBenhNhan" class="btn-add-exam">
+                            <span class="material-symbols-outlined">add</span>
+                            <span>Thêm đợt khám</span>
+                        </a>
+                    }
+                </div>
+            </div>
+
+            @if (Model.DotKhams != null && Model.DotKhams.Any())
+            {
+                <div class="table-wrapper">
+                    <table class="exam-table">
+                        <thead>
+                            <tr>
+                                <th>Mã đợt</th>
+                                <th>Lý do vào viện</th>
+                                <th>Thời gian vào</th>
+                                <th>Khoa tiếp nhận</th>
+                                <th>Hình thức</th>
+                                <th>Thời gian ra</th>
+                                <th class="text-center">Số ngày</th>
+                                <th class="text-right">Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var dk in Model.DotKhams.OrderByDescending(x => x.NgayVaoVien))
+                            {
+                                <tr>
+                                    <td><span class="exam-id">#@dk.MaDotKham</span></td>
+                                    <td><span class="exam-reason">@dk.LyDoVaoVien</span></td>
+                                    <td>
+                                        <div class="date-time-cell">
+                                            <div class="date">@dk.NgayVaoVien.ToString("dd/MM/yyyy")</div>
+                                            <div class="time">@dk.GioVaoVien.ToString(@"hh\:mm")</div>
+                                        </div>
+                                    </td>
+                                    <td>@dk.KhoaTiepNhan?.TenKhoa</td>
+                                    <td>
+                                        @{
+                                            var hinhThucClass = dk.HinhThucTiepNhan switch
+                                            {
+                                                "Cấp cứu" => "emergency",
+                                                "Nội trú" => "inpatient",
+                                                _ => "outpatient"
+                                            };
+                                        }
+                                        <span class="exam-type-badge @hinhThucClass">@dk.HinhThucTiepNhan</span>
+                                    </td>
+                                    <td>
+                                        @if (dk.NgayRaVien.HasValue)
+                                        {
+                                            <div class="date-time-cell">
+                                                <div class="date">@dk.NgayRaVien.Value.ToString("dd/MM/yyyy")</div>
+                                                <div class="time">@dk.KhoaRaVien?.TenKhoa</div>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <span class="no-data-inline">Đang điều trị</span>
+                                        }
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="days-badge">@(dk.TongSoNgayDieuTri > 0 ? dk.TongSoNgayDieuTri.ToString() : "0")</span>
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="table-actions">
+                                            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                                            {
+                                                <a asp-action="Edit" asp-controller="DotKhams" asp-route-id="@dk.MaDotKham" class="btn-table-action edit" title="Sửa">
+                                                    <span class="material-symbols-outlined">edit</span>
+                                                </a>
+                                                <a asp-action="Delete" asp-controller="DotKhams" asp-route-id="@dk.MaDotKham" class="btn-table-action delete" title="Xóa">
+                                                    <span class="material-symbols-outlined">delete</span>
+                                                </a>
+                                            }
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="empty-state">
+                    <span class="material-symbols-outlined empty-icon">folder_open</span>
+                    <p class="empty-text">Chưa có dữ liệu đợt khám cho bệnh nhân này</p>
+                    @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                    {
+                        <a asp-action="Create" asp-controller="DotKhams" asp-route-maBenhNhan="@Model.MaBenhNhan" class="btn-empty-action">
+                            <span class="material-symbols-outlined">add_circle</span>
+                            <span>Tạo đợt khám ngay</span>
+                        </a>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

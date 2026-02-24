@@ -1,0 +1,43 @@
+﻿@model IEnumerable<DACS_web.Models.KetQuaKhamMat>
+
+@{
+    ViewData["Title"] = "Danh sách kết quả khám mắt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2 class="mb-4">@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">+ Thêm kết quả mới</a>
+</p>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-light">
+        <tr>
+            <th>Hồ sơ bệnh án</th>
+            <th>Vị trí mắt</th>
+            <th>Thị lực (Không kính)</th>
+            <th>Thị lực (Có kính)</th>
+            <th>Nhãn áp</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.HoSoBenhAn?.MaHoSo</td>
+                <td>@item.ViTriMat</td>
+                <td>@item.ThiLucKhongKinh</td>
+                <td>@item.ThiLucCoKinh</td>
+                <td>@item.NhanAp mmHg</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.MaKQ" class="btn btn-sm btn-warning">Sửa</a>
+                    <a asp-action="Details" asp-route-id="@item.MaKQ" class="btn btn-sm btn-info">Chi tiết</a>
+                    <a asp-action="Delete" asp-route-id="@item.MaKQ" class="btn btn-sm btn-danger">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

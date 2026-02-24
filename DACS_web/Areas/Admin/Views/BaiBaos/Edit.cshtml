@@ -1,0 +1,167 @@
+﻿@model DACS_web.Models.BaiBao
+@{
+    ViewData["Title"] = "Chỉnh sửa bài báo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Index">Danh sách bài báo</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Chỉnh sửa</li>
+        </ol>
+    </nav>
+
+    <div class="card shadow">
+        <div class="card-header bg-white">
+            <h1 class="h3 mb-0">Chỉnh sửa bài báo</h1>
+        </div>
+
+        <div class="card-body">
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="NgayDang" />
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="mb-3">
+                            <label asp-for="TieuDe" class="form-label">Tiêu đề</label>
+                            <input asp-for="TieuDe" class="form-control" />
+                            <span asp-validation-for="TieuDe" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="NoiDung" class="form-label">Nội dung</label>
+                            <textarea asp-for="NoiDung" id="editor" class="form-control" rows="15"></textarea>
+                            <span asp-validation-for="NoiDung" class="text-danger"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="TacGia" class="form-label">Tác giả</label>
+                                    <input asp-for="TacGia" class="form-control" />
+                                    <span asp-validation-for="TacGia" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label asp-for="DanhMuc" class="form-label">Danh mục</label>
+                                    <select asp-for="DanhMuc" class="form-select">
+                                        <option value="Tin tức">Tin tức</option>
+                                        <option value="Đời sống">Đời sống</option>
+                                        <option value="Giải trí">Giải trí</option>
+                                        <option value="Thể thao">Thể thao</option>
+                                        <option value="Giáo dục">Giáo dục</option>
+                                        <option value="Kinh tế">Kinh tế</option>
+                                        <option value="Công nghệ">Công nghệ</option>
+                                        <option value="Sức khỏe">Sức khỏe</option>
+                                    </select>
+                                    <span asp-validation-for="DanhMuc" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label class="form-label">Thời gian đăng</label>
+                            <input value="@Model.NgayDang.ToString("dd/MM/yyyy HH:mm")" class="form-control" readonly />
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Hình ảnh bài báo</label>
+                            <input type="hidden" asp-for="HinhAnh" id="currentImage" />
+                            <input type="file" name="HinhAnhFile" id="HinhAnhFile" class="form-control mb-2" accept="image/*" />
+
+                            <div class="mt-3 text-center">
+                                @if (!string.IsNullOrEmpty(Model.HinhAnh))
+                                {
+                                    <img src="@Model.HinhAnh" id="imagePreview" class="img-fluid rounded border" alt="Hình ảnh bài báo" style="max-height: 250px; width: 100%; object-fit: cover;" />
+                                }
+                                else
+                                {
+                                    <img id="imagePreview" class="img-fluid rounded border d-none" alt="Hình ảnh bài báo" style="max-height: 250px; width: 100%; object-fit: cover;" />
+                                    <div id="noImageLabel" class="border rounded p-5 text-center text-muted bg-light">
+                                        <i class="bi bi-image" style="font-size: 2rem;"></i>
+                                        <p class="mt-2 mb-0">Chưa có hình ảnh</p>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="d-flex justify-content-between">
+                    <a asp-action="Index" class="btn btn-outline-secondary">
+                        <i class="bi bi-arrow-left"></i> Quay lại
+                    </a>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save"></i> Lưu thay đổi
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <!-- TinyMCE cho trình soạn thảo văn bản phong phú -->
+    <script src="~/lib/tinymce/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: 'textarea#noidung',
+            height: 300,
+            menubar: false,
+            plugins: 'link lists preview',
+            toolbar: 'undo redo | bold italic underline | alignleft aligncenter alignright | bullist numlist | link | preview',
+            branding: false
+        });
+    </script>
+
+    <script>
+        // Khởi tạo TinyMCE
+        tinymce.init({
+            selector: '#editor',
+            height: 500,
+            menubar: false,
+            plugins: [
+                'advlist autolink lists link image charmap print preview anchor',
+                'searchreplace visualblocks code fullscreen',
+                'insertdatetime media table paste code help wordcount'
+            ],
+            toolbar: 'undo redo | formatselect | ' +
+                'bold italic backcolor | alignleft aligncenter ' +
+                'alignright alignjustify | bullist numlist outdent indent | ' +
+                'removeformat | help',
+            content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+        });
+
+        // Xem trước hình ảnh khi chọn file
+        document.getElementById('HinhAnhFile').addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (event) {
+                    const imagePreview = document.getElementById('imagePreview');
+                    const noImageLabel = document.getElementById('noImageLabel');
+
+                    imagePreview.src = event.target.result;
+                    imagePreview.classList.remove('d-none');
+
+                    if (noImageLabel) {
+                        noImageLabel.classList.add('d-none');
+                    }
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+}

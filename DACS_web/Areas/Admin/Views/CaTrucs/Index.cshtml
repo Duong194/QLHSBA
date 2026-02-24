@@ -1,0 +1,147 @@
+﻿@model IEnumerable<DACS_web.Models.CaTruc>
+@{
+    ViewData["Title"] = "Quản lý ca trực";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid py-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0">
+                <i class="fas fa-calendar-alt me-2"></i>@ViewData["Title"]
+            </h4>
+            <div>
+                <a asp-action="CreateMultiple" class="btn btn-light btn-sm me-2">
+                    <i class="fas fa-plus-circle me-1"></i>Phân công nhiều ca
+                </a>
+                <a asp-action="Create" class="btn btn-light btn-sm me-2">
+                    <i class="fas fa-plus me-1"></i>Thêm ca trực
+                </a>
+                <a asp-action="Calendar" class="btn btn-light btn-sm">
+                    <i class="fas fa-calendar me-1"></i>Xem lịch
+                </a>
+            </div>
+        </div>
+
+        <div class="card-body">
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show">
+                    <i class="fas fa-check-circle me-2"></i>@TempData["SuccessMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show">
+                    <i class="fas fa-exclamation-circle me-2"></i>@TempData["ErrorMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+
+            <!-- Filters -->
+            <form method="get" class="row g-3 mb-4">
+                <div class="col-md-3">
+                    <label class="form-label"><i class="fas fa-calendar me-1"></i>Ngày trực</label>
+                    <input type="date" name="ngayTruc" class="form-control" value="@ViewBag.NgayTruc" />
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label"><i class="fas fa-user me-1"></i>Nhân viên</label>
+                    <select name="maNhanVien" class="form-select" asp-items="ViewBag.NhanVienList">
+                        <option value="">-- Tất cả --</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label"><i class="fas fa-clock me-1"></i>Ca trực</label>
+                    <select name="tenCa" class="form-select" asp-items="ViewBag.CaTrucList">
+                        <option value="">-- Tất cả --</option>
+                    </select>
+                </div>
+                <div class="col-md-3 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary me-2">
+                        <i class="fas fa-search me-1"></i>Lọc
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="fas fa-redo me-1"></i>Làm mới
+                    </a>
+                </div>
+            </form>
+
+            <!-- Table -->
+            <div class="table-responsive">
+                <table class="table table-hover table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Ngày trực</th>
+                            <th>Nhân viên</th>
+                            <th>Khoa</th>
+                            <th>Ca trực</th>
+                            <th>Thời gian</th>
+                            <th>Ghi chú</th>
+                            <th style="width: 150px;">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Any())
+                        {
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <strong>@item.NgayTruc.ToString("dd/MM/yyyy")</strong>
+                                        <br />
+                                        <small class="text-muted">@item.NgayTruc.ToString("dddd", new System.Globalization.CultureInfo("vi-VN"))</small>
+                                    </td>
+                                    <td>
+                                        <strong>@item.NhanVien?.HoTen</strong>
+                                        <br />
+                                        <small class="text-muted">@item.NhanVien?.VaiTro</small>
+                                    </td>
+                                    <td>@item.NhanVien?.Khoa?.TenKhoa</td>
+                                    <td>
+                                        @{
+                                            var badgeClass = item.TenCa switch
+                                            {
+                                                "Sáng" => "bg-warning",
+                                                "Chiều" => "bg-info",
+                                                "Tối" => "bg-primary",
+                                                "Đêm" => "bg-dark",
+                                                _ => "bg-secondary"
+                                            };
+                                        }
+                                        <span class="badge @badgeClass">
+                                            <i class="fas fa-clock me-1"></i>@item.TenCa
+                                        </span>
+                                    </td>
+                                    <td>
+                                        @item.GioBatDau.ToString(@"hh\:mm") - @item.GioKetThuc.ToString(@"hh\:mm")
+                                    </td>
+                                    <td>@(item.GhiChu ?? "---")</td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <a asp-action="Edit" asp-route-id="@item.MaCaTruc" class="btn btn-warning" title="Sửa">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <a asp-action="Delete" asp-route-id="@item.MaCaTruc" class="btn btn-danger" title="Xóa">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="7" class="text-center py-4">
+                                    <i class="fas fa-inbox fa-3x text-muted mb-3 d-block"></i>
+                                    <p class="text-muted">Không có ca trực nào được tìm thấy</p>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

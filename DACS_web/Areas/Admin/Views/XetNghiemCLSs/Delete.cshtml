@@ -1,0 +1,73 @@
+﻿@model DACS_web.Models.XetNghiemCLS
+
+@{
+    ViewData["Title"] = "Xóa xét nghiệm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0">
+                        <i class="fas fa-trash-alt"></i> Xác nhận xóa xét nghiệm
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <strong>Cảnh báo:</strong> Bạn có chắc chắn muốn xóa xét nghiệm này không? Thao tác này không thể hoàn tác!
+                    </div>
+
+                    <dl class="row">
+                        <dt class="col-sm-4">Mã xét nghiệm:</dt>
+                        <dd class="col-sm-8">@Model.MaXetNghiem</dd>
+
+                        <dt class="col-sm-4">Bệnh nhân:</dt>
+                        <dd class="col-sm-8">@Model.HoSoBenhAn?.BenhNhan?.HoTen</dd>
+
+                        <dt class="col-sm-4">Loại xét nghiệm:</dt>
+                        <dd class="col-sm-8">
+                            <span class="badge bg-info">@Model.LoaiXetNghiem</span>
+                        </dd>
+
+                        <dt class="col-sm-4">Mô tả:</dt>
+                        <dd class="col-sm-8">@(Model.MoTa ?? "Không có")</dd>
+
+                        <dt class="col-sm-4">Ngày thực hiện:</dt>
+                        <dd class="col-sm-8">
+                            @Model.NgayThucHien.ToString("dd/MM/yyyy")
+                            @if (Model.GioThucHien != null)
+                            {
+                                <text> - @Model.GioThucHien?.ToString(@"hh\:mm")</text>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-4">Bác sĩ chỉ định:</dt>
+                        <dd class="col-sm-8">@(Model.BacSiChiDinh?.HoTen ?? "Không có")</dd>
+
+                        @if (!string.IsNullOrEmpty(Model.KetQua))
+                        {
+                            <dt class="col-sm-4">Kết quả:</dt>
+                            <dd class="col-sm-8">@Model.KetQua</dd>
+                        }
+                    </dl>
+
+                    <form asp-action="Delete" method="post">
+                        <input type="hidden" asp-for="MaXetNghiem" />
+
+                        <div class="d-flex justify-content-between mt-4">
+                            <a asp-action="Details" asp-controller="HoSoBenhAns" asp-route-id="@Model.MaHoSo" class="btn btn-secondary">
+                                <i class="fas fa-times"></i> Hủy
+                            </a>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-trash"></i> Xóa xét nghiệm
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

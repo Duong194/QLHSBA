@@ -1,0 +1,32 @@
+﻿@model DACS_web.Models.Khoa
+
+@{
+    ViewData["Title"] = "Xóa khoa";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h1 class="mb-4">@ViewData["Title"]</h1>
+
+<h3>Bạn có chắc chắn muốn xóa khoa này?</h3>
+
+<div class="row">
+    <div class="col-md-6">
+        <dl class="row">
+            <dt class="col-sm-4">Mã khoa</dt>
+            <dd class="col-sm-8">@Model.MaKhoa</dd>
+
+            <dt class="col-sm-4">Tên khoa</dt>
+            <dd class="col-sm-8">@Model.TenKhoa</dd>
+
+            <dt class="col-sm-4">Mô tả</dt>
+            <dd class="col-sm-8">@Model.MoTa</dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="MaKhoa" />
+            <button type="submit" class="btn btn-danger">Xóa</button>
+            <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+        </form>
+    </div>
+</div>

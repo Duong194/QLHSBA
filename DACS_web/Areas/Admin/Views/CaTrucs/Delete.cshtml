@@ -1,0 +1,78 @@
+﻿@model DACS_web.Models.CaTruc
+@{
+    ViewData["Title"] = "Xóa ca trực";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string GetCaBadgeClass(string tenCa)
+    {
+        return tenCa switch
+        {
+            "Sáng" => "bg-warning text-dark",
+            "Chiều" => "bg-info",
+            "Tối" => "bg-primary",
+            "Đêm" => "bg-dark",
+            _ => "bg-secondary"
+        };
+    }
+}
+
+<div class="container py-4">
+    <div class="card shadow border-danger">
+        <div class="card-header bg-danger text-white">
+            <h4 class="mb-0"><i class="fas fa-trash me-2"></i>@ViewData["Title"]</h4>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-danger">
+                <i class="fas fa-exclamation-triangle me-2"></i>
+                <strong>Cảnh báo:</strong> Bạn có chắc chắn muốn xóa ca trực này?
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4">Nhân viên:</dt>
+                        <dd class="col-sm-8"><strong>@Model.NhanVien?.HoTen</strong></dd>
+
+                        <dt class="col-sm-4">Vai trò:</dt>
+                        <dd class="col-sm-8">@Model.NhanVien?.VaiTro</dd>
+
+                        <dt class="col-sm-4">Ngày trực:</dt>
+                        <dd class="col-sm-8">
+                            <strong>@Model.NgayTruc.ToString("dd/MM/yyyy")</strong>
+                            <br />
+                            <small class="text-muted">@Model.NgayTruc.ToString("dddd", new System.Globalization.CultureInfo("vi-VN"))</small>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4">Ca trực:</dt>
+                        <dd class="col-sm-8">
+                            <span class="badge @GetCaBadgeClass(Model.TenCa)">@Model.TenCa</span>
+                        </dd>
+
+                        <dt class="col-sm-4">Thời gian:</dt>
+                        <dd class="col-sm-8">
+                            @Model.GioBatDau.ToString(@"hh\:mm") - @Model.GioKetThuc.ToString(@"hh\:mm")
+                        </dd>
+
+                        <dt class="col-sm-4">Ghi chú:</dt>
+                        <dd class="col-sm-8">@(Model.GhiChu ?? "---")</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <form asp-action="Delete" method="post" class="mt-4">
+                <input type="hidden" asp-for="MaCaTruc" />
+                <div class="d-flex justify-content-between">
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-2"></i>Hủy bỏ
+                    </a>
+                    <button type="submit" class="btn btn-danger">
+                        <i class="fas fa-trash me-2"></i>Xác nhận xóa
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

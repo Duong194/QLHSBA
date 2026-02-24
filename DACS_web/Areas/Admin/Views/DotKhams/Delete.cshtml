@@ -1,0 +1,25 @@
+﻿@model DACS_web.Models.DotKham
+
+@{
+    ViewData["Title"] = "Xóa đợt khám";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2 class="text-danger mb-4">@ViewData["Title"]</h2>
+
+<h4>Bạn có chắc chắn muốn xóa đợt khám: @Model.MaDotKham không?</h4>
+
+<dl class="row">
+    <dt class="col-sm-4">Bệnh nhân</dt>
+    <dd class="col-sm-8">@Model.BenhNhan?.HoTen</dd>
+
+    <dt class="col-sm-4">Ngày vào viện</dt>
+    <dd class="col-sm-8">@Model.NgayVaoVien.ToString("dd/MM/yyyy")</dd>
+</dl>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="MaDotKham" />
+    <button type="submit" class="btn btn-danger">🗑 Xác nhận xóa</button>
+    <a asp-action="Details" asp-controller="BenhNhans" asp-route-id="@Model.MaBenhNhan" class="btn btn-secondary">Hủy</a>
+</form>

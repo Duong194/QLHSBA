@@ -1,0 +1,224 @@
+﻿@model IEnumerable<DACS_web.Models.CuocHenKham>
+
+@{
+    ViewData["Title"] = "Lịch Khám Theo Ca Trực";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var caTrucs = ViewBag.CaTrucs as List<DACS_web.Models.CaTruc> ?? new List<DACS_web.Models.CaTruc>();
+    var tuNgay = (DateTime)ViewBag.TuNgay;
+}
+
+<div class="container-fluid px-4">
+    <div class="d-flex justify-content-between align-items-center mt-4 mb-4">
+        <h2>
+            <i class="fas fa-calendar-check"></i> Lịch Khám Theo Ca Trực Của Tôi
+        </h2>
+        <a href="@Url.Action("Create", new { maCaTruc = caTrucs.FirstOrDefault()?.MaCaTruc })" class="btn btn-success">
+            <i class="fas fa-plus"></i> Tạo lịch khám mới
+        </a>
+    </div>
+
+    <!-- Bộ lọc tuần -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <form method="get" class="row g-3 align-items-end">
+                <div class="col-md-4">
+                    <label class="form-label">Từ ngày</label>
+                    <input type="date" name="tuNgay" class="form-control" value="@tuNgay.ToString("yyyy-MM-dd")" />
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Xem lịch
+                    </button>
+                    <a href="@Url.Action("LichKhamTheoCaTruc")" class="btn btn-secondary">
+                        <i class="fas fa-redo"></i> Tuần này
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <!-- Hiển thị lịch theo ca trực -->
+    @if (caTrucs.Any())
+    {
+        foreach (var caTruc in caTrucs.OrderBy(c => c.NgayTruc).ThenBy(c => c.GioBatDau))
+        {
+            var cuocHensInCaTruc = Model.Where(c => c.MaCaTruc == caTruc.MaCaTruc).OrderBy(c => c.GioKhamDuKien).ToList();
+
+            <div class="card mb-4">
+                <div class="card-header @(caTruc.NgayTruc.Date == DateTime.Today ? "bg-primary text-white" : "bg-light")">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h5 class="mb-0">
+                                <i class="far fa-calendar"></i>
+                                @caTruc.NgayTruc.ToString("dddd, dd/MM/yyyy") - Ca @caTruc.TenCa
+                            </h5>
+                            <small>
+                                <i class="fas fa-clock"></i>
+                                @caTruc.GioBatDau.ToString(@"hh\:mm") - @caTruc.GioKetThuc.ToString(@"hh\:mm")
+                            </small>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <span class="badge @(cuocHensInCaTruc.Count == 0 ? "bg-secondary" : cuocHensInCaTruc.Count < 5 ? "bg-success" : "bg-warning") fs-6">
+                                <i class="fas fa-users"></i> @cuocHensInCaTruc.Count bệnh nhân
+                            </span>
+                            <a href="@Url.Action("Create", new { maCaTruc = caTruc.MaCaTruc })"
+                               class="btn btn-sm @(caTruc.NgayTruc.Date == DateTime.Today ? "btn-light" : "btn-primary") ms-2">
+                                <i class="fas fa-plus"></i> Thêm bệnh nhân
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    @if (cuocHensInCaTruc.Any())
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th width="5%">#</th>
+                                        <th width="10%">Giờ khám</th>
+                                        <th width="15%">Mã BN</th>
+                                        <th width="20%">Bệnh nhân</th>
+                                        <th width="25%">Lý do khám</th>
+                                        <th width="10%">Trạng thái</th>
+                                        <th width="15%" class="text-center">Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        int index = 1;
+                                    }
+                                    @foreach (var cuocHen in cuocHensInCaTruc)
+                                    {
+                                        <tr>
+                                            <td>@index</td>
+                                            <td>
+                                                <strong>@cuocHen.GioKhamDuKien?.ToString(@"hh\:mm")</strong>
+                                            </td>
+                                            <td>@cuocHen.MaBenhNhan</td>
+                                            <td>
+                                                <strong>@cuocHen.BenhNhan?.HoTen</strong>
+                                                @if (cuocHen.BenhNhan?.NgaySinh != null)
+                                                {
+                                                    <br />
+                                                    <small class="text-muted">
+                                                        Sinh: @cuocHen.BenhNhan.NgaySinh.ToString("dd/MM/yyyy")
+                                                    </small>
+                                                }
+                                            </td>
+                                            <td>
+                                                <small>@(cuocHen.LyDoKham ?? "Chưa rõ")</small>
+                                            </td>
+                                            <td>
+                                                @switch (cuocHen.TrangThaiHen)
+                                                {
+                                                    case "Chờ khám":
+                                                        <span class="badge bg-warning">@cuocHen.TrangThaiHen</span>
+                                                        break;
+                                                    case "Đã xác nhận":
+                                                        <span class="badge bg-info">@cuocHen.TrangThaiHen</span>
+                                                        break;
+                                                    case "Đã khám":
+                                                        <span class="badge bg-success">@cuocHen.TrangThaiHen</span>
+                                                        break;
+                                                    case "Đã hủy":
+                                                        <span class="badge bg-danger">@cuocHen.TrangThaiHen</span>
+                                                        break;
+                                                    default:
+                                                        <span class="badge bg-secondary">@cuocHen.TrangThaiHen</span>
+                                                        break;
+                                                }
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="btn-group btn-group-sm" role="group">
+                                                    <a href="@Url.Action("Edit", new { id = cuocHen.MaCuocHen })"
+                                                       class="btn btn-outline-primary" title="Chỉnh sửa">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    @if (cuocHen.TrangThaiHen != "Đã khám")
+                                                    {
+                                                        <a href="#" class="btn btn-outline-success"
+                                                           onclick="confirmKhamXong('@cuocHen.MaCuocHen')"
+                                                           title="Đánh dấu đã khám">
+                                                            <i class="fas fa-check"></i>
+                                                        </a>
+                                                    }
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        index++;
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-info mb-0">
+                            <i class="fas fa-info-circle"></i> Chưa có lịch hẹn nào trong ca trực này.
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="alert alert-warning">
+            <i class="fas fa-exclamation-triangle"></i> Bạn không có ca trực nào trong tuần này.
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        function confirmKhamXong(maCuocHen) {
+            if (confirm('Xác nhận bệnh nhân này đã khám xong?')) {
+                var form = document.createElement('form');
+                form.method = 'POST';
+                form.action = '@Url.Action("CapNhatDaKham", "CuocHenKhams", new { area = "Admin", id = "' + maCuocHen + '" })';
+
+                // Tạo hidden input cho anti-forgery token
+                var tokenInput = document.createElement('input');
+                tokenInput.type = 'hidden';
+                tokenInput.name = '__RequestVerificationToken';
+                tokenInput.value = '@GetAntiforgeryToken()';
+                form.appendChild(tokenInput);
+
+                document.body.appendChild(form);
+                form.submit();
+            }
+            return false;
+        }
+    </script>
+}
+
+@functions {
+    public string GetAntiforgeryToken()
+    {
+        return Context.Request.Cookies[".AspNetCore.Antiforgery.COOKIE_NAME"] ?? "";
+    }
+}
+
+<style>
+    .card-header {
+        font-weight: 600;
+    }
+
+    .table tbody tr {
+        transition: background-color 0.2s;
+    }
+
+        .table tbody tr:hover {
+            background-color: rgba(0,0,0,0.02);
+        }
+</style>

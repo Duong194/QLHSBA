@@ -1,0 +1,37 @@
+﻿@model DACS_web.Models.KetQuaKhamMat
+
+@{
+    ViewData["Title"] = "Chi tiết kết quả khám mắt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2 class="mb-4">@ViewData["Title"]</h2>
+
+<dl class="row">
+    <dt class="col-sm-3">Hồ sơ bệnh án</dt>
+    <dd class="col-sm-9">@Model.HoSoBenhAn?.MaHoSo</dd>
+
+    <dt class="col-sm-3">Vị trí mắt</dt>
+    <dd class="col-sm-9">@Model.ViTriMat</dd>
+
+    <dt class="col-sm-3">Thị lực không kính</dt>
+    <dd class="col-sm-9">@Model.ThiLucKhongKinh</dd>
+
+    <dt class="col-sm-3">Thị lực có kính</dt>
+    <dd class="col-sm-9">@Model.ThiLucCoKinh</dd>
+
+    <dt class="col-sm-3">Nhãn áp</dt>
+    <dd class="col-sm-9">@Model.NhanAp mmHg</dd>
+
+    <dt class="col-sm-3">Tổng trạng mắt</dt>
+    <dd class="col-sm-9">@Model.TongTrangMat</dd>
+
+    <dt class="col-sm-3">Mô tả bộ phận mắt</dt>
+    <dd class="col-sm-9">@Model.MoTaBoPhanMat</dd>
+</dl>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.MaKQ" class="btn btn-warning">Sửa</a>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</div>

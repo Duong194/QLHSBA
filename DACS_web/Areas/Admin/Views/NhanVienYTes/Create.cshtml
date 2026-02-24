@@ -1,0 +1,182 @@
+﻿@model DACS_web.Models.NhanVienYTe
+@using DACS_web.Models
+@{
+    ViewData["Title"] = "Thêm nhân viên y tế";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var vaiTroList = VaiTroNhanVien.GetAllRoles();
+    var hocViList = HocViNhanVien.GetAllHocVi();
+}
+
+<div class="container py-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0"><i class="fas fa-user-plus me-2"></i>@ViewData["Title"]</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                <input asp-for="MaNhanVien" type="hidden" />
+
+                <div class="row">
+                    <!-- Hình ảnh -->
+                    <div class="col-md-12 mb-4">
+                        <div class="text-center">
+                            <label class="form-label"><i class="fas fa-image me-1"></i> Hình ảnh</label>
+                            <div class="mb-3">
+                                <img id="imagePreview" src="~/images/default-avatar.png"
+                                     class="rounded-circle" style="width: 150px; height: 150px; object-fit: cover;" />
+                            </div>
+                            <input type="file" name="imageFile" id="imageFile"
+                                   class="form-control" accept="image/*" onchange="previewImage(this)" />
+                            <small class="text-muted">Chấp nhận: JPG, PNG, GIF (tối đa 5MB)</small>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label asp-for="HoTen" class="form-label">
+                                <i class="fas fa-user me-1"></i> Họ và tên
+                            </label>
+                            <input asp-for="HoTen" class="form-control border-primary"
+                                   placeholder="Nhập họ tên nhân viên" />
+                            <span asp-validation-for="HoTen" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label asp-for="VaiTro" class="form-label">
+                                <i class="fas fa-user-tag me-1"></i> Vai trò
+                            </label>
+                            <select asp-for="VaiTro" class="form-select border-primary"
+                                    id="vaiTroSelect" onchange="toggleHocVi()">
+                                <option value="">-- Chọn vai trò --</option>
+                                @foreach (var role in vaiTroList)
+                                {
+                                    <option value="@role">@role</option>
+                                }
+                            </select>
+                            <span asp-validation-for="VaiTro" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phần học vị - chỉ hiện với Bác sĩ -->
+                <div class="row" id="hocViSection" style="display: none;">
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label asp-for="HocVi" class="form-label">
+                                <i class="fas fa-graduation-cap me-1"></i> Học vị
+                            </label>
+                            <select asp-for="HocVi" class="form-select border-primary">
+                                <option value="">-- Chọn học vị --</option>
+                                @foreach (var hv in hocViList)
+                                {
+                                    <option value="@hv">@hv</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label asp-for="ChuyenKhoa" class="form-label">
+                                <i class="fas fa-stethoscope me-1"></i> Chuyên khoa
+                            </label>
+                            <input asp-for="ChuyenKhoa" class="form-control border-primary"
+                                   placeholder="VD: Nhãn khoa, Tim mạch..." />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label asp-for="NamKinhNghiem" class="form-label">
+                                <i class="fas fa-briefcase me-1"></i> Số năm kinh nghiệm
+                            </label>
+                            <input asp-for="NamKinhNghiem" type="number"
+                                   class="form-control border-primary"
+                                   placeholder="VD: 10" min="0" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label asp-for="SoDienThoai" class="form-label">
+                                <i class="fas fa-phone me-1"></i> Số điện thoại
+                            </label>
+                            <input asp-for="SoDienThoai" class="form-control border-primary"
+                                   placeholder="Nhập số điện thoại" />
+                            <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <label asp-for="MaKhoa" class="form-label">
+                                <i class="fas fa-hospital me-1"></i> Khoa
+                            </label>
+                            <select asp-for="MaKhoa" class="form-select border-primary"
+                                    asp-items="ViewBag.MaKhoa">
+                                <option value="">-- Chọn khoa --</option>
+                            </select>
+                            <span asp-validation-for="MaKhoa" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 d-flex justify-content-between">
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-2"></i>Quay về danh sách
+                    </a>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-2"></i>Thêm mới
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        // Preview hình ảnh
+        function previewImage(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('imagePreview').src = e.target.result;
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        // Hiện/ẩn phần học vị khi chọn vai trò
+        function toggleHocVi() {
+            const vaiTro = document.getElementById('vaiTroSelect').value;
+            const hocViSection = document.getElementById('hocViSection');
+
+            if (vaiTro === 'Bác sĩ') {
+                hocViSection.style.display = 'block';
+            } else {
+                hocViSection.style.display = 'none';
+            }
+        }
+
+        // Highlight form controls khi focus
+        document.querySelectorAll('.form-control, .form-select').forEach(element => {
+            element.addEventListener('focus', function() {
+                this.classList.add('border-primary');
+                this.style.boxShadow = '0 0 0 0.2rem rgba(13, 110, 253, 0.15)';
+            });
+
+            element.addEventListener('blur', function() {
+                this.style.boxShadow = '';
+            });
+        });
+    </script>
+}

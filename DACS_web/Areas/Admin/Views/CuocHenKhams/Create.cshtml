@@ -1,0 +1,75 @@
+﻿@model DACS_web.Models.CuocHenKham
+
+@{
+
+    ViewData["Title"]="Tạo cuộc hẹn khám mới";
+    Layout="~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+<div class="container bg-white p-4 rounded shadow-sm">
+    <h2 class="text-primary mb-4">
+        <i class="fas fa-calendar-plus me-2"></i>@ViewData["Title"]
+    </h2>
+
+    <form asp-action="Create" method="post">
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="MaBenhNhan" class="form-label fw-bold">
+                        <i class="fas fa-user-injured me-1"></i> Bệnh nhân
+                    </label>
+                    <select asp-for="MaBenhNhan" class="form-select" asp-items="ViewBag.MaBenhNhan" required>
+                        <option value="">-- Chọn bệnh nhân --</option>
+                    </select>
+                    <span asp-validation-for="MaBenhNhan" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="MaBacSiDuKien" class="form-label fw-bold">
+                        <i class="fas fa-user-md me-1"></i> Bác sĩ phụ trách
+                    </label>
+                    <select asp-for="MaBacSiDuKien" class="form-select" asp-items="ViewBag.MaBacSiDuKien" required>
+                        <option value="">-- Chọn bác sĩ --</option>
+                    </select>
+                    <span asp-validation-for="MaBacSiDuKien" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="form-group">
+                    <label asp-for="NgayGioHen" class="form-label fw-bold">
+                        <i class="fas fa-clock me-1"></i> Ngày giờ hẹn
+                    </label>
+                    <input asp-for="NgayGioHen" class="form-control" type="datetime-local" required />
+                    <span asp-validation-for="NgayGioHen" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        @* Trạng thái hẹn được thiết lập mặc định là "Chờ khám" và không hiển thị cho người dùng *@
+        <input type="hidden" asp-for="TrangThaiHen" value="Chờ khám" />
+
+        <div class="mt-4">
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-save me-1"></i> Lưu
+            </button>
+            <a asp-action="Index" class="btn btn-secondary ms-2">
+                <i class="fas fa-arrow-left me-1"></i> Quay lại
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,80 @@
+﻿@model DACS_web.Models.PhuongPhapDieuTri
+@{
+    ViewData["Title"] = "Thêm phương pháp điều trị";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="container">
+    <h2 class="mb-4 text-primary">@ViewData["Title"]</h2>
+    <div class="card shadow">
+        <div class="card-body">
+            <form asp-action="Create" method="post">
+                <div asp-validation-summary="All" class="alert alert-danger"></div>
+
+                <div class="mb-4">
+                    <label class="form-label fw-bold">Mã Hồ sơ bệnh án</label>
+                    <input asp-for="MaHoSo" class="form-control" readonly />
+                    <span asp-validation-for="MaHoSo" class="text-danger"></span>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Nội khoa</label>
+                        <div class="d-flex gap-4 mt-2">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="noiKhoaCo" name="NoiKhoa" value="Có" checked="@(Model?.NoiKhoa == "Có")" />
+                                <label class="form-check-label" for="noiKhoaCo">Có</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="noiKhoaKhong" name="NoiKhoa" value="Không" checked="@(Model?.NoiKhoa == "Không")" />
+                                <label class="form-check-label" for="noiKhoaKhong">Không</label>
+                            </div>
+                        </div>
+                        <span asp-validation-for="NoiKhoa" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label fw-bold">Ngoại khoa</label>
+                        <div class="d-flex gap-4 mt-2">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="ngoaiKhoaCo" name="NgoaiKhoa" value="Có" checked="@(Model?.NgoaiKhoa == "Có")" />
+                                <label class="form-check-label" for="ngoaiKhoaCo">Có</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="ngoaiKhoaKhong" name="NgoaiKhoa" value="Không" checked="@(Model?.NgoaiKhoa == "Không")" />
+                                <label class="form-check-label" for="ngoaiKhoaKhong">Không</label>
+                            </div>
+                        </div>
+                        <span asp-validation-for="NgoaiKhoa" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label asp-for="MoTaChiTiet" class="form-label fw-bold">Mô tả chi tiết</label>
+                    <textarea asp-for="MoTaChiTiet" class="form-control" rows="5" placeholder="Nhập mô tả chi tiết về phương pháp điều trị..."></textarea>
+                    <span asp-validation-for="MoTaChiTiet" class="text-danger"></span>
+                </div>
+
+                @{
+                    ViewBag.MaHoSo = Context.Request.Query["MaHoSo"];
+                }
+
+                <div class="d-flex gap-2 mt-4">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save me-1"></i> Lưu mới
+                    </button>
+                    <a asp-action="Details" asp-controller="HoSoBenhAns" asp-route-id="@ViewBag.MaHoSo" class="btn btn-secondary">
+                        <i class="bi bi-x-circle me-1"></i> Hủy
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

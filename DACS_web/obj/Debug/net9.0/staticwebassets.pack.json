@@ -1,0 +1,1021 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\DACS_web.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DACS_web.biwfzqyqg4.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\Calendar.css",
+      "PackagePath": "staticwebassets\\css\\Calendar.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\DoctorList.css",
+      "PackagePath": "staticwebassets\\css\\DoctorList.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\consistency-fix.css",
+      "PackagePath": "staticwebassets\\css\\consistency-fix.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\cuochenkham-index.css",
+      "PackagePath": "staticwebassets\\css\\cuochenkham-index.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\dotkham-create.css",
+      "PackagePath": "staticwebassets\\css\\dotkham-create.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\dotkham-edit.css",
+      "PackagePath": "staticwebassets\\css\\dotkham-edit.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\iden.css",
+      "PackagePath": "staticwebassets\\css\\iden.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\index_scoped.css",
+      "PackagePath": "staticwebassets\\css\\index_scoped.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\medical-record-list.css",
+      "PackagePath": "staticwebassets\\css\\medical-record-list.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\medical-record.css",
+      "PackagePath": "staticwebassets\\css\\medical-record.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\medicine-list.css",
+      "PackagePath": "staticwebassets\\css\\medicine-list.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\patient-detail.css",
+      "PackagePath": "staticwebassets\\css\\patient-detail.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\patient-list.css",
+      "PackagePath": "staticwebassets\\css\\patient-list.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\user-list.css",
+      "PackagePath": "staticwebassets\\css\\user-list.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\user_edit.css",
+      "PackagePath": "staticwebassets\\css\\user_edit.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\images\\nhanvien\\NV001_a933b7a9-4813-4a6b-9fe7-cba75e99fc23.jpg",
+      "PackagePath": "staticwebassets\\images\\nhanvien\\NV001_a933b7a9-4813-4a6b-9fe7-cba75e99fc23.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\images\\nhanvien\\NV002_1e830a85-c62f-4942-b8e9-0c97ccf0d0bd.jpg",
+      "PackagePath": "staticwebassets\\images\\nhanvien\\NV002_1e830a85-c62f-4942-b8e9-0c97ccf0d0bd.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\images\\nhanvien\\NV004_8036b9e8-8eee-4fce-be4f-6bda00dcf740.jpg",
+      "PackagePath": "staticwebassets\\images\\nhanvien\\NV004_8036b9e8-8eee-4fce-be4f-6bda00dcf740.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\images\\nhanvien\\NV005_d807b280-76b1-4490-8ec7-a735f7984633.png",
+      "PackagePath": "staticwebassets\\images\\nhanvien\\NV005_d807b280-76b1-4490-8ec7-a735f7984633.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\images\\nhanvien\\NV006_5c71ad95-fc00-4c56-bbbb-5f9b7b2b5e8b.png",
+      "PackagePath": "staticwebassets\\images\\nhanvien\\NV006_5c71ad95-fc00-4c56-bbbb-5f9b7b2b5e8b.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\js\\dashboard.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\js\\dropdown-fix.js",
+      "PackagePath": "staticwebassets\\js\\dropdown-fix.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\CHANGELOG.md"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\icons\\default\\icons.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\icons\\default\\icons.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\langs\\README.md",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\langs\\README.md"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\license.md",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\license.md"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\models\\dom\\model.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\models\\dom\\model.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\accordion\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\accordion\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\advlist\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\advlist\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\anchor\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\anchor\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\autolink\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\autolink\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\autoresize\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\autoresize\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\autosave\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\autosave\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\code\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\code\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\codesample\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\codesample\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\directionality\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\directionality\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\emoticons\\js\\emojis.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\emoticons\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\emoticons\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\fullscreen\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\fullscreen\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ar.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ar.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\bg_BG.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\bg_BG.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ca.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ca.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\cs.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\cs.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\da.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\da.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\de.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\de.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\el.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\el.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\en.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\en.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\es.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\es.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\eu.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\eu.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fa.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fa.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fi.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fi.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fr_FR.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\fr_FR.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\he_IL.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\he_IL.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hi.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hi.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hr.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hr.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hu_HU.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\hu_HU.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\id.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\id.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\it.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\it.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ja.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ja.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\kk.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\kk.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ko_KR.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ko_KR.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ms.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ms.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nb_NO.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nb_NO.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nl.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\nl.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pl.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pl.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_BR.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_BR.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_PT.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\pt_PT.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ro.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ro.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ru.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\ru.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sk.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sk.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sl_SI.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sl_SI.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sv_SE.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\sv_SE.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\th_TH.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\th_TH.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\tr.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\tr.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\uk.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\uk.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\vi.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\vi.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_CN.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_CN.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_TW.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\js\\i18n\\keynav\\zh_TW.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\help\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\help\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\image\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\image\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\importcss\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\importcss\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\insertdatetime\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\insertdatetime\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\link\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\link\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\lists\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\lists\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\media\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\media\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\nonbreaking\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\nonbreaking\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\pagebreak\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\pagebreak\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\preview\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\preview\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\quickbars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\quickbars\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\save\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\save\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\searchreplace\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\searchreplace\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\table\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\table\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\visualblocks\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\visualblocks\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\visualchars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\visualchars\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\wordcount\\plugin.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\plugins\\wordcount\\plugin.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\content\\dark\\content.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\content\\default\\content.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\content\\default\\content.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\content\\default\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\content\\default\\content.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\content\\document\\content.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\content\\document\\content.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\content\\document\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\content\\document\\content.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\content\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\content\\writer\\content.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\content.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.inline.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\content.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\tinymce.d.ts",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\tinymce.d.ts"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\tinymce.min.js",
+      "PackagePath": "staticwebassets\\lib\\tinymce\\js\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\091d6af8-6aa6-4cc6-9fa2-1096c9b158a3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\091d6af8-6aa6-4cc6-9fa2-1096c9b158a3.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\2d0dea87-d8d8-4c43-a58c-1c7a06c1727a_7e8bdefe-f298-4864-822c-782739d6f68b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\2d0dea87-d8d8-4c43-a58c-1c7a06c1727a_7e8bdefe-f298-4864-822c-782739d6f68b.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\30fa7fd5-cc38-44ac-ab3e-1bd9964a0242_7e8bdefe-f298-4864-822c-782739d6f68b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\30fa7fd5-cc38-44ac-ab3e-1bd9964a0242_7e8bdefe-f298-4864-822c-782739d6f68b.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\3241b4b2-26a8-4d0a-a6e3-19f5ba13d7e3_880.jpg",
+      "PackagePath": "staticwebassets\\uploads\\3241b4b2-26a8-4d0a-a6e3-19f5ba13d7e3_880.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\37f1d846-5d45-4ccd-a9e9-f083e24eebbc_44363-284-tb-ctsv-tiep-nhan-dang-ky-va-dong-tien-mua-bhyt-nam-2025-danh-cho-sv-khoa-2023-tro-ve-truoc-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\37f1d846-5d45-4ccd-a9e9-f083e24eebbc_44363-284-tb-ctsv-tiep-nhan-dang-ky-va-dong-tien-mua-bhyt-nam-2025-danh-cho-sv-khoa-2023-tro-ve-truoc-1.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\43bb08d2-9038-4aea-8e8e-c63d9a0e62b3_7e8bdefe-f298-4864-822c-782739d6f68b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\43bb08d2-9038-4aea-8e8e-c63d9a0e62b3_7e8bdefe-f298-4864-822c-782739d6f68b.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\594ca44a-9fed-49d7-a779-17156e63941f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\594ca44a-9fed-49d7-a779-17156e63941f.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\67c0c5bb-273d-4e87-a496-3aee1c1b8665_4856668.png",
+      "PackagePath": "staticwebassets\\uploads\\67c0c5bb-273d-4e87-a496-3aee1c1b8665_4856668.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\6cb5a09d-5b36-46cc-9326-ced2f095120c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6cb5a09d-5b36-46cc-9326-ced2f095120c.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\6f522826-d4a6-41ff-829b-18827e11b3a4_7e8bdefe-f298-4864-822c-782739d6f68b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6f522826-d4a6-41ff-829b-18827e11b3a4_7e8bdefe-f298-4864-822c-782739d6f68b.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\71c187ce-0c31-41ad-b847-8d5a9d97b9a8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\71c187ce-0c31-41ad-b847-8d5a9d97b9a8.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\7eefcf1d-22fc-4dec-9f78-eff50986e215_880.jpg",
+      "PackagePath": "staticwebassets\\uploads\\7eefcf1d-22fc-4dec-9f78-eff50986e215_880.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\8a37240b-db75-487f-8694-a57652e30db0_59377.png",
+      "PackagePath": "staticwebassets\\uploads\\8a37240b-db75-487f-8694-a57652e30db0_59377.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\HOMEPAGE-USP-1-1.png",
+      "PackagePath": "staticwebassets\\uploads\\HOMEPAGE-USP-1-1.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\HOMEPAGE-USP-2-1.png",
+      "PackagePath": "staticwebassets\\uploads\\HOMEPAGE-USP-2-1.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\HOMEPAGE-USP-3-2.png",
+      "PackagePath": "staticwebassets\\uploads\\HOMEPAGE-USP-3-2.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\LOGO-Matcos-moi.png",
+      "PackagePath": "staticwebassets\\uploads\\LOGO-Matcos-moi.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\Screenshot 2025-05-01 104727.png",
+      "PackagePath": "staticwebassets\\uploads\\Screenshot 2025-05-01 104727.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\b2c50821-b415-490a-90cc-c3def3685e78_59377.png",
+      "PackagePath": "staticwebassets\\uploads\\b2c50821-b415-490a-90cc-c3def3685e78_59377.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\b45ca9a5-c1c1-4959-854f-7bdb614c5b47.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b45ca9a5-c1c1-4959-854f-7bdb614c5b47.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\bc9310de-2b98-4aa3-b23b-d1dd75863e1c_59377.png",
+      "PackagePath": "staticwebassets\\uploads\\bc9310de-2b98-4aa3-b23b-d1dd75863e1c_59377.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\bs1.png",
+      "PackagePath": "staticwebassets\\uploads\\bs1.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\c74a0134-167d-49fa-b849-0dc49c154edc_7e8bdefe-f298-4864-822c-782739d6f68b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c74a0134-167d-49fa-b849-0dc49c154edc_7e8bdefe-f298-4864-822c-782739d6f68b.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\cd3a3fa7-a75f-4d1c-95c6-5dbb0f61a93b.png",
+      "PackagePath": "staticwebassets\\uploads\\cd3a3fa7-a75f-4d1c-95c6-5dbb0f61a93b.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\d3b7926f-7f90-4307-aa6f-bf0b657eabc4_7e91c944b9a66af833b7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d3b7926f-7f90-4307-aa6f-bf0b657eabc4_7e91c944b9a66af833b7.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\de06b2d9-725b-4c70-98fc-5ab744f4e7fe.jpg",
+      "PackagePath": "staticwebassets\\uploads\\de06b2d9-725b-4c70-98fc-5ab744f4e7fe.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\ecfb9e15-8628-496e-8920-dcc7521c0dee_benh-ve-mat-5.png",
+      "PackagePath": "staticwebassets\\uploads\\ecfb9e15-8628-496e-8920-dcc7521c0dee_benh-ve-mat-5.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\f0ffa045-f8ee-46a8-808d-92d01a962ab2_7e8bdefe-f298-4864-822c-782739d6f68b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f0ffa045-f8ee-46a8-808d-92d01a962ab2_7e8bdefe-f298-4864-822c-782739d6f68b.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\f284aaa2-02b9-4dbd-afaa-5980aa41be6b_7e8bdefe-f298-4864-822c-782739d6f68b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f284aaa2-02b9-4dbd-afaa-5980aa41be6b_7e8bdefe-f298-4864-822c-782739d6f68b.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\f2fe91d2-3d6d-484e-be9b-7a1f14d9450e_59377.png",
+      "PackagePath": "staticwebassets\\uploads\\f2fe91d2-3d6d-484e-be9b-7a1f14d9450e_59377.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\lk.jpg",
+      "PackagePath": "staticwebassets\\uploads\\lk.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\mat1_QASR.jpg",
+      "PackagePath": "staticwebassets\\uploads\\mat1_QASR.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\msg-logo.png",
+      "PackagePath": "staticwebassets\\uploads\\msg-logo.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\slide1.png",
+      "PackagePath": "staticwebassets\\uploads\\slide1.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\slide2.png",
+      "PackagePath": "staticwebassets\\uploads\\slide2.png"
+    },
+    {
+      "Id": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\slide3.png",
+      "PackagePath": "staticwebassets\\uploads\\slide3.png"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.DACS_web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.DACS_web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.DACS_web.props",
+      "PackagePath": "build\\DACS_web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.DACS_web.props",
+      "PackagePath": "buildMultiTargeting\\DACS_web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.DACS_web.props",
+      "PackagePath": "buildTransitive\\DACS_web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

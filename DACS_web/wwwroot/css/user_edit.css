@@ -1,0 +1,59 @@
+﻿.user-edit-page .bg-gradient-primary {
+    background: linear-gradient(135deg, #3a6eff 0%, #5f9bff 100%);
+}
+
+.user-edit-page .form-floating > label {
+    top: -0.6rem;
+    left: 0.75rem;
+    font-size: 0.85rem;
+}
+
+/* Điều chỉnh vị trí của label khi input có giá trị hoặc được focus */
+.user-edit-page .form-floating > .form-control:focus ~ label,
+.user-edit-page .form-floating > .form-control:not(:placeholder-shown) ~ label,
+.user-edit-page .form-floating > .form-select ~ label {
+    opacity: 0.65;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    padding-left: 1.75rem;
+}
+
+.user-edit-page .form-control:focus, .user-edit-page .form-select:focus {
+    border-color: #3a6eff;
+    box-shadow: 0 0 0 0.25rem rgba(58, 110, 255, 0.15);
+}
+
+.user-edit-page .form-floating > .form-control::placeholder, .user-edit-page .form-floating > .form-select::placeholder {
+    color: transparent;
+}
+
+.user-edit-page .form-control, .user-edit-page .form-select {
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    min-height: 58px;
+}
+
+/* Đảm bảo vị trí của icon và text trong label */
+.user-edit-page .form-floating > label i {
+    vertical-align: middle;
+}
+
+.user-edit-page .btn {
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+}
+
+.user-edit-page .btn-primary {
+    background-color: #3a6eff;
+    border-color: #3a6eff;
+}
+
+    .user-edit-page .btn-primary:hover, .user-edit-page .btn-primary:focus {
+        background-color: #2a5bea;
+        border-color: #2a5bea;
+    }
+
+.user-edit-page .btn-outline-secondary:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+    border-color: #dee2e6;
+}

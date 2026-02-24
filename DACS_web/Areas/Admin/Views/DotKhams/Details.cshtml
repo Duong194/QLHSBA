@@ -1,0 +1,37 @@
+﻿@model DACS_web.Models.DotKham
+
+@{
+    ViewData["Title"] = "Chi tiết đợt khám";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2 class="mb-4">@ViewData["Title"]</h2>
+
+<dl class="row">
+    <dt class="col-sm-4">Mã đợt khám</dt>
+    <dd class="col-sm-8">@Model.MaDotKham</dd>
+
+    <dt class="col-sm-4">Bệnh nhân</dt>
+    <dd class="col-sm-8">@Model.BenhNhan?.HoTen</dd>
+
+    <dt class="col-sm-4">Lý do vào viện</dt>
+    <dd class="col-sm-8">@Model.LyDoVaoVien</dd>
+
+    <dt class="col-sm-4">Ngày vào viện</dt>
+    <dd class="col-sm-8">@Model.NgayVaoVien.ToString("dd/MM/yyyy")</dd>
+
+    <dt class="col-sm-4">Giờ vào viện</dt>
+    <dd class="col-sm-8">@Model.GioVaoVien.ToString(@"hh\:mm")</dd>
+
+    <dt class="col-sm-4">Khoa tiếp nhận</dt>
+    <dd class="col-sm-8">@Model.KhoaTiepNhan?.TenKhoa</dd>
+
+    <dt class="col-sm-4">Hình thức tiếp nhận</dt>
+    <dd class="col-sm-8">@Model.HinhThucTiepNhan</dd>
+</dl>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.MaDotKham" class="btn btn-warning">✏️ Chỉnh sửa</a>
+    <a asp-action="Index" class="btn btn-secondary">🔙 Quay lại</a>
+</div>

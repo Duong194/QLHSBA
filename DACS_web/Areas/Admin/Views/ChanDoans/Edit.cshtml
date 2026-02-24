@@ -1,0 +1,173 @@
+﻿@model DACS_web.Models.ChanDoan
+
+@{
+    ViewData["Title"] = "Chỉnh sửa chẩn đoán";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="container">
+    <div class="row mb-4">
+        <div class="col">
+            <h2 class="text-primary">@ViewData["Title"]</h2>
+            <hr class="my-3" />
+        </div>
+    </div>
+
+    <form asp-action="Edit" method="post" id="editDiagnosisForm">
+        <input type="hidden" asp-for="MaChanDoan" />
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-light">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Thông tin hồ sơ</h5>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="MaHoSo" class="form-label fw-bold">Mã Hồ sơ bệnh án</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-file-medical"></i></span>
+                                <input asp-for="MaHoSo" class="form-control" readonly />
+                            </div>
+                            <span asp-validation-for="MaHoSo" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="MaChanDoan" class="form-label fw-bold">Mã chẩn đoán</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-tags"></i></span>
+                                <input value="@Model.MaChanDoan" class="form-control" readonly />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-light">
+                <h5 class="mb-0">Thông tin chẩn đoán</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label asp-for="LoaiChanDoan" class="form-label fw-bold">Loại chẩn đoán <span class="text-danger">*</span></label>
+                        <select asp-for="LoaiChanDoan" class="form-select" required>
+                            <option value="">-- Chọn loại chẩn đoán --</option>
+                            <option value="Bệnh chính">Bệnh chính</option>
+                            <option value="Bệnh kèm theo">Bệnh kèm theo</option>
+                            <option value="Biến chứng">Biến chứng</option>
+                            <option value="Chẩn đoán sơ bộ">Chẩn đoán sơ bộ</option>
+                            <option value="Chẩn đoán xác định">Chẩn đoán xác định</option>
+                        </select>
+                        <span asp-validation-for="LoaiChanDoan" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label asp-for="MaICD" class="form-label fw-bold">Tên bệnh (ICD) <span class="text-danger">*</span></label>
+                        <select asp-for="MaICD" class="form-select" asp-items="ViewBag.MaICD" required>
+                            <option value="">-- Chọn bệnh ICD --</option>
+                        </select>
+                        <span asp-validation-for="MaICD" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label asp-for="ViTri" class="form-label fw-bold">Vị trí tổn thương <span class="text-danger">*</span></label>
+                        <select asp-for="ViTri" class="form-select" required>
+                            <option value="">-- Chọn vị trí --</option>
+                            <option value="Mắt phải">Mắt phải</option>
+                            <option value="Mắt trái">Mắt trái</option>
+                            <option value="Hai mắt">Hai mắt</option>
+                            <option value="Khác">Khác</option>
+                        </select>
+                        <span asp-validation-for="ViTri" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <label asp-for="MoTa" class="form-label fw-bold">Mô tả chi tiết <span class="text-danger">*</span></label>
+                        <textarea asp-for="MoTa" class="form-control" rows="4" placeholder="Mô tả chi tiết về tình trạng bệnh lý..." required></textarea>
+                        <span asp-validation-for="MoTa" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between mb-5">
+            <a asp-action="Details" asp-controller="HoSoBenhAns" asp-route-id="@ViewBag.MaHoSo" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-left me-1"></i> Quay lại
+            </a>
+            <div>
+                <button type="submit" class="btn btn-primary px-4">
+                    <i class="bi bi-save me-1"></i> Lưu thay đổi
+                </button>
+                <a asp-action="Delete" asp-route-id="@Model.MaChanDoan" class="btn btn-outline-danger ms-2">
+                    <i class="bi bi-trash me-1"></i> Xóa chẩn đoán
+                </a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <script>
+        // Form validation
+        (() => {
+            'use strict'
+            const form = document.getElementById('editDiagnosisForm')
+
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })()
+
+        // Pre-select the current values
+        $(document).ready(function() {
+            // Initialize Select2 for ICD selection if the library is available
+            if ($.fn.select2) {
+                $("select[name='MaICD']").select2({
+                    placeholder: "Tìm và chọn bệnh ICD",
+                    allowClear: true
+                });
+            }
+
+            // If ViTri value doesn't match any options, select "Khác"
+            const viTriSelect = document.querySelector('select[name="ViTri"]');
+            if (viTriSelect) {
+                const currentValue = '@Model.ViTri';
+                let found = false;
+
+                for (let i = 0; i < viTriSelect.options.length; i++) {
+                    if (viTriSelect.options[i].value === currentValue) {
+                        found = true;
+                        break;
+                    }
+                }
+
+                if (!found && currentValue) {
+                    // Add the current value as an option if it doesn't exist
+                    const newOption = document.createElement('option');
+                    newOption.value = currentValue;
+                    newOption.text = currentValue;
+                    viTriSelect.appendChild(newOption);
+                    viTriSelect.value = currentValue;
+                }
+            }
+        });
+    </script>
+}

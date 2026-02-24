@@ -1,0 +1,102 @@
+﻿@model DACS_web.Models.KetQuaKhamMat
+@{
+    ViewData["Title"] = "Thêm Kết quả khám mắt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="container-fluid py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="text-primary mb-0">@ViewData["Title"]</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
+                    <li class="breadcrumb-item"><a  asp-controller="HoSoBenhAns" asp-action="Details" asp-route-id="@Context.Request.Query["MaHoSo"]">Chi tiết hồ sơ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Thêm kết quả khám mắt</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-info text-white">
+            <h5 class="mb-0"><i class="fas fa-eye me-2"></i>Thêm kết quả khám mắt</h5>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create" method="post">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <input type="hidden" asp-for="MaHoSo" value="@Context.Request.Query["MaHoSo"]" />
+
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <label asp-for="ViTriMat" class="form-label">Vị trí mắt</label>
+                        <select asp-for="ViTriMat" class="form-select">
+                            <option value="">-- Chọn vị trí mắt --</option>
+                            <option value="Mắt phải">Mắt phải</option>
+                            <option value="Mắt trái">Mắt trái</option>
+                        </select>
+                        <span asp-validation-for="ViTriMat" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label asp-for="ThiLucKhongKinh" class="form-label">Thị lực không kính</label>
+                        <input asp-for="ThiLucKhongKinh" class="form-control" />
+                        <span asp-validation-for="ThiLucKhongKinh" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="ThiLucCoKinh" class="form-label">Thị lực có kính</label>
+                        <input asp-for="ThiLucCoKinh" class="form-control" />
+                        <span asp-validation-for="ThiLucCoKinh" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label asp-for="NhanAp" class="form-label">Nhãn áp</label>
+                        <input asp-for="NhanAp" class="form-control" type="number" step="0.1" />
+                        <span asp-validation-for="NhanAp" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="TongTrangMat" class="form-label">Tổng trng mắt</label>
+                        <input asp-for="TongTrangMat" class="form-control" />
+                        <span asp-validation-for="TongTrangMat" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="MoTaBoPhanMat" class="form-label">Mô tả bộ phận mắt</label>
+                    <textarea asp-for="MoTaBoPhanMat" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="MoTaBoPhanMat" class="text-danger"></span>
+                </div>
+                @{
+                    ViewBag.MaHoSo = Context.Request.Query["MaHoSo"];
+                }
+                <div class="d-flex justify-content-end gap-2 mt-4">
+                    <a asp-controller="HoSoBenhAns" asp-action="Details" asp-route-id="@Context.Request.Query["MaHoSo"]" class="btn btn-secondary">
+                        <i class="fas fa-times me-1"></i> Hủy
+                    </a>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-1"></i> Lưu kết quả
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        // Script xử lý giao diện nếu cần thiết
+        $(document).ready(function() {
+            // Có thể thêm script validation tùy chỉnh ở đây
+        });
+    </script>
+}

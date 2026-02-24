@@ -1,0 +1,44 @@
+﻿@model IEnumerable<DACS_web.Models.ChanDoan>
+
+@{
+    ViewData["Title"] = "Danh sách chẩn đoán";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="mb-3">
+    <a asp-action="Create" class="btn btn-primary me-2">+ Thêm 1 chẩn đoán</a>
+    <a asp-action="CreateMultiple" class="btn btn-success">+ Thêm nhiều chẩn đoán</a>
+</div>
+
+<table class="table table-striped table-bordered">
+    <thead class="table-dark text-center">
+        <tr>
+            <th>Mã chẩn đoán</th>
+            <th>Mã hồ sơ</th>
+            <th>Bệnh (ICD)</th>
+            <th>Loại chẩn đoán</th>
+            <th>Vị trí</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaChanDoan</td>
+                <td>@item.MaHoSo</td>
+                <td>@item.DanhMucICD?.TenBenh (@item.MaICD)</td>
+                <td>@item.LoaiChanDoan</td>
+                <td>@item.ViTri</td>
+                <td class="text-center">
+                    <a asp-action="Edit" asp-route-id="@item.MaChanDoan" class="btn btn-warning btn-sm">Sửa</a>
+                    <a asp-action="Details" asp-route-id="@item.MaChanDoan" class="btn btn-info btn-sm">Chi tiết</a>
+                    <a asp-action="Delete" asp-route-id="@item.MaChanDoan" class="btn btn-danger btn-sm">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

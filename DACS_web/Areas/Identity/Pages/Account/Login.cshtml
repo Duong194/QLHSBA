@@ -1,0 +1,126 @@
+﻿@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Đăng nhập";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/iden.css" asp-append-version="true" />
+
+<div class="login-page">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="row">
+                <div class="col-lg-6 d-none d-lg-block login-image">
+                    <div class="overlay">
+                        <h1>Chào mừng trở lại</h1>
+                        <p>Đăng nhập để truy cập và quản lý tài khoản của bạn</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 login-form-container">
+                    <div class="login-form">
+                        <div class="text-center mb-4">
+                            <img src="~/uploads/msg-logo.png" alt="Logo" class="logo mb-3" />
+                            <h2>Đăng nhập</h2>
+                            <p class="text-muted">Nhập thông tin tài khoản của bạn</p>
+                        </div>
+
+                        <form id="account" method="post">
+                            <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                            <div class="form-group mb-3">
+                                <label asp-for="Input.Email" class="form-label">Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                    <input asp-for="Input.Email" class="form-control" autocomplete="username"
+                                           aria-required="true" placeholder="name@example.com" />
+                                </div>
+                                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <label asp-for="Input.Password" class="form-label">Mật khẩu</label>
+                                    <a id="forgot-password" asp-page="./ForgotPassword" class="small text-primary">Quên mật khẩu?</a>
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password"
+                                           aria-required="true" placeholder="Nhập mật khẩu" />
+                                </div>
+                                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" asp-for="Input.RememberMe" id="rememberMe" />
+                                <label class="form-check-label" asp-for="Input.RememberMe" for="rememberMe">
+                                    @Html.DisplayNameFor(m => m.Input.RememberMe)
+                                </label>
+                            </div>
+
+                            <div class="d-grid mb-4">
+                                <button id="login-submit" type="submit" class="btn btn-primary btn-lg">Đăng nhập</button>
+                            </div>
+
+                            <div class="text-center mb-3">
+                                <p class="mb-0">
+                                    Chưa có tài khoản?
+                                    <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="text-primary fw-bold">Đăng ký ngay</a>
+                                </p>
+                                <a id="resend-confirmation" asp-page="./ResendEmailConfirmation" class="small">Gửi lại email xác nhận</a>
+                            </div>
+                        </form>
+
+                        @{
+                            if ((Model.ExternalLogins?.Count ?? 0) > 0)
+                            {
+                                <div class="social-login">
+                                    <div class="divider mb-3">
+                                        <span>Hoặc đăng nhập với</span>
+                                    </div>
+
+                                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                                        <div class="d-flex justify-content-center gap-2">
+                                            @foreach (var provider in Model.ExternalLogins!)
+                                            {
+                                                <button type="submit" class="btn btn-outline-secondary social-btn"
+                                                        name="provider" value="@provider.Name"
+                                                        title="Log in using your @provider.DisplayName account">
+                                                    <i class="fa fa-@GetSocialIcon(provider.Name.ToLower())"></i> @provider.DisplayName
+                                                </button>
+                                            }
+                                        </div>
+                                    </form>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Optional: Add custom JavaScript here
+    </script>
+}
+
+@functions {
+    public string GetSocialIcon(string providerName)
+    {
+        return providerName switch
+        {
+            "google" => "google",
+            "facebook" => "facebook",
+            "microsoft" => "windows",
+            "twitter" => "twitter",
+            "apple" => "apple",
+            "github" => "github",
+            _ => "external-link"
+        };
+    }
+}
+

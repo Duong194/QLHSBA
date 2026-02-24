@@ -1,0 +1,206 @@
+﻿@model DACS_web.Models.BenhNhan
+
+@{
+    ViewData["Title"] = "Chỉnh sửa thông tin bệnh nhân";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="container py-4">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0"><i class="fas fa-user-edit me-2"></i>@ViewData["Title"]</h3>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                <input type="hidden" asp-for="MaBenhNhan" />
+
+                <div class="row">
+                    <!-- Thông tin cá nhân -->
+                    <div class="col-md-12 mb-4">
+                        <div class="card border-0 bg-light">
+                            <div class="card-header bg-info bg-opacity-10">
+                                <h5 class="mb-0"><i class="fas fa-user me-2"></i>Thông tin cá nhân</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input asp-for="HoTen" class="form-control" placeholder="Họ và tên" />
+                                            <label asp-for="HoTen">Họ và tên</label>
+                                            <span asp-validation-for="HoTen" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-floating mb-3">
+                                            <input asp-for="NgaySinh" type="date" class="form-control" placeholder="Ngày sinh" />
+                                            <label asp-for="NgaySinh">Ngày sinh</label>
+                                            <span asp-validation-for="NgaySinh" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-floating mb-3">
+                                            <select asp-for="GioiTinh" class="form-select">
+                                                <option value="Nam">Nam</option>
+                                                <option value="Nữ">Nữ</option>
+                                                <option value="Khác">Khác</option>
+                                            </select>
+                                            <label asp-for="GioiTinh">Giới tính</label>
+                                            <span asp-validation-for="GioiTinh" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-floating mb-3">
+                                            <input asp-for="CMND" class="form-control" placeholder="CMND/CCCD" />
+                                            <label asp-for="CMND">CMND/CCCD</label>
+                                            <span asp-validation-for="CMND" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-floating mb-3">
+                                            <input asp-for="SoDienThoai" class="form-control" placeholder="Số điện thoại" />
+                                            <label asp-for="SoDienThoai">Số điện thoại</label>
+                                            <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-floating mb-3">
+                                            <input asp-for="NgheNghiep" class="form-control" placeholder="Nghề nghiệp" />
+                                            <label asp-for="NgheNghiep">Nghề nghiệp</label>
+                                            <span asp-validation-for="NgheNghiep" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input asp-for="DanToc" class="form-control" placeholder="Dân tộc" />
+                                            <label asp-for="DanToc">Dân tộc</label>
+                                            <span asp-validation-for="DanToc" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input asp-for="QuocTich" class="form-control" placeholder="Quốc tịch" value="Việt Nam" />
+                                            <label asp-for="QuocTich">Quốc tịch</label>
+                                            <span asp-validation-for="QuocTich" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-floating mb-3">
+                                            <input asp-for="DiaChi" class="form-control" placeholder="Địa chỉ" />
+                                            <label asp-for="DiaChi">Địa chỉ</label>
+                                            <span asp-validation-for="DiaChi" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Thông tin bảo hiểm -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-0 bg-light h-100">
+                            <div class="card-header bg-warning bg-opacity-10">
+                                <h5 class="mb-0"><i class="fas fa-id-card me-2"></i>Thông tin bảo hiểm</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <div class="form-floating mb-3">
+                                            <select asp-for="DoiTuong" class="form-select">
+                                                <option value="BHYT">Bảo hiểm y tế</option>
+                                                <option value="Thu phí">Thu phí</option>
+                                                <option value="Miễn phí">Miễn phí</option>
+                                            </select>
+                                            <label asp-for="DoiTuong">Đối tượng</label>
+                                            <span asp-validation-for="DoiTuong" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-floating mb-3">
+                                            <input asp-for="BHYT" class="form-control" placeholder="Số thẻ BHYT" />
+                                            <label asp-for="BHYT">Số thẻ BHYT</label>
+                                            <span asp-validation-for="BHYT" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tiền sử bệnh -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-0 bg-light h-100">
+                            <div class="card-header bg-danger bg-opacity-10">
+                                <h5 class="mb-0"><i class="fas fa-notes-medical me-2"></i>Tiền sử bệnh</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <div class="form-floating mb-3">
+                                            <textarea asp-for="TienSuDiUng" class="form-control" style="height: 80px" placeholder="Tiền sử dị ứng"></textarea>
+                                            <label asp-for="TienSuDiUng">Tiền sử dị ứng</label>
+                                            <span asp-validation-for="TienSuDiUng" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-floating mb-3">
+                                            <textarea asp-for="TienSuBenhBanThan" class="form-control" style="height: 80px" placeholder="Tiền sử bệnh bản thân"></textarea>
+                                            <label asp-for="TienSuBenhBanThan">Tiền sử bệnh bản thân</label>
+                                            <span asp-validation-for="TienSuBenhBanThan" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-floating mb-3">
+                                            <textarea asp-for="TienSuBenhGiaDinh" class="form-control" style="height: 80px" placeholder="Tiền sử bệnh gia đình"></textarea>
+                                            <label asp-for="TienSuBenhGiaDinh">Tiền sử bệnh gia đình</label>
+                                            <span asp-validation-for="TienSuBenhGiaDinh" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end gap-2 mt-4">
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-2"></i>Quay về danh sách
+                    </a>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-2"></i>Lưu thay đổi
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $(document).ready(function() {
+            // Tự động thêm class is-invalid khi có lỗi validation
+            $("input, select, textarea").on("change", function() {
+                if ($(this).hasClass("input-validation-error")) {
+                    $(this).addClass("is-invalid");
+                } else {
+                    $(this).removeClass("is-invalid");
+                }
+            });
+        });
+    </script>
+}

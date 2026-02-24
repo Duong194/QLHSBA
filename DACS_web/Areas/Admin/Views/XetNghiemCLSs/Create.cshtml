@@ -1,0 +1,140 @@
+﻿@model DACS_web.Models.XetNghiemCLS
+
+@{
+    ViewData["Title"] = "Thêm xét nghiệm cận lâm sàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">
+                        <i class="fas fa-vial"></i> Thêm xét nghiệm cận lâm sàng
+                    </h4>
+                </div>
+                <div class="card-body">
+                    @if (ViewData["HoSoInfo"] != null)
+                    {
+                        var hoSo = ViewData["HoSoInfo"] as DACS_web.Models.HoSoBenhAn;
+                        <div class="alert alert-info mb-4">
+                            <strong><i class="fas fa-user"></i> Bệnh nhân:</strong> @hoSo?.BenhNhan?.HoTen<br>
+                            <strong><i class="fas fa-file-medical"></i> Mã hồ sơ:</strong> @hoSo?.MaHoSo
+                        </div>
+                    }
+
+                    <form asp-action="Create" method="post">
+                        @* ✅ Hidden fields *@
+                        <input type="hidden" asp-for="MaHoSo" />
+
+                        @* Backup hidden field *@
+                        @if (!string.IsNullOrEmpty(Model.MaHoSo))
+                        {
+                            <input type="hidden" name="MaHoSo" value="@Model.MaHoSo" />
+                        }
+
+                        @if (!string.IsNullOrEmpty(Context.Request.Query["returnUrl"]))
+                        {
+                            <input type="hidden" name="returnUrl" value="@Context.Request.Query["returnUrl"]" />
+                        }
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        @if (ViewData["HoSoInfo"] == null)
+                        {
+                            <div class="mb-3">
+                                <label asp-for="MaHoSo" class="form-label">Hồ sơ bệnh án <span class="text-danger">*</span></label>
+                                <select asp-for="MaHoSo" class="form-select" asp-items="ViewBag.MaHoSo" required>
+                                    <option value="">-- Chọn hồ sơ --</option>
+                                </select>
+                                <span asp-validation-for="MaHoSo" class="text-danger"></span>
+                            </div>
+                        }
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="LoaiXetNghiem" class="form-label">Loại xét nghiệm <span class="text-danger">*</span></label>
+                                <select asp-for="LoaiXetNghiem" class="form-select" asp-items="ViewBag.LoaiXetNghiem" required>
+                                    <option value="">-- Chọn loại xét nghiệm --</option>
+                                </select>
+                                <span asp-validation-for="LoaiXetNghiem" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="MaBacSiChiDinh" class="form-label">Bác sĩ chỉ định</label>
+                                <select asp-for="MaBacSiChiDinh" class="form-select" asp-items="ViewBag.MaBacSiChiDinh">
+                                    <option value="">-- Chọn bác sĩ --</option>
+                                </select>
+                                <span asp-validation-for="MaBacSiChiDinh" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="NgayThucHien" class="form-label">Ngày thực hiện <span class="text-danger">*</span></label>
+                                <input asp-for="NgayThucHien" class="form-control" type="date" required />
+                                <span asp-validation-for="NgayThucHien" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="GioThucHien" class="form-label">Giờ thực hiện</label>
+                                <input asp-for="GioThucHien" class="form-control" type="time" />
+                                <span asp-validation-for="GioThucHien" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="MoTa" class="form-label">Mô tả</label>
+                            <textarea asp-for="MoTa" class="form-control" rows="3" placeholder="Nhập mô tả chi tiết về xét nghiệm..."></textarea>
+                            <span asp-validation-for="MoTa" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="KetQua" class="form-label">Kết quả</label>
+                            <textarea asp-for="KetQua" class="form-control" rows="4" placeholder="Nhập kết quả xét nghiệm..."></textarea>
+                            <span asp-validation-for="KetQua" class="text-danger"></span>
+                            <small class="form-text text-muted">Có thể để trống nếu chưa có kết quả</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="GhiChu" class="form-label">Ghi chú</label>
+                            <textarea asp-for="GhiChu" class="form-control" rows="2" placeholder="Ghi chú thêm (nếu có)..."></textarea>
+                            <span asp-validation-for="GhiChu" class="text-danger"></span>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="d-flex justify-content-between">
+                            @if (!string.IsNullOrEmpty(Model.MaHoSo))
+                            {
+                                <a asp-action="Details" asp-controller="HoSoBenhAns" asp-route-id="@Model.MaHoSo" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-left"></i> Quay lại
+                                </a>
+                            }
+                            else
+                            {
+                                <a asp-action="Index" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-left"></i> Quay lại
+                                </a>
+                            }
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save"></i> Lưu xét nghiệm
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        // Debug: Kiểm tra giá trị MaHoSo
+        console.log('MaHoSo:', '@Model.MaHoSo');
+    </script>
+}

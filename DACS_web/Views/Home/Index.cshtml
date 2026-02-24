@@ -1,0 +1,389 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Trang chủ";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/index_scoped.css" asp-append-version="true" />
+    <style>
+        /* Thêm style cho card news để dễ định vị nút xem chi tiết */
+        .news-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-card .card-body {
+            flex: 1;
+        }
+
+        .news-card .card-footer {
+            padding: 1rem;
+            margin-top: auto;
+            text-align: right;
+        }
+
+        /* Style cho phân trang */
+        .pagination {
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .page-item.active .page-link {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+        .page-link {
+            color: #17a2b8;
+        }
+
+            .page-link:hover {
+                color: #0f7888;
+            }
+    </style>
+}
+
+
+<div class="home-index">
+    <!-- Hero Slider Section -->
+    <div class="slider-container">
+        <div class="slider-wrapper">
+            <div class="slider-item active">
+                <div class="slider-content" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/uploads/slide1.png');"></div>
+            </div>
+            <div class="slider-item">
+                <div class="slider-content" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/uploads/slide2.png');"></div>
+            </div>
+            <div class="slider-item">
+                <div class="slider-content" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/uploads/slide3.png');"></div>
+            </div>
+
+            <div class="slider-controls">
+                <button class="slider-control prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                </div>
+                <button class="slider-control next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <section class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="text-center mb-4 animate-fade">Mắt Sài Gòn - Hệ thống bệnh viện Mắt lớn nhất Việt Nam</h2>
+            <p class="text-muted text-center mx-auto mb-5" style="max-width: 720px; font-size: 1.1rem; line-height: 1.8;">
+                Được thành lập vào năm 2004, trải qua hơn 21 năm hình thành và phát triển...
+            </p>
+        </div>
+
+        <div class="row g-4 animate-slide-up" style="animation-delay: 0.3s;">
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="overflow-hidden">
+                        <img src="~/uploads/HOMEPAGE-USP-1-1.png" class="card-img-top" alt="Chuyên môn cao" />
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title fw-bold">Chuyên môn cao</h4>
+                        <p class="card-text text-muted">Đội ngũ y bác sĩ giỏi, được đào tạo chuyên sâu trong nước và quốc tế</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="overflow-hidden">
+                        <img src="~/uploads/HOMEPAGE-USP-2-1.png" class="card-img-top" alt="Chất lượng vàng" />
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title fw-bold">Chất lượng vàng</h4>
+                        <p class="card-text text-muted">Trang thiết bị hiện đại, công nghệ tiên tiến và dịch vụ chất lượng cao</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="overflow-hidden">
+                        <img src="~/uploads/HOMEPAGE-USP-3-2.png" class="card-img-top" alt="Trải nghiệm vượt trội" />
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title fw-bold">Trải nghiệm vượt trội</h4>
+                        <p class="card-text text-muted">Quy trình khám chữa bệnh chuyên nghiệp, tận tâm và hiệu quả</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Team Section -->
+    <section class="py-5 doctor-section" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 animate-slide-right">
+                    <img src="~/uploads/bs1.png" class="img-fluid rounded shadow" alt="Đội ngũ bác sĩ tận tâm và giàu kinh nghiệm">
+                </div>
+                <div class="col-lg-4 text-center text-lg-start mt-5 mt-lg-0 doctor-content animate-slide-left">
+                    <h3 class="text-success fw-bold mb-4">Đội ngũ bác sĩ tận tâm<br>và giàu kinh nghiệm</h3>
+                    <p class="text-muted mb-4">Mắt Sài Gòn tự hào với đội ngũ y bác sĩ là những chuyên gia hàng đầu trong lĩnh vực nhãn khoa, luôn tận tâm chăm sóc sức khỏe thị lực của bệnh nhân.</p>
+                    <a href="/Admin/NhanVienYTes/DanhSachBacSi" class="btn btn-outline-success btn-lg rounded-pill">
+                        <i class="fas fa-user-md me-2"></i> Xem tất cả bác sĩ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Appointment Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center text-lg-start mb-5 mb-lg-0 animate-slide-right">
+                    <h3 class="text-danger fw-bold mb-4">Đặt lịch khám<br>trực tuyến dễ dàng</h3>
+                    <p class="text-muted mb-4">Tiết kiệm thời gian và thuận tiện với hệ thống đặt lịch khám online hiện đại. Chỉ với vài bước đơn giản, bạn đã có ngay lịch hẹn với bác sĩ chuyên khoa.</p>
+                    <a href="/Admin/TuVans/Create" class="btn btn-outline-danger btn-lg rounded-pill">
+                        <i class="far fa-calendar-alt me-2"></i> Đặt lịch ngay
+                    </a>
+                </div>
+                <div class="col-lg-8 animate-slide-left">
+                    <img src="~/uploads/lk.jpg" class="img-fluid rounded shadow" alt="Đặt lịch khám trực tuyến dễ dàng">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-center mb-5 animate-fade">Những con số ấn tượng</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="stats-item text-center animate-slide-up" style="animation-delay: 0.1s;">
+                        <div class="stats-number">15+</div>
+                        <div class="stats-label">Năm kinh nghiệm</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-item text-center animate-slide-up" style="animation-delay: 0.3s;">
+                        <div class="stats-number">50+</div>
+                        <div class="stats-label">Bác sĩ chuyên khoa</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-item text-center animate-slide-up" style="animation-delay: 0.5s;">
+                        <div class="stats-number">200+</div>
+                        <div class="stats-label">Lượt khám/ngày</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-item text-center animate-slide-up" style="animation-delay: 0.7s;">
+                        <div class="stats-number">98%</div>
+                        <div class="stats-label">Bệnh nhân hài lòng</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section-bg" id="news">
+        <div class="container py-4">
+            <h2 class="text-center section-heading mb-5 animate-fade">Tin Tức & Bài Báo</h2>
+            <div class="row g-4 mb-4">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="news-card border-0 shadow-sm h-100 animate-slide-up" style="animation-delay: 0.2s;">
+                            <div class="news-img-box">
+                                <img src="@item.HinhAnh" class="news-image" alt="@item.TieuDe">
+                            </div>
+
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-info-subtle text-info news-tag">@item.DanhMuc</span>
+                                    <span class="news-meta"><i class="far fa-calendar-alt me-1"></i>@item.NgayDang.ToString("dd/MM/yyyy")</span>
+                                </div>
+                                <h5 class="card-title fw-bold">@item.TieuDe</h5>
+                                <p class="card-text text-muted">
+                                    @((item.NoiDung.Length > 100) ? item.NoiDung.Substring(0, 100) + "..." : item.NoiDung)
+                                </p>
+                            </div>
+                            <div class="card-footer bg-white border-0">
+                                <a asp-controller="BaiBaos"
+                                   asp-action="Details"
+                                   asp-route-id="@item.Id"
+                                   asp-area="Admin"
+                                   class="text-info text-decoration-none fw-semibold">
+                                    Xem chi tiết <i class="fas fa-angle-right ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <!-- Phân trang -->
+            @if (ViewBag.TotalPages > 1)
+            {
+                <nav aria-label="Phân trang bài báo">
+                    <ul class="pagination">
+                        @if (ViewBag.CurrentPage > 1)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage - 1 })#news" aria-label="Trang trước">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                        }
+
+                        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                        {
+                            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                                <a class="page-link" href="@Url.Action("Index", new { page = i })#news">@i</a>
+                            </li>
+                        }
+
+                        @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" href="@Url.Action("Index", new { page = ViewBag.CurrentPage + 1 })#news" aria-label="Trang sau">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </nav>
+            }
+        </div>
+    </section>
+</div>
+
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sliderItems = document.querySelectorAll('.slider-item');
+            const indicators = document.querySelectorAll('.indicator');
+            const prevBtn = document.querySelector('.slider-control.prev');
+            const nextBtn = document.querySelector('.slider-control.next');
+
+            let currentSlide = 0;
+            const slideCount = sliderItems.length;
+            let slideInterval;
+
+            function showSlide(index) {
+                sliderItems.forEach(item => item.classList.remove('active'));
+                indicators.forEach(dot => dot.classList.remove('active'));
+                sliderItems[index].classList.add('active');
+                indicators[index].classList.add('active');
+                currentSlide = index;
+            }
+
+            function nextSlide() {
+                showSlide((currentSlide + 1) % slideCount);
+            }
+
+            function prevSlide() {
+                showSlide((currentSlide - 1 + slideCount) % slideCount);
+            }
+
+            function startSlideShow() {
+                slideInterval = setInterval(nextSlide, 5000);
+            }
+
+            function pauseSlideShow() {
+                clearInterval(slideInterval);
+            }
+
+            nextBtn.addEventListener('click', () => {
+                pauseSlideShow();
+                nextSlide();
+                startSlideShow();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                pauseSlideShow();
+                prevSlide();
+                startSlideShow();
+            });
+
+            indicators.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    pauseSlideShow();
+                    showSlide(index);
+                    startSlideShow();
+                });
+            });
+
+            document.querySelector('.slider-container').addEventListener('mouseenter', pauseSlideShow);
+            document.querySelector('.slider-container').addEventListener('mouseleave', startSlideShow);
+
+            showSlide(0);
+            startSlideShow();
+
+            // Animation on scroll
+            const animateOnScroll = function() {
+                const elements = document.querySelectorAll('.animate-slide-up, .animate-slide-right, .animate-slide-left');
+
+                elements.forEach(element => {
+                    const position = element.getBoundingClientRect();
+
+                    // Check if element is in viewport
+                    if(position.top < window.innerHeight - 100) {
+                        // Add class to start animation
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+
+            // Initial check on load
+            animateOnScroll();
+
+            // Add scroll event listener
+            window.addEventListener('scroll', animateOnScroll);
+
+            // Phần code xử lý lưu và khôi phục vị trí scroll khi chuyển trang
+            // 1. Lưu vị trí scroll hiện tại vào sessionStorage trước khi chuyển trang
+            const paginationLinks = document.querySelectorAll('.pagination .page-link');
+            paginationLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Lưu vị trí scroll hiện tại
+                    sessionStorage.setItem('scrollPosition', window.scrollY);
+                });
+            });
+
+            // 2. Kiểm tra nếu đang từ trang phân trang quay lại, sẽ cuộn đến vị trí đã lưu
+            const newsSection = document.querySelector('.news-section-bg');
+            if (sessionStorage.getItem('scrollPosition')) {
+                const scrollTo = sessionStorage.getItem('scrollPosition');
+                // Đảm bảo vị trí scroll không vượt quá vị trí của phần tin tức
+                if (newsSection) {
+                    const newsSectionPosition = newsSection.offsetTop - 100; // Trừ 100px để có khoảng cách phía trên
+                    window.scrollTo(0, Math.max(newsSectionPosition, scrollTo));
+                } else {
+                    window.scrollTo(0, scrollTo);
+                }
+                // Xóa giá trị đã lưu
+                sessionStorage.removeItem('scrollPosition');
+            }
+
+            // Xử lý các fragment identifier trong URL (nếu có)
+            if (window.location.hash === '#news') {
+                if (newsSection) {
+                    const newsPosition = newsSection.offsetTop - 80; // khoảng cách từ top để tính vị trí scroll
+                    window.scrollTo({
+                        top: newsPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    </script>
+}

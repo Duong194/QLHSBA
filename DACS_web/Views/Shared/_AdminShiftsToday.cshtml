@@ -1,0 +1,76 @@
+﻿@{
+    var caTrucsToday = ViewBag.CaTrucsToday as List<DACS_web.Models.CaTruc>;
+}
+
+<div class="dash-section-header">
+    <div class="d-flex justify-content-between align-items-center">
+        <div>
+            <h2 class="dash-section-title">
+                <i class="fas fa-calendar-day me-2"></i>
+                Ca trực hôm nay
+            </h2>
+            <p class="dash-section-subtitle">Danh sách nhân viên trực trong ngày</p>
+        </div>
+        <a asp-area="Admin" asp-controller="CaTrucs" asp-action="Index" class="btn btn-light">
+            <i class="fas fa-calendar-alt me-2"></i>Xem tất cả
+        </a>
+    </div>
+</div>
+
+<div class="row g-4">
+    @if (caTrucsToday != null && caTrucsToday.Any())
+    {
+        @foreach (var shift in caTrucsToday.Take(8))
+        {
+            var badgeClass = shift.TenCa switch
+            {
+                "Sáng" => "bg-warning text-dark",
+                "Chiều" => "bg-info",
+                "Tối" => "bg-primary",
+                "Đêm" => "bg-dark",
+                _ => "bg-secondary"
+            };
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="rounded-circle bg-light p-2 me-3">
+                                <i class="fas fa-user-md text-primary"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0 fw-bold">@shift.NhanVien?.HoTen</h6>
+                                <small class="text-muted">@shift.NhanVien?.VaiTro</small>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge @badgeClass">
+                                <i class="fas fa-clock me-1"></i>@shift.TenCa
+                            </span>
+                            <small class="text-muted">
+                                @shift.GioBatDau.ToString(@"hh\:mm") - @shift.GioKetThuc.ToString(@"hh\:mm")
+                            </small>
+                        </div>
+                        @if (!string.IsNullOrEmpty(shift.GhiChu))
+                        {
+                            <div class="mt-2">
+                                <small class="text-muted">
+                                    <i class="fas fa-sticky-note me-1"></i>@shift.GhiChu
+                                </small>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="col-12">
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle me-2"></i>
+                Không có ca trực nào trong hôm nay
+            </div>
+        </div>
+    }
+</div>

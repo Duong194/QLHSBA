@@ -1,0 +1,28 @@
+﻿@model DACS_web.Models.HoSoBenhAn
+
+@{
+    ViewData["Title"] = "Xóa hồ sơ bệnh án";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<h4>Bạn có chắc chắn muốn xóa hồ sơ này không?</h4>
+
+<dl class="row">
+    <dt class="col-sm-4">Mã hồ sơ</dt>
+    <dd class="col-sm-8">@Model.MaHoSo</dd>
+
+    <dt class="col-sm-4">Bệnh nhân</dt>
+    <dd class="col-sm-8">@Model.BenhNhan?.HoTen</dd>
+
+    <dt class="col-sm-4">Ngày tạo</dt>
+    <dd class="col-sm-8">@Model.NgayTao.ToString("dd/MM/yyyy")</dd>
+</dl>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="MaHoSo" />
+    <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>

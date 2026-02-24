@@ -1,0 +1,283 @@
+﻿@model IEnumerable<DACS_web.Models.CaTruc>
+@{
+    ViewData["Title"] = "Lịch trực của tôi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var selectedMonth = (DateTime)ViewBag.SelectedMonth;
+    var nhanVien = ViewBag.NhanVien as DACS_web.Models.NhanVienYTe;
+}
+
+<div class="container py-4">
+    <!-- Header Card -->
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-primary p-3 me-3">
+                            <i class="fas fa-user-md fa-2x text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="mb-0">@nhanVien?.HoTen</h4>
+                            <p class="text-muted mb-0">
+                                <i class="fas fa-user-tag me-1"></i>@nhanVien?.VaiTro
+                                @if (!string.IsNullOrEmpty(nhanVien?.Khoa?.TenKhoa))
+                                {
+                                    <span class="mx-2">•</span>
+                                    <i class="fas fa-hospital me-1"></i>
+
+                                    @nhanVien.Khoa.TenKhoa
+                                }
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <div class="btn-group">
+                        <a asp-action="MyShifts" asp-route-month="@selectedMonth.AddMonths(-1).ToString("yyyy-MM-dd")"
+                           class="btn btn-outline-primary">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <button class="btn btn-primary" disabled>
+                            <i class="fas fa-calendar me-2"></i>
+                            Tháng @selectedMonth.Month/@selectedMonth.Year
+                        </button>
+                        <a asp-action="MyShifts" asp-route-month="@selectedMonth.AddMonths(1).ToString("yyyy-MM-dd")"
+                           class="btn btn-outline-primary">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="row g-3 mb-4">
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="text-primary mb-2">
+                        <i class="fas fa-calendar-check fa-2x"></i>
+                    </div>
+                    <h3 class="mb-0">@Model.Count()</h3>
+                    <small class="text-muted">Tổng số ca</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="text-warning mb-2">
+                        <i class="fas fa-sun fa-2x"></i>
+                    </div>
+                    <h3 class="mb-0">@Model.Count(c => c.TenCa == "Sáng")</h3>
+                    <small class="text-muted">Ca sáng</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="text-info mb-2">
+                        <i class="fas fa-cloud-sun fa-2x"></i>
+                    </div>
+                    <h3 class="mb-0">@Model.Count(c => c.TenCa == "Chiều")</h3>
+                    <small class="text-muted">Ca chiều</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="text-dark mb-2">
+                        <i class="fas fa-moon fa-2x"></i>
+                    </div>
+                    <h3 class="mb-0">@Model.Count(c => c.TenCa == "Tối" || c.TenCa == "Đêm")</h3>
+                    <small class="text-muted">Ca tối/đêm</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schedule Table -->
+    <div class="card shadow-sm">
+        <div class="card-header bg-white">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">
+                    <i class="fas fa-list me-2"></i>Lịch trực chi tiết
+                </h5>
+                <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="btn btn-sm btn-outline-secondary">
+                    <i class="fas fa-home me-1"></i>Về Dashboard
+                </a>
+            </div>
+        </div>
+
+        <div class="card-body">
+            @if (Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th style="width: 15%;">Ngày</th>
+                                <th style="width: 12%;">Thứ</th>
+                                <th style="width: 15%;">Ca trực</th>
+                                <th style="width: 20%;">Thời gian</th>
+                                <th style="width: 28%;">Ghi chú</th>
+                                <th style="width: 10%;" class="text-center">Trạng thái</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var shift in Model.OrderBy(s => s.NgayTruc).ThenBy(s => s.GioBatDau))
+                            {
+                                var isToday = shift.NgayTruc.Date == DateTime.Today;
+                                var isPast = shift.NgayTruc.Date < DateTime.Today;
+                                var isFuture = shift.NgayTruc.Date > DateTime.Today;
+
+                                var badgeClass = shift.TenCa switch
+                                {
+                                    "Sáng" => "bg-warning text-dark",
+                                    "Chiều" => "bg-info",
+                                    "Tối" => "bg-primary",
+                                    "Đêm" => "bg-dark",
+                                    _ => "bg-secondary"
+                                };
+
+                                var rowClass = isToday ? "table-warning" : isPast ? "text-muted" : "";
+
+                                <tr class="@rowClass">
+                                    <td>
+                                        <strong>@shift.NgayTruc.ToString("dd/MM/yyyy")</strong>
+                                    </td>
+                                    <td>
+                                        @shift.NgayTruc.ToString("dddd", new System.Globalization.CultureInfo("vi-VN"))
+                                    </td>
+                                    <td>
+                                        <span class="badge @badgeClass">
+                                            <i class="fas fa-clock me-1"></i>@shift.TenCa
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <i class="far fa-clock text-muted me-2"></i>
+                                        @shift.GioBatDau.ToString(@"hh\:mm") - @shift.GioKetThuc.ToString(@"hh\:mm")
+                                    </td>
+                                    <td>
+                                        @if (!string.IsNullOrEmpty(shift.GhiChu))
+                                        {
+                                            <small>
+                                                <i class="fas fa-sticky-note text-muted me-1"></i>
+                                                @shift.GhiChu
+                                            </small>
+                                        }
+                                        else
+                                        {
+                                            <small class="text-muted">---</small>
+                                        }
+                                    </td>
+                                    <td class="text-center">
+                                        @if (isToday)
+                                        {
+                                            <span class="badge bg-success">
+                                                <i class="fas fa-circle me-1"></i>Hôm nay
+                                            </span>
+                                        }
+                                        else if (isPast)
+                                        {
+                                            <span class="badge bg-secondary">
+                                                <i class="fas fa-check me-1"></i>Đã qua
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-info">
+                                                <i class="fas fa-clock me-1"></i>Sắp tới
+                                            </span>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Summary Footer -->
+                <div class="border-top pt-3 mt-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>Chú thích:</strong>
+                                    <span class="badge bg-warning text-dark ms-2">Ca Sáng</span>
+                                    <span class="badge bg-info ms-2">Ca Chiều</span>
+                                    <span class="badge bg-primary ms-2">Ca Tối</span>
+                                    <span class="badge bg-dark ms-2">Ca Đêm</span>
+                                </div>
+                                <div>
+                                    <small class="text-muted">
+                                        <i class="fas fa-info-circle me-1"></i>
+                                        Tổng: <strong>@Model.Count()</strong> ca trực trong tháng này
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <i class="fas fa-calendar-times fa-4x text-muted mb-3"></i>
+                    <h5 class="text-muted">Không có lịch trực</h5>
+                    <p class="text-muted">Bạn chưa có ca trực nào trong tháng @selectedMonth.Month/@selectedMonth.Year</p>
+                    <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index" class="btn btn-primary mt-3">
+                        <i class="fas fa-home me-2"></i>Về Dashboard
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    @if (Model.Any())
+    {
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card border-0 bg-light">
+                    <div class="card-body">
+                        <h6 class="mb-3">
+                            <i class="fas fa-question-circle me-2"></i>Cần hỗ trợ?
+                        </h6>
+                        <p class="mb-2 small text-muted">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Nếu bạn cần thay đổi lịch trực, vui lòng liên hệ với quản lý hoặc bộ phận nhân sự.
+                        </p>
+                        <p class="mb-0 small text-muted">
+                            <i class="fas fa-phone text-primary me-2"></i>
+                            Hotline: <strong>1900-xxxx</strong> | Email: <strong>hr@hospital.com</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Styles {
+    <style>
+        .table > tbody > tr.text-muted {
+            opacity: 0.6;
+        }
+
+        .table-warning {
+            background-color: #fff3cd !important;
+        }
+
+        .card {
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+}

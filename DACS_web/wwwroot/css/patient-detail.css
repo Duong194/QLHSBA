@@ -1,0 +1,811 @@
+﻿/* ============================================
+   PATIENT DETAIL PAGE STYLES
+   Scoped to .patient-detail-page to prevent conflicts
+   ============================================ */
+
+/* CSS Variables - Scoped */
+.patient-detail-page {
+    --primary: #f9f506;
+    --primary-hover: #e6e205;
+    --bg-light: #f8f8f5;
+    --bg-card: #ffffff;
+    --border-color: #f0f0eb;
+    --text-main: #181811;
+    --text-secondary: #8c8b5f;
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    --green-bg: #f0fdf4;
+    --green-border: #dcfce7;
+    --green-text: #15803d;
+}
+
+    /* Container */
+    .patient-detail-page .modern-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+
+    /* Breadcrumb Section */
+    .patient-detail-page .breadcrumb-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .patient-detail-page .breadcrumb-text {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+    }
+
+        .patient-detail-page .breadcrumb-text .current {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+    .patient-detail-page .btn-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--border-color);
+        border-radius: 9999px;
+        background: white;
+        color: var(--text-secondary);
+        font-weight: 600;
+        font-size: 0.875rem;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+        .patient-detail-page .btn-back:hover {
+            background: var(--bg-light);
+            color: var(--text-main);
+        }
+
+    /* Patient Header Card */
+    .patient-detail-page .patient-header-card {
+        background: white;
+        padding: 1.5rem 2rem;
+        border-radius: 1rem;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-sm);
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .patient-detail-page .patient-main-info {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        flex: 1;
+    }
+
+    .patient-detail-page .patient-avatar-large {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 9999px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        border: 4px solid var(--bg-light);
+        flex-shrink: 0;
+    }
+
+    .patient-detail-page .patient-header-details {
+        flex: 1;
+    }
+
+    .patient-detail-page .name-status-row {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .patient-detail-page .patient-name-large {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: var(--text-main);
+        margin: 0;
+    }
+
+    .patient-detail-page .badge-active {
+        display: inline-flex;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        background: #e3fcf7;
+        color: #0d9488;
+        border: 1px solid #ccfbf1;
+    }
+
+    .patient-detail-page .patient-id-large {
+        color: var(--text-secondary);
+        font-weight: 500;
+        margin: 0 0 1rem 0;
+    }
+
+    .patient-detail-page .quick-info-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .patient-detail-page .info-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.375rem;
+        padding: 0.5rem 0.75rem;
+        background: var(--bg-light);
+        border-radius: 0.5rem;
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+    }
+
+    /* Action Buttons Header */
+    .patient-detail-page .action-buttons-header {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+
+    .patient-detail-page .btn-action-outline {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.625rem 1.25rem;
+        border: 1px solid var(--border-color);
+        border-radius: 9999px;
+        background: white;
+        color: var(--text-secondary);
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+        .patient-detail-page .btn-action-outline:hover {
+            background: var(--bg-light);
+            color: var(--text-main);
+        }
+
+    .patient-detail-page .btn-primary-action {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.625rem 1.5rem;
+        background: var(--primary);
+        border: none;
+        border-radius: 9999px;
+        color: var(--text-main);
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: var(--shadow-sm);
+        transition: all 0.2s;
+    }
+
+        .patient-detail-page .btn-primary-action:hover {
+            background: var(--primary-hover);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transform: scale(0.98);
+        }
+
+    /* Content Grid */
+    .patient-detail-page .content-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+@media (min-width: 1024px) {
+    .patient-detail-page .content-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* Info Card */
+.patient-detail-page .info-card {
+    background: white;
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.patient-detail-page .card-header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    background: #fafaf7;
+}
+
+.patient-detail-page .header-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+    .patient-detail-page .header-title h3 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        margin: 0;
+        color: var(--text-main);
+    }
+
+    .patient-detail-page .header-title .material-symbols-outlined {
+        color: var(--text-secondary);
+    }
+
+.patient-detail-page .card-body {
+    padding: 1.5rem;
+}
+
+/* Info Grid */
+.patient-detail-page .info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .patient-detail-page .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.patient-detail-page .info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+    .patient-detail-page .info-item.full-width {
+        grid-column: 1 / -1;
+    }
+
+.patient-detail-page .info-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin: 0 0 0.375rem 0;
+    transition: color 0.2s;
+}
+
+.patient-detail-page .info-item:hover .info-label {
+    color: var(--primary);
+}
+
+.patient-detail-page .info-value {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-main);
+    margin: 0;
+}
+
+.patient-detail-page .info-value-with-action {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.patient-detail-page .call-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 9999px;
+    background: #dcfce7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #16a34a;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+    .patient-detail-page .call-button:hover {
+        background: #bbf7d0;
+    }
+
+    .patient-detail-page .call-button .material-symbols-outlined {
+        font-size: 0.875rem;
+    }
+
+/* Divider */
+.patient-detail-page .divider-dashed {
+    margin: 1.5rem 0;
+    border-top: 2px dashed var(--border-color);
+}
+
+/* Insurance Section */
+.patient-detail-page .insurance-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .patient-detail-page .insurance-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.patient-detail-page .patient-type-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.patient-detail-page .badge-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+}
+
+.patient-detail-page .patient-type-badge.outpatient {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+    .patient-detail-page .patient-type-badge.outpatient .badge-dot {
+        background: #3b82f6;
+    }
+
+.patient-detail-page .patient-type-badge.inpatient {
+    background: #ffedd5;
+    color: #c2410c;
+}
+
+    .patient-detail-page .patient-type-badge.inpatient .badge-dot {
+        background: #f97316;
+    }
+
+.patient-detail-page .patient-type-badge.emergency {
+    background: #fae8ff;
+    color: #a21caf;
+}
+
+    .patient-detail-page .patient-type-badge.emergency .badge-dot {
+        background: #c026d3;
+    }
+
+.patient-detail-page .insurance-card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: var(--green-bg);
+    border: 1px solid var(--green-border);
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+
+.patient-detail-page .insurance-icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #16a34a;
+    box-shadow: var(--shadow-sm);
+}
+
+.patient-detail-page .insurance-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--green-text);
+    margin: 0;
+}
+
+.patient-detail-page .insurance-number {
+    font-size: 0.75rem;
+    color: #166534;
+    margin: 0;
+}
+
+/* Medical Card */
+.patient-detail-page .medical-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.patient-detail-page .medical-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+    .patient-detail-page .medical-section.bordered {
+        padding-left: 1rem;
+        border-left: 2px solid var(--border-color);
+    }
+
+.patient-detail-page .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.patient-detail-page .section-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.patient-detail-page .count-badge {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 9999px;
+    background: #fee2e2;
+    color: #dc2626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.patient-detail-page .allergy-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.patient-detail-page .allergy-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+    .patient-detail-page .allergy-tag .material-symbols-outlined {
+        font-size: 1rem;
+    }
+
+.patient-detail-page .history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+    .patient-detail-page .history-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        color: var(--text-main);
+    }
+
+    .patient-detail-page .history-list .material-symbols-outlined {
+        font-size: 1rem;
+        color: var(--text-secondary);
+        margin-top: 0.125rem;
+    }
+
+.patient-detail-page .no-data {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin: 0;
+}
+
+/* Examination History Card */
+.patient-detail-page .exam-history-card {
+    background: white;
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.patient-detail-page .exam-header {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.patient-detail-page .header-left .header-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.patient-detail-page .btn-add-exam {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    background: var(--primary);
+    border: none;
+    border-radius: 9999px;
+    color: var(--text-main);
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+    .patient-detail-page .btn-add-exam:hover {
+        background: var(--primary-hover);
+        transform: scale(0.98);
+    }
+
+/* Table */
+.patient-detail-page .table-wrapper {
+    overflow-x: auto;
+}
+
+.patient-detail-page .exam-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .patient-detail-page .exam-table thead {
+        background: #fafaf7;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .patient-detail-page .exam-table th {
+        padding: 1rem 1.5rem;
+        text-align: left;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--text-secondary);
+        white-space: nowrap;
+    }
+
+    .patient-detail-page .exam-table tbody tr {
+        border-bottom: 1px solid var(--border-color);
+        transition: background 0.2s;
+    }
+
+        .patient-detail-page .exam-table tbody tr:hover {
+            background: var(--bg-light);
+        }
+
+    .patient-detail-page .exam-table td {
+        padding: 1rem 1.5rem;
+        font-size: 0.875rem;
+        vertical-align: middle;
+    }
+
+.patient-detail-page .exam-id {
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.patient-detail-page .exam-reason {
+    font-weight: 500;
+}
+
+.patient-detail-page .date-time-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+}
+
+    .patient-detail-page .date-time-cell .date {
+        font-weight: 500;
+        color: var(--text-main);
+    }
+
+    .patient-detail-page .date-time-cell .time {
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+    }
+
+.patient-detail-page .exam-type-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+    .patient-detail-page .exam-type-badge.outpatient {
+        background: #dbeafe;
+        color: #1e40af;
+    }
+
+    .patient-detail-page .exam-type-badge.inpatient {
+        background: #ffedd5;
+        color: #c2410c;
+    }
+
+    .patient-detail-page .exam-type-badge.emergency {
+        background: #fee2e2;
+        color: #dc2626;
+    }
+
+.patient-detail-page .days-badge {
+    display: inline-flex;
+    padding: 0.25rem 0.5rem;
+    background: #e0e7ff;
+    color: #4338ca;
+    border-radius: 0.375rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+.patient-detail-page .no-data-inline {
+    color: var(--text-secondary);
+}
+
+.patient-detail-page .text-center {
+    text-align: center;
+}
+
+.patient-detail-page .text-right {
+    text-align: right;
+}
+
+.patient-detail-page .table-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.patient-detail-page .btn-table-action {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    border: 1px solid transparent;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+    .patient-detail-page .btn-table-action:hover {
+        background: white;
+        border-color: var(--border-color);
+    }
+
+    .patient-detail-page .btn-table-action.edit:hover {
+        color: #3b82f6;
+    }
+
+    .patient-detail-page .btn-table-action.delete:hover {
+        color: #ef4444;
+    }
+
+    .patient-detail-page .btn-table-action .material-symbols-outlined {
+        font-size: 1.25rem;
+    }
+
+/* Empty State */
+.patient-detail-page .empty-state {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.patient-detail-page .empty-icon {
+    font-size: 4rem;
+    color: var(--text-secondary);
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
+
+.patient-detail-page .empty-text {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.patient-detail-page .btn-empty-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary);
+    border: none;
+    border-radius: 9999px;
+    color: var(--text-main);
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+    .patient-detail-page .btn-empty-action:hover {
+        background: var(--primary-hover);
+        transform: scale(0.98);
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .patient-detail-page .modern-container {
+        padding: 1rem;
+    }
+
+    .patient-detail-page .patient-header-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .patient-detail-page .patient-main-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .patient-detail-page .name-status-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .patient-detail-page .patient-name-large {
+        font-size: 1.5rem;
+    }
+
+    .patient-detail-page .action-buttons-header {
+        flex-direction: column;
+    }
+
+    .patient-detail-page .exam-table {
+        font-size: 0.75rem;
+    }
+
+        .patient-detail-page .exam-table th,
+        .patient-detail-page .exam-table td {
+            padding: 0.75rem 0.5rem;
+        }
+}
+
+/* Print Styles */
+@media print {
+    .patient-detail-page .breadcrumb-section,
+    .patient-detail-page .action-buttons-header,
+    .patient-detail-page .btn-add-exam,
+    .patient-detail-page .table-actions {
+        display: none !important;
+    }
+
+    .patient-detail-page .patient-header-card,
+    .patient-detail-page .info-card,
+    .patient-detail-page .exam-history-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        page-break-inside: avoid;
+    }
+}

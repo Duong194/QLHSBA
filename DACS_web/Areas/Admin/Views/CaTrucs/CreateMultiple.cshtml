@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "Phân công nhiều ca trực";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0"><i class="fas fa-users me-2"></i>@ViewData["Title"]</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="CreateMultiple" method="post">
+                <div class="alert alert-info">
+                    <i class="fas fa-info-circle me-2"></i>
+                    <strong>Hướng dẫn:</strong> Chọn nhiều nhân viên, khoảng thời gian và các ca trực để tự động phân công lịch làm việc hàng loạt.
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <label class="form-label">
+                            <i class="fas fa-calendar-day me-1"></i>Ngày bắt đầu
+                        </label>
+                        <input type="date" name="ngayBatDau" class="form-control" required
+                               value="@DateTime.Today.ToString("yyyy-MM-dd")" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">
+                            <i class="fas fa-calendar-check me-1"></i>Ngày kết thúc
+                        </label>
+                        <input type="date" name="ngayKetThuc" class="form-control" required
+                               value="@DateTime.Today.AddDays(7).ToString("yyyy-MM-dd")" />
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">
+                        <i class="fas fa-users me-1"></i>Chọn nhân viên (Giữ Ctrl để chọn nhiều)
+                    </label>
+                    <select name="maNhanViens" class="form-select" multiple size="8" required>
+                        @foreach (var nv in (ViewBag.MaNhanVien as Microsoft.AspNetCore.Mvc.Rendering.SelectList))
+                        {
+                            <option value="@nv.Value">@nv.Text</option>
+                        }
+                    </select>
+                    <small class="text-muted">Giữ phím Ctrl (hoặc Cmd trên Mac) và click để chọn nhiều nhân viên</small>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">
+                        <i class="fas fa-clock me-1"></i>Chọn ca trực
+                    </label>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="tenCas" value="Sáng" id="caSang">
+                                <label class="form-check-label" for="caSang">
+                                    <span class="badge bg-warning text-dark">Sáng (7:00 - 12:00)</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="tenCas" value="Chiều" id="caChieu">
+                                <label class="form-check-label" for="caChieu">
+                                    <span class="badge bg-info">Chiều (13:00 - 18:00)</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="tenCas" value="Tối" id="caToi">
+                                <label class="form-check-label" for="caToi">
+                                    <span class="badge bg-primary">Tối (18:00 - 22:00)</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="tenCas" value="Đêm" id="caDem">
+                                <label class="form-check-label" for="caDem">
+                                    <span class="badge bg-dark">Đêm (22:00 - 7:00)</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">
+                        <i class="fas fa-sticky-note me-1"></i>Ghi chú chung
+                    </label>
+                    <textarea name="ghiChu" class="form-control" rows="3"
+                              placeholder="Nhập ghi chú áp dụng cho tất cả ca trực (nếu có)"></textarea>
+                </div>
+
+                <div class="alert alert-warning">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    <strong>Lưu ý:</strong> Các ca trực đã tồn tại sẽ được bỏ qua tự động.
+                </div>
+
+                <div class="mt-4 d-flex justify-content-between">
+                    <a asp-action="Index" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-2"></i>Quay lại
+                    </a>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save me-2"></i>Phân công ca trực
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Highlight selected options
+        document.querySelector('select[multiple]').addEventListener('change', function() {
+            Array.from(this.options).forEach(option => {
+                if (option.selected) {
+                    option.style.backgroundColor = '#0d6efd';
+                    option.style.color = 'white';
+                } else {
+                    option.style.backgroundColor = '';
+                    option.style.color = '';
+                }
+            });
+        });
+
+        // Validation
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const checkboxes = document.querySelectorAll('input[name="tenCas"]:checked');
+            if (checkboxes.length === 0) {
+                e.preventDefault();
+                alert('Vui lòng chọn ít nhất một ca trực!');
+            }
+        });
+    </script>
+}

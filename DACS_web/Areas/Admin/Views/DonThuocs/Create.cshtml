@@ -1,0 +1,260 @@
+﻿@model DACS_web.ViewModels.DonThuocViewModel
+
+@{
+    ViewData["Title"] = "Thêm đơn thuốc";
+    var danhSachThuoc = ViewBag.DanhSachThuoc as SelectList;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mb-4 text-primary"><i class="fas fa-prescription-bottle-alt me-2"></i>@ViewData["Title"]</h2>
+
+<form asp-action="Create" method="post">
+    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+    <div class="row mb-3">
+        @if (!string.IsNullOrEmpty(Model.MaHoSo))
+        {
+            <input type="hidden" asp-for="MaHoSo" />
+            <input class="form-control" value="@Model.MaHoSo" disabled />
+        }
+        else
+        {
+            <select asp-for="MaHoSo" class="form-select" asp-items="ViewBag.MaHoSo">
+                <option value="">-- Chọn hồ sơ --</option>
+            </select>
+        }
+        <span asp-validation-for="MaHoSo" class="text-danger"></span>
+        <div class="col-md-6">
+            <label asp-for="BacSiKeDon" class="form-label">Bác sĩ kê đơn</label>
+            <select asp-for="BacSiKeDon" class="form-select" asp-items="ViewBag.BacSiKeDon">
+                <option value="">-- Chọn bác sĩ --</option>
+            </select>
+            <span asp-validation-for="BacSiKeDon" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="HuongDanSuDung" class="form-label">Hướng dẫn sử dụng</label>
+        <textarea asp-for="HuongDanSuDung" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="HuongDanSuDung" class="text-danger"></span>
+    </div>
+
+    <div class="mb-4">
+        <label asp-for="NgayKe" class="form-label">Ngày kê</label>
+        <input asp-for="NgayKe" type="date" class="form-control" />
+        <span asp-validation-for="NgayKe" class="text-danger"></span>
+    </div>
+
+    <hr />
+    <h5 class="text-secondary mb-3">Danh sách thuốc</h5>
+
+    <div id="thuoc-list">
+        @for (int i = 0; i < Model.ChiTietThuocs.Count; i++)
+        {
+            <div class="border rounded p-3 mb-3 position-relative thuoc-item">
+                <div class="row">
+                    <div class="col-md-4 mb-2">
+                        <label class="form-label">Tên thuốc</label>
+                        <select name="ChiTietThuocs[@i].MaThuoc" class="form-select" asp-items="danhSachThuoc">
+                            <option value="">-- Chọn thuốc --</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 mb-2">
+                        <label class="form-label">Số lượng</label>
+                        <input type="number" name="ChiTietThuocs[@i].SoLuong" class="form-control" min="1" required />
+                    </div>
+                    <div class="col-md-2 mb-2">
+                        <label class="form-label">Liều dùng</label>
+                        <input name="ChiTietThuocs[@i].LieuDung" class="form-control" />
+                    </div>
+                    <div class="col-md-2 mb-2">
+                        <label class="form-label">Thời gian</label>
+                        <input name="ChiTietThuocs[@i].ThoiGianDung" class="form-control" />
+                    </div>
+                    <div class="col-md-2 mb-2">
+                        <label class="form-label">Ghi chú</label>
+                        <input name="ChiTietThuocs[@i].GhiChu" class="form-control" />
+                    </div>
+                </div>
+                <button type="button" class="btn btn-danger btn-sm position-absolute top-0 end-0 m-2 remove-thuoc">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </div>
+        }
+    </div>
+
+    <button type="button" class="btn btn-outline-primary mb-4" id="add-thuoc">
+        <i class="fas fa-plus-circle me-1"></i> Thêm thuốc
+    </button>
+
+    <div class="d-flex justify-content-end gap-2">
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="fas fa-arrow-left me-1"></i> Quay lại
+        </a>
+        <button type="submit" class="btn btn-primary">
+            <i class="fas fa-save me-1"></i> Lưu đơn thuốc
+        </button>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+                document.addEventListener("DOMContentLoaded", function () {
+            let index = @Model.ChiTietThuocs.Count;
+
+            // Debug: In ra console để kiểm tra dữ liệu
+            console.log("ViewBag.DanhSachThuocJson:", '@Html.Raw(ViewBag.DanhSachThuocJson)');
+
+            // Kiểm tra xem DanhSachThuocJson có tồn tại không
+            const thuocListData = '@Html.Raw(ViewBag.DanhSachThuocJson)';
+            let thuocList = [];
+
+            if (thuocListData) {
+                try {
+                    thuocList = JSON.parse(thuocListData);
+                    console.log("Thuốc list parsed:", thuocList);
+
+                    // Kiểm tra xem thuốc đầu tiên có thuộc tính gì
+                    if (thuocList.length > 0) {
+                        console.log("Thuốc đầu tiên:", thuocList[0]);
+                    }
+                } catch (e) {
+                    console.error("Không thể parse thuocList:", e);
+                }
+            }
+
+            function createThuocItemHtml(idx) {
+                let options = '<option value="">-- Chọn thuốc --</option>';
+
+                if (thuocList && thuocList.length > 0) {
+                    // Lặp qua danh sách thuốc và kiểm tra tên thuộc tính
+                    thuocList.forEach(t => {
+                        // Thử cả hai trường hợp: camelCase và PascalCase
+                        const maThuoc = t.maThuoc || t.MaThuoc;
+                        const tenThuoc = t.tenThuoc || t.TenThuoc;
+
+                        if (maThuoc && tenThuoc) {
+                            options += `<option value="${maThuoc}">${tenThuoc}</option>`;
+                        }
+                    });
+                }
+
+                return `
+                <div class="border rounded p-3 mb-3 position-relative thuoc-item">
+                    <div class="row">
+                        <div class="col-md-4 mb-2">
+                            <label class="form-label">Tên thuốc</label>
+                            <select name="ChiTietThuocs[${idx}].MaThuoc" class="form-select thuoc-select" required>
+                                ${options}
+                            </select>
+                            <div class="invalid-feedback">Thuốc này đã được thêm vào đơn</div>
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <label class="form-label">Số lượng</label>
+                            <input type="number" name="ChiTietThuocs[${idx}].SoLuong" class="form-control" min="1" required />
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <label class="form-label">Liều dùng</label>
+                            <input name="ChiTietThuocs[${idx}].LieuDung" class="form-control" />
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <label class="form-label">Thời gian</label>
+                            <input name="ChiTietThuocs[${idx}].ThoiGianDung" class="form-control" />
+                        </div>
+                        <div class="col-md-2 mb-2">
+                            <label class="form-label">Ghi chú</label>
+                            <input name="ChiTietThuocs[${idx}].GhiChu" class="form-control" />
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger btn-sm position-absolute top-0 end-0 m-2 remove-thuoc">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>`;
+            }
+
+            // Thêm thuốc mới
+            document.getElementById("add-thuoc").addEventListener("click", function () {
+                const html = createThuocItemHtml(index);
+                document.getElementById("thuoc-list").insertAdjacentHTML("beforeend", html);
+                index++;
+                // Thêm sự kiện kiểm tra trùng lặp cho select mới thêm
+                addSelectChangeEvent();
+            });
+
+            // Xóa thuốc
+            document.getElementById("thuoc-list").addEventListener("click", function (e) {
+                if (e.target.closest(".remove-thuoc")) {
+                    e.target.closest(".thuoc-item").remove();
+                    // Kiểm tra lại tất cả thuốc sau khi xóa
+                    validateAllSelects();
+                }
+            });
+
+            // Kiểm tra trùng lặp khi chọn thuốc
+            function addSelectChangeEvent() {
+                document.querySelectorAll('.thuoc-select').forEach(select => {
+                    if (!select.hasAttribute('data-event-attached')) {
+                        select.setAttribute('data-event-attached', 'true');
+                        select.addEventListener('change', function() {
+                            validateAllSelects();
+                        });
+                    }
+                });
+            }
+
+            // Kiểm tra tất cả thuốc đã chọn
+            function validateAllSelects() {
+                const selectedValues = {};
+                const allSelects = document.querySelectorAll('.thuoc-select');
+
+                // Reset trạng thái
+                allSelects.forEach(select => {
+                    select.classList.remove('is-invalid');
+                });
+
+                // Kiểm tra trùng lặp
+                allSelects.forEach(select => {
+                    const value = select.value;
+                    if (value) {
+                        if (selectedValues[value]) {
+                            // Đánh dấu select đầu tiên và hiện tại là invalid
+                            selectedValues[value].classList.add('is-invalid');
+                            select.classList.add('is-invalid');
+                        } else {
+                            selectedValues[value] = select;
+                        }
+                    }
+                });
+            }
+
+            // Kiểm tra trước khi submit form
+            document.querySelector('form').addEventListener('submit', function(e) {
+                const allSelects = document.querySelectorAll('.thuoc-select');
+                const selectedValues = {};
+                let hasDuplicate = false;
+
+                allSelects.forEach(select => {
+                    const value = select.value;
+                    if (value) {
+                        if (selectedValues[value]) {
+                            hasDuplicate = true;
+                            select.classList.add('is-invalid');
+                            selectedValues[value].classList.add('is-invalid');
+                        } else {
+                            selectedValues[value] = select;
+                        }
+                    }
+                });
+
+                if (hasDuplicate) {
+                    e.preventDefault();
+                    alert('Không thể lưu đơn thuốc vì có thuốc trùng lặp. Vui lòng kiểm tra lại.');
+                }
+            });
+
+            // Thêm sự kiện cho các select ban đầu
+            addSelectChangeEvent();
+        });
+    </script>
+}

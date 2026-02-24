@@ -1,0 +1,175 @@
+﻿/* ============================================
+   CuocHenKham Index Page Styles
+   Đảm bảo không ảnh hưởng đến header và footer
+   ============================================ */
+
+/* Container chính */
+.container-fluid {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+    /* Card styles - chỉ áp dụng trong container-fluid */
+    .container-fluid .card {
+        border-radius: 10px;
+        border: 1px solid #dee2e6;
+    }
+
+    .container-fluid .card-header {
+        border-radius: 10px 10px 0 0 !important;
+    }
+
+/* Table hover effect - chỉ trong appointmentsTable */
+#appointmentsTable tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Button group trong table */
+#appointmentsTable .btn-group .btn {
+    margin: 0 2px;
+}
+
+/* Badge styles */
+#appointmentsTable .badge {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Alert animations */
+.container-fluid .alert {
+    animation: slideInDown 0.3s ease-out;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Filter card */
+.container-fluid .bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Table responsive */
+.container-fluid .table-responsive {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table header */
+#appointmentsTable thead th {
+    font-weight: 600;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* Table body */
+#appointmentsTable tbody td {
+    vertical-align: middle;
+}
+
+/* Icon spacing */
+#appointmentsTable .fa,
+#appointmentsTable .fas,
+#appointmentsTable .far {
+    margin-right: 4px;
+}
+
+/* Button styles trong action column */
+#appointmentsTable .btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Empty state alert */
+.container-fluid .alert-info.text-center {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+/* Call-to-action card ở cuối trang */
+.container-fluid .card.border-success {
+    margin-top: 2rem;
+    border-width: 2px;
+}
+
+    .container-fluid .card.border-success .card-body {
+        padding: 2rem;
+    }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container-fluid .card-header {
+        flex-direction: column !important;
+        gap: 1rem;
+    }
+
+        .container-fluid .card-header .btn-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+            .container-fluid .card-header .btn-group .btn {
+                width: 100%;
+            }
+
+    #appointmentsTable {
+        font-size: 0.85rem;
+    }
+
+        #appointmentsTable .btn-sm {
+            padding: 0.2rem 0.4rem;
+            font-size: 0.75rem;
+        }
+}
+
+/* DataTables customization */
+#appointmentsTable_wrapper .dataTables_filter input {
+    margin-left: 0.5rem;
+}
+
+#appointmentsTable_wrapper .dataTables_length select {
+    margin: 0 0.5rem;
+}
+
+/* Loading state */
+.container-fluid .table-loading {
+    text-align: center;
+    padding: 3rem;
+    color: #6c757d;
+}
+
+/* Status badge colors */
+.badge.bg-warning {
+    color: #000 !important;
+}
+
+.badge.bg-success,
+.badge.bg-danger,
+.badge.bg-info,
+.badge.bg-primary {
+    color: #fff;
+}
+
+/* Form trong filter card */
+.container-fluid .bg-light .form-label {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.container-fluid .bg-light .form-select,
+.container-fluid .bg-light .form-control {
+    font-size: 0.95rem;
+}

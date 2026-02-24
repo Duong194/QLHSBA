@@ -1,0 +1,214 @@
+﻿@model IEnumerable<DACS_web.Models.BaiBao>
+
+@{
+    ViewData["Title"] = "Quản lý bài báo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid py-4">
+    <!-- Header Section with Animation -->
+    <div class="row mb-4 align-items-center">
+        <div class="col-md-7">
+            <div class="d-flex align-items-center">
+                <div class="bg-primary p-3 rounded-circle me-3 shadow-sm">
+                    <i class="bi bi-newspaper text-white" style="font-size: 1.5rem;"></i>
+                </div>
+                <div>
+                    <h1 class="fw-bold mb-0 text-primary">Quản lý bài báo</h1>
+                    <p class="text-muted mb-0">Tổng số: @Model.Count() bài viết</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 text-md-end mt-3 mt-md-0">
+            <div class="d-flex justify-content-md-end">
+                <div class="input-group me-2" style="max-width: 250px;">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm bài viết...">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+                <a asp-action="Create" class="btn btn-primary d-flex align-items-center">
+                    <i class="bi bi-plus-circle me-2"></i>Thêm bài báo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body py-3">
+                    <div class="d-flex flex-wrap gap-2">
+                        <div class="me-3 mb-2 mb-md-0">
+                            <label class="form-label small mb-1 text-muted">Danh mục</label>
+                            <select class="form-select form-select-sm" id="categoryFilter">
+                                <option value="">Tất cả danh mục</option>
+                                @{
+                                    var categories = Model.Select(b => b.DanhMuc).Distinct();
+                                    foreach (var category in categories)
+                                    {
+                                        <option value="@category">@category</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Articles List -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card border-0 shadow">
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0" id="articlesTable">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th class="border-0 rounded-start ps-4" style="width: 120px;">Hình ảnh</th>
+                                    <th class="border-0" style="min-width: 250px;">@Html.DisplayNameFor(model => model.TieuDe)</th>
+                                    <th class="border-0">@Html.DisplayNameFor(model => model.TacGia)</th>
+                                    <th class="border-0">@Html.DisplayNameFor(model => model.NgayDang)</th>
+                                    <th class="border-0">@Html.DisplayNameFor(model => model.DanhMuc)</th>
+                                    <th class="border-0 rounded-end text-center" style="width: 180px;">Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.OrderByDescending(b => b.NgayDang))
+                                {
+                                    <tr class="article-row">
+                                        <td class="ps-4">
+                                            @if (!string.IsNullOrEmpty(item.HinhAnh))
+                                            {
+                                                <div class="position-relative" style="width: 100px; height: 70px; overflow: hidden; border-radius: 6px;">
+                                                    <img src="@item.HinhAnh" class="position-absolute top-50 start-50 translate-middle"
+                                                         style="min-width: 100%; min-height: 100%; object-fit: cover;" alt="@item.TieuDe" />
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <div class="d-flex align-items-center justify-content-center bg-light"
+                                                     style="width: 100px; height: 70px; border-radius: 6px;">
+                                                    <i class="bi bi-card-image text-secondary" style="font-size: 1.8rem;"></i>
+                                                </div>
+                                            }
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <h6 class="mb-1 fw-bold text-truncate" style="max-width: 400px;">@item.TieuDe</h6>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="badge bg-success bg-opacity-10 text-success me-2">
+                                                        <i class="bi bi-check-circle-fill me-1 small"></i>Đã xuất bản
+                                                    </span>
+                                                    <span class="text-muted small">ID: @item.Id</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="rounded-circle bg-primary bg-opacity-10 p-2 me-2">
+                                                    <i class="bi bi-person-fill text-primary small"></i>
+                                                </div>
+                                                <span>@item.TacGia</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span>@item.NgayDang.ToString("dd/MM/yyyy")</span>
+                                                <small class="text-muted">@item.NgayDang.ToString("HH:mm")</small>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            @{
+                                                string badgeClass = "bg-info";
+                                                if (item.DanhMuc?.ToLower() == "thể thao") badgeClass = "bg-danger";
+                                                else if (item.DanhMuc?.ToLower() == "kinh tế") badgeClass = "bg-success";
+                                                else if (item.DanhMuc?.ToLower() == "giáo dục") badgeClass = "bg-warning";
+                                                else if (item.DanhMuc?.ToLower() == "giải trí") badgeClass = "bg-primary";
+                                            }
+                                            <span class="badge @badgeClass bg-opacity-75 px-2 py-1">
+                                                @Html.DisplayFor(modelItem => item.DanhMuc)
+                                            </span>
+                                        </td>
+                                        <td class="text-center">
+                                            <div class="d-flex justify-content-center gap-1">
+                                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary" data-bs-toggle="tooltip" title="Chỉnh sửa">
+                                                    <span class="d-inline">Sửa</span>
+                                                </a>
+                                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info text-white" data-bs-toggle="tooltip" title="Xem chi tiết">
+                                                    <span class="d-inline">Chi tiết</span>
+                                                </a>
+                                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger" data-bs-toggle="tooltip" title="Xóa bài viết">
+                                                    <span class="d-inline">Xóa</span>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Enable tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
+
+            // Search functionality
+            $("#searchInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#articlesTable tbody tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+
+            // Category filter
+            $("#categoryFilter").on("change", function() {
+                var value = $(this).val().toLowerCase();
+                if (value === "") {
+                    $(".article-row").show();
+                } else {
+                    $(".article-row").hide();
+                    $(".article-row").filter(function() {
+                        return $(this).find("td:nth-child(5)").text().toLowerCase().indexOf(value) > -1;
+                    }).show();
+                }
+            });
+
+            // Sort functionality
+            $("#sortOrder").on("change", function() {
+                var selectedOption = $(this).val();
+                var rows = $("#articlesTable tbody tr").get();
+
+                rows.sort(function(a, b) {
+                    if (selectedOption === "newest") {
+                        return new Date($(b).find("td:nth-child(4)").text()) -
+                               new Date($(a).find("td:nth-child(4)").text());
+                    } else if (selectedOption === "oldest") {
+                        return new Date($(a).find("td:nth-child(4)").text()) -
+                               new Date($(b).find("td:nth-child(4)").text());
+                    } else if (selectedOption === "title") {
+                        return $(a).find("td:nth-child(2) h6").text().localeCompare(
+                               $(b).find("td:nth-child(2) h6").text());
+                    }
+                });
+
+                $.each(rows, function(index, row) {
+                    $("#articlesTable tbody").append(row);
+                });
+            });
+        });
+    </script>
+}

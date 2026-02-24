@@ -1,0 +1,231 @@
+﻿@model DACS_web.Models.CreateMultipleChanDoan
+
+@{
+    ViewData["Title"] = "Thêm nhiều chẩn đoán";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="container">
+    <div class="row mb-4">
+        <div class="col">
+            <h2 class="text-primary">@ViewData["Title"]</h2>
+            <hr class="my-3" />
+        </div>
+    </div>
+
+    <form asp-action="CreateMultiple" method="post" id="diagnosisForm">
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-light">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Thông tin hồ sơ</h5>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Mã Hồ sơ bệnh án</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-file-medical"></i></span>
+                                <input asp-for="MaHoSo" class="form-control" readonly />
+                            </div>
+                            <span asp-validation-for="MaHoSo" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-light">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Chẩn đoán bệnh</h5>
+                    <button type="button" class="btn btn-sm btn-success" onclick="addChanDoan()">
+                        <i class="bi bi-plus-circle me-1"></i> Thêm chẩn đoán
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div id="chanDoanList">
+                    <div class="chan-doan-item mb-3 border-bottom pb-3">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label fw-bold">Loại chẩn đoán <span class="text-danger">*</span></label>
+                                <select name="LoaiChanDoans[]" class="form-select" required>
+                                    <option value="">-- Chọn loại chẩn đoán --</option>
+                                    <option value="Bệnh chính">Bệnh chính</option>
+                                    <option value="Bệnh kèm theo">Bệnh kèm theo</option>
+                                    <option value="Biến chứng">Biến chứng</option>
+                                    <option value="Chẩn đoán sơ bộ">Chẩn đoán sơ bộ</option>
+                                    <option value="Chẩn đoán xác định">Chẩn đoán xác định</option>
+                                </select>
+                                <div class="invalid-feedback">Vui lòng chọn loại chẩn đoán</div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label fw-bold">Tên bệnh (ICD) <span class="text-danger">*</span></label>
+                                <select name="MaICDs[]" class="form-select" required>
+                                    <option value="">-- Chọn bệnh ICD --</option>
+                                    @foreach (var icd in ViewBag.DanhMucICD as List<SelectListItem>)
+                                    {
+                                        <option value="@icd.Value">@icd.Text</option>
+                                    }
+                                </select>
+                                <div class="invalid-feedback">Vui lòng chọn tên bệnh</div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label class="form-label fw-bold">Vị trí tổn thương <span class="text-danger">*</span></label>
+                                <select name="ViTris[]" class="form-select" required>
+                                    <option value="">-- Chọn vị trí --</option>
+                                    <option value="Mắt phải">Mắt phải</option>
+                                    <option value="Mắt trái">Mắt trái</option>
+                                    <option value="Hai mắt">Hai mắt</option>
+                                    <option value="Khác">Khác</option>
+                                </select>
+                                <div class="invalid-feedback">Vui lòng chọn vị trí tổn thương</div>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label class="form-label fw-bold">Mô tả chi tiết <span class="text-danger">*</span></label>
+                                <textarea name="MoTas[]" class="form-control" rows="3" placeholder="Mô tả chi tiết về tình trạng bệnh lý..." required></textarea>
+                                <div class="invalid-feedback">Vui lòng nhập mô tả chi tiết</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @{
+            ViewBag.MaHoSo = Context.Request.Query["MaHoSo"];
+        }
+
+        <div class="d-flex justify-content-between mb-5">
+            <a asp-action="Details" asp-controller="HoSoBenhAns" asp-route-id="@ViewBag.MaHoSo" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-left me-1"></i> Quay lại
+            </a>
+            <button type="submit" class="btn btn-primary px-4">
+                <i class="bi bi-save me-1"></i> Lưu tất cả chẩn đoán
+            </button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <script>
+        // Form validation
+        (() => {
+            'use strict'
+            const form = document.getElementById('diagnosisForm')
+
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+        })()
+
+        // Danh sách bệnh ICD lấy từ ViewBag (render vào javascript)
+        var danhSachICD = [
+        @foreach (var icd in ViewBag.DanhMucICD as List<SelectListItem>)
+        {
+            @Html.Raw($"\"{icd.Text}\",")
+        }
+        ];
+
+        // Add new diagnosis row
+        function addChanDoan() {
+            var html = `
+            <div class="chan-doan-item mb-3 border-bottom pb-3">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label fw-bold">Loại chẩn đoán <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <select name="LoaiChanDoans[]" class="form-select" required>
+                                <option value="">-- Chọn loại chẩn đoán --</option>
+                                <option value="Bệnh chính">Bệnh chính</option>
+                                <option value="Bệnh kèm theo">Bệnh kèm theo</option>
+                                <option value="Biến chứng">Biến chứng</option>
+                                <option value="Chẩn đoán sơ bộ">Chẩn đoán sơ bộ</option>
+                                <option value="Chẩn đoán xác định">Chẩn đoán xác định</option>
+                            </select>
+                            <button type="button" class="btn btn-outline-danger" onclick="xoaChanDoan(this)">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </div>
+                        <div class="invalid-feedback">Vui lòng chọn loại chẩn đoán</div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label fw-bold">Tên bệnh (ICD) <span class="text-danger">*</span></label>
+                        <select name="MaICDs[]" class="form-select" required>
+                            <option value="">-- Chọn bệnh ICD --</option>
+        @foreach (var icd in ViewBag.DanhMucICD as List<SelectListItem>)
+        {
+                                    <option value="@icd.Value">@icd.Text</option>
+        }
+                        </select>
+                        <div class="invalid-feedback">Vui lòng chọn tên bệnh</div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label fw-bold">Vị trí tổn thương <span class="text-danger">*</span></label>
+                        <select name="ViTris[]" class="form-select" required>
+                            <option value="">-- Chọn vị trí --</option>
+                            <option value="Mắt phải">Mắt phải</option>
+                            <option value="Mắt trái">Mắt trái</option>
+                            <option value="Hai mắt">Hai mắt</option>
+                            <option value="Khác">Khác</option>
+                        </select>
+                        <div class="invalid-feedback">Vui lòng chọn vị trí tổn thương</div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <label class="form-label fw-bold">Mô tả chi tiết <span class="text-danger">*</span></label>
+                        <textarea name="MoTas[]" class="form-control" rows="3" placeholder="Mô tả chi tiết về tình trạng bệnh lý..." required></textarea>
+                        <div class="invalid-feedback">Vui lòng nhập mô tả chi tiết</div>
+                    </div>
+                </div>
+            </div>`;
+            $("#chanDoanList").append(html);
+        }
+
+        // Delete diagnosis row
+        function xoaChanDoan(button) {
+            $(button).closest(".chan-doan-item").remove();
+        }
+
+        // Search ICD function
+        $(document).ready(function() {
+            // Initialize Select2 for ICD selection
+            if ($.fn.select2) {
+                $("select[name='MaICDs[]']").select2({
+                    placeholder: "Tìm và chọn bệnh ICD",
+                    allowClear: true
+                });
+
+                // Setup observation for dynamically added elements
+                $(document).on('DOMNodeInserted', function(e) {
+                    if ($(e.target).find("select[name='MaICDs[]']").length > 0) {
+                        $(e.target).find("select[name='MaICDs[]']").select2({
+                            placeholder: "Tìm và chọn bệnh ICD",
+                            allowClear: true
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+}

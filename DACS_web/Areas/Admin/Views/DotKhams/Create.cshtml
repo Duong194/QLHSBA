@@ -1,0 +1,237 @@
+﻿@model DACS_web.Models.DotKham
+
+@{
+    ViewData["Title"] = "Thêm đợt khám mới";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+<link href="~/css/dotkham-create.css" rel="stylesheet" />
+
+<div class="dotkham-create-page">
+    <div class="modern-container">
+
+        <div class="page-header">
+            <div class="header-content">
+                <div class="header-icon">
+                    <span class="material-symbols-outlined">note_add</span>
+                </div>
+                <div class="header-text">
+                    <h1>@ViewData["Title"]</h1>
+                    <div class="breadcrumb-modern">
+                        <a asp-controller="Home" asp-action="Index">Trang chủ</a>
+                        <span class="separator">/</span>
+                        <a asp-controller="BenhNhans" asp-action="Index">Danh sách bệnh nhân</a>
+                        <span class="separator">/</span>
+                        <a asp-controller="BenhNhans" asp-action="Details" asp-route-id="@ViewBag.MaBenhNhan">Chi tiết bệnh nhân</a>
+                        <span class="separator">/</span>
+                        <span class="current">Thêm đợt khám</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-actions">
+                <a asp-action="Details" asp-controller="BenhNhans" asp-route-id="@ViewBag.MaBenhNhan" class="btn-back">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    <span>Quay lại</span>
+                </a>
+            </div>
+        </div>
+
+        @if (ViewData.ModelState.ErrorCount > 0)
+        {
+            <div class="alert-modern alert-danger">
+                <span class="material-symbols-outlined">error</span>
+                <div class="alert-content">
+                    <div asp-validation-summary="All"></div>
+                </div>
+                <button type="button" class="alert-close" onclick="this.parentElement.remove()">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+        }
+
+        <div class="modern-card">
+            <form asp-action="Create" method="post" class="needs-validation" novalidate>
+
+                <div class="card-section">
+                    <div class="section-header">
+                        <div class="section-icon basic">
+                            <span class="material-symbols-outlined">info</span>
+                        </div>
+                        <h2>Thông tin cơ bản</h2>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label asp-for="MaBenhNhan" class="form-label">
+                                <span class="material-symbols-outlined">badge</span>
+                                Mã bệnh nhân
+                            </label>
+                            <input asp-for="MaBenhNhan" class="form-input readonly" readonly />
+                            <span asp-validation-for="MaBenhNhan" class="validation-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="MaCuocHen" class="form-label">
+                                <span class="material-symbols-outlined">event_available</span>
+                                Cuộc hẹn
+                            </label>
+                            <select asp-for="MaCuocHen" class="form-select" asp-items="ViewBag.MaCuocHen">
+                                <option value="">-- Chọn cuộc hẹn (tùy chọn) --</option>
+                            </select>
+                            <span asp-validation-for="MaCuocHen" class="validation-message"></span>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label asp-for="LyDoVaoVien" class="form-label required">
+                                <span class="material-symbols-outlined">description</span>
+                                Lý do vào viện
+                            </label>
+                            <textarea asp-for="LyDoVaoVien" class="form-textarea" rows="3" placeholder="Nhập lý do vào viện..." required></textarea>
+                            <span asp-validation-for="LyDoVaoVien" class="validation-message"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-section">
+                    <div class="section-header">
+                        <div class="section-icon admission">
+                            <span class="material-symbols-outlined">how_to_reg</span>
+                        </div>
+                        <h2>Thông tin tiếp nhận</h2>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label asp-for="NgayVaoVien" class="form-label required">
+                                <span class="material-symbols-outlined">calendar_today</span>
+                                Ngày vào viện
+                            </label>
+                            <div class="input-with-icon">
+                                <input asp-for="NgayVaoVien" class="form-input" type="date" required />
+                            </div>
+                            <span asp-validation-for="NgayVaoVien" class="validation-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="GioVaoVien" class="form-label required">
+                                <span class="material-symbols-outlined">schedule</span>
+                                Giờ vào viện
+                            </label>
+                            <div class="input-with-icon">
+                                <input asp-for="GioVaoVien" class="form-input" type="time" required />
+                            </div>
+                            <span asp-validation-for="GioVaoVien" class="validation-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="HinhThucTiepNhan" class="form-label required">
+                                <span class="material-symbols-outlined">emergency</span>
+                                Hình thức tiếp nhận
+                            </label>
+                            <select asp-for="HinhThucTiepNhan" class="form-select" required>
+                                <option value="">-- Chọn hình thức --</option>
+                                <option value="Cấp cứu">Cấp cứu</option>
+                                <option value="Khoa KB">Khoa khám bệnh</option>
+                                <option value="Đơn vị khác">Đơn vị khác</option>
+                            </select>
+                            <span asp-validation-for="HinhThucTiepNhan" class="validation-message"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="MaKhoaTiepNhan" class="form-label required">
+                                <span class="material-symbols-outlined">local_hospital</span>
+                                Khoa tiếp nhận
+                            </label>
+                            <select asp-for="MaKhoaTiepNhan" class="form-select" asp-items="ViewBag.MaKhoaTiepNhan" required>
+                                <option value="">-- Chọn khoa tiếp nhận --</option>
+                            </select>
+                            <span asp-validation-for="MaKhoaTiepNhan" class="validation-message"></span>
+                        </div>
+                    </div>
+                </div>
+
+                @{
+                    ViewBag.MaBenhNhan = Context.Request.Query["MaBenhNhan"];
+                }
+
+                <div class="form-actions">
+                    <a asp-action="Details" asp-controller="BenhNhans" asp-route-id="@ViewBag.MaBenhNhan" class="btn-cancel">
+                        <span class="material-symbols-outlined">close</span>
+                        <span>Hủy</span>
+                    </a>
+                    <button type="submit" class="btn-save">
+                        <span class="material-symbols-outlined">save</span>
+                        <span>Lưu thông tin</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="info-card">
+            <div class="info-icon">
+                <span class="material-symbols-outlined">lightbulb</span>
+            </div>
+            <div class="info-content">
+                <h3>Lưu ý khi tạo đợt khám</h3>
+                <ul>
+                    <li>Các trường đánh dấu <span class="required-indicator">*</span> là bắt buộc</li>
+                    <li>Ngày và giờ vào viện phải chính xác</li>
+                    <li>Chọn đúng khoa tiếp nhận để theo dõi bệnh nhân</li>
+                    <li>Cuộc hẹn có thể bỏ trống nếu không có lịch hẹn trước</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        // Kích hoạt validation form Bootstrap/Modern
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tự động focus vào ô đầu tiên
+            const firstInput = document.getElementById('LyDoVaoVien');
+            if (firstInput) {
+                firstInput.focus();
+            }
+
+            // Set ngày và giờ mặc định là hiện tại
+            const ngayVaoInput = document.getElementById('NgayVaoVien');
+            const gioVaoInput = document.getElementById('GioVaoVien');
+
+            if (ngayVaoInput && !ngayVaoInput.value) {
+                const today = new Date();
+                const yyyy = today.getFullYear();
+                const mm = String(today.getMonth() + 1).padStart(2, '0');
+                const dd = String(today.getDate()).padStart(2, '0');
+                ngayVaoInput.value = `${yyyy}-${mm}-${dd}`;
+            }
+
+            if (gioVaoInput && !gioVaoInput.value) {
+                const now = new Date();
+                const hh = String(now.getHours()).padStart(2, '0');
+                const mm = String(now.getMinutes()).padStart(2, '0');
+                gioVaoInput.value = `${hh}:${mm}`;
+            }
+        });
+    </script>
+}

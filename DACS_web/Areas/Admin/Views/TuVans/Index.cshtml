@@ -1,0 +1,52 @@
+﻿@model List<DACS_web.Models.TuVan>
+@{
+    ViewData["Title"] = "Danh sách tư vấn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+
+    <a asp-action="Index" asp-route-chuaLienHe="true" class="btn btn-warning mb-3 text-white fw-bold">
+        <i class="fas fa-phone-slash me-1"></i> Chưa liên hệ
+    </a>
+
+    <table class="table table-hover border">
+        <thead class="table-light">
+            <tr>
+                <th>Họ tên</th>
+                <th>Điện thoại</th>
+                <th>Ngày tạo</th>
+                <th>Trạng thái</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tv in Model)
+            {
+                <tr>
+                    <td>@tv.HoTen</td>
+                    <td>@tv.SoDienThoai</td>
+                    <td>@tv.NgayTao.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>
+                        @if (tv.DaLienHe)
+                        {
+                            <span class="badge bg-success">Đã liên hệ</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Chưa liên hệ</span>
+                        }
+                    </td>
+                    <td>
+                        <form asp-action="ToggleLienHe" method="post">
+                            <input type="hidden" name="id" value="@tv.Id" />
+                            <button type="submit" class="btn btn-sm btn-outline-primary">
+                                <i class="fas fa-check-circle me-1"></i> Đánh dấu @(tv.DaLienHe ? "chưa" : "đã") liên hệ
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

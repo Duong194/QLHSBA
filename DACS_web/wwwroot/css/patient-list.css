@@ -1,0 +1,479 @@
+﻿/* ============================================
+   PATIENT LIST PAGE STYLES
+   Scoped to .patient-list-page to prevent conflicts
+   ============================================ */
+
+/* CSS Variables - Scoped */
+.patient-list-page {
+    --primary: #f9f506;
+    --primary-hover: #e6e205;
+    --bg-light: #f8f8f5;
+    --bg-card: #ffffff;
+    --border-color: #f0f0eb;
+    --text-main: #181811;
+    --text-secondary: #8c8b5f;
+    --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+    /* Container */
+    .patient-list-page .modern-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+
+    /* Card */
+    .patient-list-page .modern-card {
+        background: var(--bg-card);
+        border-radius: 1rem;
+        box-shadow: var(--shadow-sm);
+        border: 1px solid var(--border-color);
+        overflow: hidden;
+    }
+
+    /* Header */
+    .patient-list-page .modern-header {
+        background: white;
+        padding: 1.5rem 2rem;
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+        .patient-list-page .modern-header h4 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+    .patient-list-page .btn-primary-modern {
+        background: var(--primary);
+        color: var(--text-main);
+        border: none;
+        padding: 0.625rem 1.5rem;
+        border-radius: 9999px;
+        font-weight: 700;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.2s;
+        text-decoration: none;
+    }
+
+        .patient-list-page .btn-primary-modern:hover {
+            background: var(--primary-hover);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transform: scale(0.98);
+            color: var(--text-main);
+        }
+
+    /* Search Section */
+    .patient-list-page .search-section {
+        background: white;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .patient-list-page .search-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: center;
+    }
+
+    .patient-list-page .search-input-group {
+        position: relative;
+        flex: 1;
+        min-width: 200px;
+        max-width: 300px;
+    }
+
+        .patient-list-page .search-input-group .material-symbols-outlined {
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            font-size: 1.25rem;
+            pointer-events: none;
+        }
+
+        .patient-list-page .search-input-group input {
+            width: 100%;
+            padding: 0.625rem 0.625rem 0.625rem 2.5rem;
+            border-radius: 9999px;
+            background: var(--bg-light);
+            border: 1px solid transparent;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+            .patient-list-page .search-input-group input:focus {
+                outline: none;
+                background: white;
+                border-color: var(--primary);
+                box-shadow: 0 0 0 3px rgba(249, 245, 6, 0.1);
+            }
+
+    .patient-list-page .btn-search {
+        background: var(--primary);
+        color: var(--text-main);
+        border: none;
+        padding: 0.625rem 1.5rem;
+        border-radius: 9999px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.2s;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+        .patient-list-page .btn-search:hover {
+            background: var(--primary-hover);
+            transform: scale(0.98);
+        }
+
+    .patient-list-page .btn-refresh {
+        background: var(--bg-light);
+        color: var(--text-secondary);
+        border: 1px solid var(--border-color);
+        padding: 0.625rem 1.5rem;
+        border-radius: 9999px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+        .patient-list-page .btn-refresh:hover {
+            background: white;
+            color: var(--text-main);
+        }
+
+    /* Stats Grid */
+    .patient-list-page .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 1.5rem 2rem;
+        background: var(--bg-light);
+    }
+
+    .patient-list-page .stat-card {
+        background: white;
+        padding: 1.25rem;
+        border-radius: 1rem;
+        border: 1px solid var(--border-color);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .patient-list-page .stat-icon {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .patient-list-page .stat-icon.primary {
+            background: #e3fcf7;
+            color: #0d9488;
+        }
+
+    .patient-list-page .stat-content p:first-child {
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+        margin: 0;
+        font-weight: 500;
+    }
+
+    .patient-list-page .stat-content p:last-child {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+        color: var(--text-main);
+    }
+
+    /* Table */
+    .patient-list-page .modern-table-wrapper {
+        overflow-x: auto;
+    }
+
+    .patient-list-page .modern-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .patient-list-page .modern-table thead {
+            background: #fafaf7;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .patient-list-page .modern-table th {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+        }
+
+        .patient-list-page .modern-table tbody tr {
+            border-bottom: 1px solid var(--border-color);
+            transition: background 0.2s;
+        }
+
+            .patient-list-page .modern-table tbody tr:hover {
+                background: var(--bg-light);
+            }
+
+        .patient-list-page .modern-table td {
+            padding: 1rem 1.5rem;
+            font-size: 0.875rem;
+            vertical-align: middle;
+        }
+
+    /* Patient Info */
+    .patient-list-page .patient-info {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .patient-list-page .patient-avatar {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 9999px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 700;
+        font-size: 0.875rem;
+    }
+
+    .patient-list-page .patient-name {
+        font-weight: 700;
+        color: var(--text-main);
+        margin: 0;
+    }
+
+    .patient-list-page .patient-id {
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+        margin: 0;
+    }
+
+    /* Badges */
+    .patient-list-page .badge-type {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.25rem 0.625rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+        .patient-list-page .badge-type.outpatient {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .patient-list-page .badge-type.inpatient {
+            background: #ffedd5;
+            color: #c2410c;
+        }
+
+        .patient-list-page .badge-type.emergency {
+            background: #fae8ff;
+            color: #a21caf;
+        }
+
+    /* Insurance Status */
+    .patient-list-page .insurance-status {
+        display: flex;
+        align-items: center;
+        gap: 0.375rem;
+        font-weight: 600;
+        font-size: 0.875rem;
+    }
+
+        .patient-list-page .insurance-status.active {
+            color: #16a34a;
+        }
+
+        .patient-list-page .insurance-status.expired {
+            color: #9ca3af;
+        }
+
+        .patient-list-page .insurance-status.pending {
+            color: #ca8a04;
+        }
+
+    /* Action Buttons */
+    .patient-list-page .action-buttons {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: flex-end;
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
+
+    .patient-list-page .modern-table tbody tr:hover .action-buttons {
+        opacity: 1;
+    }
+
+    .patient-list-page .btn-action {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 9999px;
+        border: 1px solid transparent;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s;
+        color: var(--text-secondary);
+        text-decoration: none;
+    }
+
+        .patient-list-page .btn-action:hover {
+            background: white;
+            border-color: var(--border-color);
+        }
+
+        .patient-list-page .btn-action.view:hover {
+            color: var(--primary);
+        }
+
+        .patient-list-page .btn-action.edit:hover {
+            color: #3b82f6;
+        }
+
+        .patient-list-page .btn-action.delete:hover {
+            color: #ef4444;
+        }
+
+    /* Pagination */
+    .patient-list-page .pagination-wrapper {
+        padding: 1rem 2rem;
+        border-top: 1px solid var(--border-color);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .patient-list-page .pagination-info {
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+    }
+
+        .patient-list-page .pagination-info .fw-bold {
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+    .patient-list-page .pagination {
+        display: flex;
+        gap: 0.25rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .patient-list-page .pagination button {
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 9999px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .patient-list-page .pagination button:hover:not(:disabled) {
+                background: var(--bg-light);
+            }
+
+            .patient-list-page .pagination button.active {
+                background: var(--primary);
+                color: var(--text-main);
+                box-shadow: var(--shadow-sm);
+            }
+
+            .patient-list-page .pagination button:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .patient-list-page .modern-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .patient-list-page .search-row {
+        flex-direction: column;
+    }
+
+    .patient-list-page .search-input-group {
+        max-width: 100%;
+    }
+
+    .patient-list-page .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .patient-list-page .pagination-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .patient-list-page .modern-table {
+        font-size: 0.75rem;
+    }
+
+        .patient-list-page .modern-table th,
+        .patient-list-page .modern-table td {
+            padding: 0.75rem 0.5rem;
+        }
+}
+
+/* Print Styles */
+@media print {
+    .patient-list-page .search-section,
+    .patient-list-page .action-buttons,
+    .patient-list-page .pagination-wrapper {
+        display: none;
+    }
+
+    .patient-list-page .modern-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}

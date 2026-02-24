@@ -1,0 +1,45 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@section Styles {
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+}
+<ul class="navbar-nav ms-auto d-flex align-items-center">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user-circle me-2"></i>
+                <span>@UserManager.GetUserName(User)</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                <li>
+                    <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index">
+                        <i class="fas fa-cog me-2"></i> Quản lý tài khoản
+                    </a>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li>
+                    <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                        <button type="submit" class="dropdown-item">
+                            <i class="fas fa-sign-out-alt me-2"></i> Đăng xuất
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item auth-buttons">
+            <div class="d-flex flex-column gap-2">
+                <a class="btn btn-primary btn-sm rounded-pill auth-btn" id="login" asp-area="Identity" asp-page="/Account/Login">
+                    <i class="fas fa-sign-in-alt me-1"></i> Đăng nhập
+                </a>
+                <a class="btn btn-outline-primary btn-sm rounded-pill auth-btn" id="register" asp-area="Identity" asp-page="/Account/Register">
+                    <i class="fas fa-user-plus me-1"></i> Đăng ký
+                </a>
+            </div>
+        </li>
+    }
+</ul>

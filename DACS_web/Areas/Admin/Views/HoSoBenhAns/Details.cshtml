@@ -1,0 +1,727 @@
+﻿@model DACS_web.Models.HoSoBenhAn
+
+@{
+    ViewData["Title"] = "Bệnh án Mắt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@* Link đến file CSS riêng *@
+<link rel="stylesheet" href="~/css/medical-record.css" />
+
+<div class="container-fluid py-4">
+    <div class="no-print mb-3">
+        <button onclick="window.print()" class="btn btn-success print-btn">
+            <i class="fas fa-print"></i> In bệnh án
+        </button>
+        <a asp-action="Index" class="btn btn-outline-secondary">
+            <i class="fas fa-arrow-left"></i> Quay lại
+        </a>
+        <a asp-action="Edit" asp-route-id="@Model.MaHoSo" class="btn btn-primary">
+            <i class="fas fa-edit"></i> Chỉnh sửa toàn bộ
+        </a>
+    </div>
+
+    <div class="medical-form">
+        <!-- HEADER -->
+        <div class="form-header">
+            <div class="row">
+                <div class="col-4 text-start">
+                    <small>Cơ quan chủ quản: ................</small><br>
+                    <small>Cơ sở KB, CB: ................</small>
+                </div>
+                <div class="col-4">
+                    <h4 class="mb-0"><strong>BỆNH ÁN MẮT</strong></h4>
+                </div>
+                <div class="col-4 text-end">
+                    <strong>MS: BA-11</strong><br>
+                    <strong>Mã HS: @Model.MaHoSo</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- A. THÔNG TIN CHUNG -->
+        <div class="section-title">
+            A. THÔNG TIN CHUNG
+            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+            {
+                <a asp-controller="BenhNhans" asp-action="Edit" asp-route-id="@Model.MaBenhNhan"
+                   class="btn btn-sm btn-outline-primary float-end no-print">
+                    <i class="fas fa-user-edit"></i> Sửa thông tin bệnh nhân
+                </a>
+            }
+        </div>
+
+        <!-- I. HÀNH CHÍNH -->
+        <h6 class="text-primary mt-3"><strong>I. HÀNH CHÍNH</strong></h6>
+
+        <div class="info-row">
+            <div class="info-field" style="flex: 2;">
+                <span class="info-label">1. Họ và tên (IN HOA):</span>
+                <span class="text-uppercase"><strong>@Model.BenhNhan?.HoTen</strong></span>
+            </div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-field">
+                <span class="info-label">2. Ngày sinh:</span>
+                @Model.BenhNhan?.NgaySinh.ToString("dd/MM/yyyy")
+            </div>
+            <div class="info-field">
+                <span class="info-label">Tuổi:</span>
+                @((DateTime.Now.Year - Model.BenhNhan?.NgaySinh.Year) ?? 0)
+            </div>
+            <div class="info-field">
+                <span class="info-label">3. Giới tính:</span>
+                @Model.BenhNhan?.GioiTinh
+            </div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-field">
+                <span class="info-label">4. Điện thoại:</span>
+                @Model.BenhNhan?.SoDienThoai
+            </div>
+            <div class="info-field">
+                <span class="info-label">5. Nghề nghiệp:</span>
+                @Model.BenhNhan?.NgheNghiep
+            </div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-field">
+                <span class="info-label">6. Dân tộc:</span>
+                @Model.BenhNhan?.DanToc
+            </div>
+            <div class="info-field">
+                <span class="info-label">7. Quốc tịch:</span>
+                @Model.BenhNhan?.QuocTich
+            </div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-field" style="flex: 2;">
+                <span class="info-label">8. Địa chỉ:</span>
+                @Model.BenhNhan?.DiaChi
+            </div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-field">
+                <span class="info-label">9. Đối tượng:</span>
+                @Model.BenhNhan?.DoiTuong
+            </div>
+            <div class="info-field">
+                <span class="info-label">10. Số thẻ BHYT:</span>
+                @Model.BenhNhan?.BHYT
+            </div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-field" style="flex: 2;">
+                <span class="info-label">11. Số Căn cước/CCCD:</span>
+                @Model.BenhNhan?.CMND
+            </div>
+        </div>
+
+        <!-- II. QUẢN LÝ NGƯỜI BỆNH -->
+        <h6 class="text-primary mt-4">
+            <strong>II. QUẢN LÝ NGƯỜI BỆNH</strong>
+            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+            {
+                <a asp-controller="DotKhams"
+                   asp-action="Edit"
+                   asp-route-id="@Model.DotKham?.MaDotKham"
+                   asp-route-returnUrl="@Url.Action("Details", "HoSoBenhAns", new { id = Model.MaHoSo })"
+                   class="btn btn-sm btn-outline-primary float-end no-print">
+                    <i class="fas fa-calendar-edit"></i> Sửa đợt khám
+                </a>
+            }
+        </h6>
+
+        <div class="info-row">
+            <div class="info-field">
+                <span class="info-label">1. Vào viện:</span>
+                @Model.DotKham?.NgayVaoVien.ToString("dd/MM/yyyy")
+                lúc @Model.DotKham?.GioVaoVien.ToString(@"hh\:mm")
+            </div>
+            <div class="info-field">
+                <span class="info-label">2. Tiếp nhận từ:</span>
+                @Model.DotKham?.HinhThucTiepNhan
+            </div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-field">
+                <span class="info-label">4. Vào khoa:</span>
+                @Model.DotKham?.KhoaTiepNhan?.TenKhoa
+            </div>
+            <div class="info-field">
+                <span class="info-label">6. Tổng số ngày điều trị:</span>
+                @Model.DotKham?.TongSoNgayDieuTri ngày
+            </div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-field">
+                <span class="info-label">8. Ra viện:</span>
+                @(Model.DotKham?.NgayRaVien?.ToString("dd/MM/yyyy") ?? "Đang điều trị")
+                @if (Model.DotKham?.GioRaVien != null)
+                {
+                    <text>lúc @Model.DotKham?.GioRaVien?.ToString(@"hh\:mm")</text>
+                }
+            </div>
+            <div class="info-field">
+                <span class="info-label">Trạng thái:</span>
+                <span class="badge bg-@(Model.DotKham?.NgayRaVien != null ? "success" : "warning")">
+                    @(Model.DotKham?.NgayRaVien != null ? "Đã ra viện" : "Đang điều trị")
+                </span>
+            </div>
+        </div>
+
+        <div class="info-row">
+            <div class="info-field">
+                <span class="info-label">Lý do vào viện:</span>
+                @Model.DotKham?.LyDoVaoVien
+            </div>
+        </div>
+
+        <!-- III. CHẨN ĐOÁN -->
+        <h6 class="text-primary mt-4">
+            <strong>III. CHẨN ĐOÁN</strong>
+            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+            {
+                <a asp-controller="ChanDoans" asp-action="CreateMultiple" asp-route-maHoSo="@Model.MaHoSo"
+                   class="btn btn-sm btn-success float-end no-print">
+                    <i class="fas fa-plus"></i> Thêm chẩn đoán
+                </a>
+            }
+        </h6>
+
+        @if (Model.ChanDoans?.Any() == true)
+        {
+            <div class="border rounded p-3 mb-3">
+                @foreach (var cd in Model.ChanDoans)
+                {
+                    <div class="mb-2 d-flex justify-content-between align-items-start">
+                        <div>
+                            <span class="badge bg-@(cd.LoaiChanDoan == "Chẩn đoán chính" ? "danger" : "info")">
+                                @cd.LoaiChanDoan
+                            </span>
+                            <strong>(@cd.ViTri):</strong> @cd.MoTa - <code>@cd.DanhMucICD?.TenBenh</code>
+                        </div>
+                        @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                        {
+                            <div class="btn-group btn-group-sm no-print">
+                                <a asp-controller="ChanDoans" asp-action="Edit" asp-route-id="@cd.MaChanDoan"
+                                   class="btn btn-outline-warning">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a asp-controller="ChanDoans" asp-action="Delete" asp-route-id="@cd.MaChanDoan"
+                                   class="btn btn-outline-danger">
+                                    <i class="fas fa-trash"></i>
+                                </a>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        }
+
+        <!-- IV. TÌNH TRẠNG RA VIỆN -->
+        <h6 class="text-primary mt-4"><strong>IV. TÌNH TRẠNG RA VIỆN</strong></h6>
+        <div class="info-field">
+            @Model.TrangThaiRaVien
+        </div>
+
+        <!-- B. THÔNG TIN KHÁM BỆNH -->
+        <div class="section-title">B. THÔNG TIN KHÁM BỆNH</div>
+
+        <!-- II. HỎI BỆNH -->
+        <h6 class="text-primary mt-3"><strong>II. HỎI BỆNH</strong></h6>
+
+        <div class="border rounded p-3 mb-3">
+            <p><strong>2. Tiền sử có liên quan đến tình trạng bệnh:</strong></p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-2">
+                        <span class="info-label">Dị ứng:</span>
+                        @(string.IsNullOrEmpty(Model.BenhNhan?.TienSuDiUng) ? "Không" : Model.BenhNhan?.TienSuDiUng)
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p class="mb-2">
+                        <span class="info-label">Bản thân:</span>
+                        @(string.IsNullOrEmpty(Model.BenhNhan?.TienSuBenhBanThan) ? "Không" : Model.BenhNhan?.TienSuBenhBanThan)
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p class="mb-2">
+                        <span class="info-label">Gia đình:</span>
+                        @(string.IsNullOrEmpty(Model.BenhNhan?.TienSuBenhGiaDinh) ? "Không" : Model.BenhNhan?.TienSuBenhGiaDinh)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Thêm phần này vào Details.cshtml, sau phần "Tiền sử" và trước phần "III. KHÁM BỆNH" -->
+        <!-- 3. Xét nghiệm, cận lâm sàng cần làm -->
+        <h6 class="text-primary mt-4">
+            <strong>3. Các xét nghiệm, cận lâm sàng cần làm</strong>
+            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+            {
+                <a asp-controller="XetNghiemCLSs"
+                   asp-action="Create"
+                   asp-route-maHoSo="@Model.MaHoSo"
+                   asp-route-returnUrl="@Url.Action("Details", "HoSoBenhAns", new { id = Model.MaHoSo })"
+                   class="btn btn-sm btn-success float-end no-print">
+                    <i class="fas fa-plus"></i> Thêm xét nghiệm
+                </a>
+            }
+        </h6>
+
+        @if (Model.XetNghiemCLSs?.Any() == true)
+        {
+            <div class="border rounded p-3 mb-4">
+                <table class="table table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th style="width: 5%">STT</th>
+                            <th style="width: 20%">Loại xét nghiệm</th>
+                            <th style="width: 20%">Mô tả</th>
+                            <th style="width: 25%">Kết quả</th>
+                            <th style="width: 15%">Ngày thực hiện</th>
+                            <th style="width: 10%">Bác sĩ chỉ định</th>
+                            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                            {
+                                <th style="width: 5%" class="no-print">Thao tác</th>
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int sttXN = 1;
+                        }
+                        @foreach (var xn in Model.XetNghiemCLSs.OrderBy(x => x.NgayThucHien))
+                        {
+                            <tr>
+                                <td>@(sttXN++)</td>
+                                <td>
+                                    <span class="badge bg-info">@xn.LoaiXetNghiem</span>
+                                </td>
+                                <td>@(xn.MoTa ?? "...")</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(xn.KetQua))
+                                    {
+                                        <div>@Html.Raw(xn.KetQua.Replace("\n", "<br>"))</div>
+                                    }
+                                    else
+                                    {
+                                        <em class="text-muted">Chưa có kết quả</em>
+                                    }
+                                </td>
+                                <td>
+                                    @xn.NgayThucHien.ToString("dd/MM/yyyy")
+                                    @if (xn.GioThucHien != null)
+                                    {
+                                        <br>
+                                        <small>@xn.GioThucHien?.ToString(@"hh\:mm")</small>
+                                    }
+                                </td>
+                                <td>
+                                    <small>@(xn.BacSiChiDinh?.HoTen ?? "...")</small>
+                                </td>
+                                @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                                {
+                                    <td class="no-print">
+                                        <div class="btn-group btn-group-sm">
+                                            <a asp-controller="XetNghiemCLSs"
+                                               asp-action="Edit"
+                                               asp-route-id="@xn.MaXetNghiem"
+                                               class="btn btn-outline-warning"
+                                               title="Sửa">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <a asp-controller="XetNghiemCLSs"
+                                               asp-action="Delete"
+                                               asp-route-id="@xn.MaXetNghiem"
+                                               class="btn btn-outline-danger"
+                                               title="Xóa">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                @if (!string.IsNullOrEmpty(Model.XetNghiemCLSs.FirstOrDefault()?.GhiChu))
+                {
+                    <div class="mt-3">
+                        <strong>Ghi chú chung:</strong>
+                        <p class="ms-3">@Model.XetNghiemCLSs.FirstOrDefault()?.GhiChu</p>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info">
+                <i class="fas fa-info-circle"></i> Chưa có xét nghiệm cận lâm sàng nào được thực hiện.
+            </div>
+        }
+        <!-- III. KHÁM BỆNH - BỆNH MẮT -->
+        <h6 class="text-primary mt-4">
+            <strong>III. KHÁM BỆNH</strong>
+            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+            {
+                <a asp-controller="KetQuaKhamMats" asp-action="Create" asp-route-maHoSo="@Model.MaHoSo"
+                   class="btn btn-sm btn-success float-end no-print">
+                    <i class="fas fa-plus"></i> Thêm kết quả khám
+                </a>
+            }
+        </h6>
+        <p><strong>1. Bệnh Mắt:</strong></p>
+
+        @{
+            var matPhai = Model.KetQuaKhamMats?.FirstOrDefault(m => m.ViTriMat == "Mắt phải");
+            var matTrai = Model.KetQuaKhamMats?.FirstOrDefault(m => m.ViTriMat == "Mắt trái");
+        }
+
+        <table class="eye-exam-table">
+            <thead>
+                <tr>
+                    <th class="eye-column">
+                        MẮT PHẢI
+                        @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                        {
+                            if (matPhai != null)
+                            {
+                                <a asp-controller="KetQuaKhamMats" asp-action="Edit" asp-route-id="@matPhai.MaKQ"
+                                   class="btn btn-xs btn-outline-warning float-end no-print">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                            }
+                        }
+                    </th>
+                    <th class="part-column">BỘ PHẬN</th>
+                    <th class="eye-column">
+                        MẮT TRÁI
+                        @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                        {
+                            if (matTrai != null)
+                            {
+                                <a asp-controller="KetQuaKhamMats" asp-action="Edit" asp-route-id="@matTrai.MaKQ"
+                                   class="btn btn-xs btn-outline-warning float-end no-print">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                            }
+                        }
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Thị lực -->
+                <tr>
+                    <td>
+                        <strong>Không kính:</strong> @(matPhai?.ThiLucKhongKinh ?? "...")<br>
+                        <strong>Có kính:</strong> @(matPhai?.ThiLucCoKinh ?? "...")
+                    </td>
+                    <td class="part-column">Thị lực</td>
+                    <td>
+                        <strong>Không kính:</strong> @(matTrai?.ThiLucKhongKinh ?? "...")<br>
+                        <strong>Có kính:</strong> @(matTrai?.ThiLucCoKinh ?? "...")
+                    </td>
+                </tr>
+
+                <!-- Nhãn áp -->
+                <tr>
+                    <td>@(matPhai?.NhanAp?.ToString() ?? "...") mmHg</td>
+                    <td class="part-column">Nhãn áp</td>
+                    <td>@(matTrai?.NhanAp?.ToString() ?? "...") mmHg</td>
+                </tr>
+
+                <!-- Tổng trạng mắt -->
+                <tr>
+                    <td>
+                        @if (!string.IsNullOrEmpty(matPhai?.TongTrangMat))
+                        {
+                            <span>☑ Bất thường</span>
+
+                            <br>
+                            <small>@matPhai.TongTrangMat</small>
+                        }
+                        else
+                        {
+                            <span>☐ Bình thường ☐ Bất thường</span>
+                        }
+                    </td>
+                    <td class="part-column">Tổng trạng mắt</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(matTrai?.TongTrangMat))
+                        {
+                            <span>☑ Bất thường</span>
+
+                            <br>
+                            <small>@matTrai.TongTrangMat</small>
+                        }
+                        else
+                        {
+                            <span>☐ Bình thường ☐ Bất thường</span>
+                        }
+                    </td>
+                </tr>
+
+                <!-- Mô tả bộ phận mắt -->
+                <tr>
+                    <td colspan="3" class="part-column">Mô tả chi tiết các bộ phận mắt</td>
+                </tr>
+                <tr>
+                    <td>
+                        @if (!string.IsNullOrEmpty(matPhai?.MoTaBoPhanMat))
+                        {
+                            <div>@Html.Raw(matPhai.MoTaBoPhanMat.Replace("\n", "<br>"))</div>
+                        }
+                        else
+                        {
+                            <small class="text-muted">Chưa có mô tả chi tiết</small>
+                        }
+                    </td>
+                    <td class="part-column">Hốc mắt, Mi mắt, Kết mạc, Giác mạc, Củng mạc, Tiền phòng, Mống mắt, Đồng tử, Thể thủy tinh, Dịch kính, Đáy mắt</td>
+                    <td>
+                        @if (!string.IsNullOrEmpty(matTrai?.MoTaBoPhanMat))
+                        {
+                            <div>@Html.Raw(matTrai.MoTaBoPhanMat.Replace("\n", "<br>"))</div>
+                        }
+                        else
+                        {
+                            <small class="text-muted">Chưa có mô tả chi tiết</small>
+                        }
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Hình ảnh y tế -->
+        <h6 class="text-primary mt-4">
+            <strong>Hình ảnh y tế</strong>
+            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+            {
+                <a asp-controller="HinhAnhYTes" asp-action="Create" asp-route-maHoSo="@Model.MaHoSo"
+                   class="btn btn-sm btn-success float-end no-print">
+                    <i class="fas fa-plus"></i> Thêm hình ảnh
+                </a>
+            }
+        </h6>
+
+        @if (Model.HinhAnhYTes?.Any() == true)
+        {
+            <div class="mt-3 mb-4">
+                <div class="row g-3">
+                    @foreach (var img in Model.HinhAnhYTes.Take(4))
+                    {
+                        <div class="col-md-3 position-relative">
+                            <img src="@Url.Content("~" + img.FileURL)" class="img-thumbnail" alt="Ảnh y tế" style="width: 100%; height: 150px; object-fit: cover;">
+                            <small class="d-block text-center mt-1">@img.MoTa</small>
+                            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                            {
+                                <div class="position-absolute top-0 end-0 p-2 no-print">
+                                    <a asp-controller="HinhAnhYTes" asp-action="Edit" asp-route-id="@img.MaAnh"
+                                       class="btn btn-xs btn-warning me-1">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a asp-controller="HinhAnhYTes" asp-action="Delete" asp-route-id="@img.MaAnh"
+                                       class="btn btn-xs btn-danger">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+
+        <!-- VI. CHẨN ĐOÁN -->
+        <h6 class="text-primary mt-4"><strong>VI. CHẨN ĐOÁN</strong></h6>
+
+        @if (Model.ChanDoans?.Any() == true)
+        {
+            var chanDoanChinh = Model.ChanDoans.FirstOrDefault(c => c.LoaiChanDoan == "Chẩn đoán chính");
+            var chanDoanPhu = Model.ChanDoans.Where(c => c.LoaiChanDoan != "Chẩn đoán chính");
+
+            <div class="border rounded p-3 mb-3">
+                @if (chanDoanChinh != null)
+                {
+                    <p class="mb-2">
+                        <strong>Bệnh chính:</strong> @chanDoanChinh.MoTa (@chanDoanChinh.ViTri) -
+                        <code>@chanDoanChinh.DanhMucICD?.TenBenh</code>
+                    </p>
+                }
+
+                @if (chanDoanPhu.Any())
+                {
+                    <p class="mb-2"><strong>Bệnh kèm theo:</strong></p>
+                    <ul>
+                        @foreach (var cd in chanDoanPhu)
+                        {
+                            <li>@cd.MoTa (@cd.ViTri) - <code>@cd.DanhMucICD?.TenBenh</code></li>
+                        }
+                    </ul>
+                }
+            </div>
+        }
+
+        <!-- VII. TIÊN LƯỢNG -->
+        <h6 class="text-primary mt-4"><strong>VII. TIÊN LƯỢNG</strong></h6>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="border rounded p-3 mb-3">
+                    <strong>Tiên lượng gần:</strong>
+                    <p>@(string.IsNullOrEmpty(Model.TienLuongGan) ? "Chưa có" : Model.TienLuongGan)</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="border rounded p-3 mb-3">
+                    <strong>Tiên lượng xa:</strong>
+                    <p>@(string.IsNullOrEmpty(Model.TienLuongXa) ? "Chưa có" : Model.TienLuongXa)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIII. KẾ HOẠCH ĐIỀU TRỊ -->
+        <h6 class="text-primary mt-4">
+            <strong>VIII. KẾ HOẠCH ĐIỀU TRỊ</strong>
+            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+            {
+                <a asp-controller="PhuongPhapDieuTris" asp-action="Create" asp-route-maHoSo="@Model.MaHoSo"
+                   class="btn btn-sm btn-success float-end no-print">
+                    <i class="fas fa-plus"></i> Thêm phương pháp điều trị
+                </a>
+            }
+        </h6>
+
+        @if (Model.PhuongPhapDieuTris?.Any() == true)
+        {
+            foreach (var pp in Model.PhuongPhapDieuTris)
+            {
+                <div class="border rounded p-3 mb-3 position-relative">
+                    @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                    {
+                        <div class="position-absolute top-0 end-0 p-2 no-print">
+                            <a asp-controller="PhuongPhapDieuTris" asp-action="Edit" asp-route-id="@pp.MaPhuongPhap"
+                               class="btn btn-sm btn-warning me-1">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a asp-controller="PhuongPhapDieuTris" asp-action="Delete" asp-route-id="@pp.MaPhuongPhap"
+                               class="btn btn-sm btn-danger">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </div>
+                    }
+                    @if (!string.IsNullOrEmpty(pp.NoiKhoa))
+                    {
+                        <p><strong>Nội khoa:</strong> @pp.NoiKhoa</p>
+                    }
+                    @if (!string.IsNullOrEmpty(pp.NgoaiKhoa))
+                    {
+                        <p><strong>Ngoại khoa:</strong> @pp.NgoaiKhoa</p>
+                    }
+                    @if (!string.IsNullOrEmpty(pp.MoTaChiTiet))
+                    {
+                        <p><strong>Chi tiết:</strong> @pp.MoTaChiTiet</p>
+                    }
+                </div>
+            }
+        }
+
+        <!-- Đơn thuốc -->
+        <h6 class="mt-4">
+            <strong>Đơn thuốc kê:</strong>
+            @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+            {
+                <a asp-controller="DonThuocs" asp-action="Create" asp-route-maHoSo="@Model.MaHoSo"
+                   class="btn btn-sm btn-success float-end no-print">
+                    <i class="fas fa-plus"></i> Kê đơn thuốc
+                </a>
+            }
+        </h6>
+
+        @if (Model.DonThuocs?.Any() == true)
+        {
+            @foreach (var dt in Model.DonThuocs)
+            {
+                <div class="border rounded p-3 mb-3 position-relative">
+                    @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi))
+                    {
+                        <div class="position-absolute top-0 end-0 p-2 no-print">
+                            <a asp-controller="DonThuocs" asp-action="Delete" asp-route-id="@dt.MaDon"
+                               class="btn btn-sm btn-danger">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </div>
+                    }
+                    <p><strong>Mã đơn:</strong> @dt.MaDon | <strong>Ngày kê:</strong> @dt.NgayKe.ToString("dd/MM/yyyy")</p>
+                    <p><strong>Hướng dẫn:</strong> @dt.HuongDanSuDung</p>
+                    <table class="table table-sm table-bordered">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Tên thuốc</th>
+                                <th>Số lượng</th>
+                                <th>Liều dùng</th>
+                                <th>Thời gian</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{
+                                int stt = 1;
+                            }
+                            @foreach (var ct in dt.ChiTietDonThuocs)
+                            {
+                                <tr>
+                                    <td>@(stt++)</td>
+                                    <td>@ct.Thuoc?.TenThuoc</td>
+                                    <td>@ct.SoLuong</td>
+                                    <td>@ct.LieuDung</td>
+                                    <td>@ct.ThoiGianDung</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        }
+
+        <!-- Chữ ký -->
+        <div class="row mt-5">
+            <div class="col-6">
+                <p class="text-center">
+                    <strong>Bác sĩ lập bệnh án</strong><br>
+                    <em>(Ký, ghi rõ họ tên)</em><br><br><br>
+                    <strong>@Model.BacSiLapBenhAn?.HoTen</strong>
+                </p>
+            </div>
+            <div class="col-6">
+                <p class="text-center">
+                    <em>Ngày @DateTime.Now.ToString("dd") tháng @DateTime.Now.ToString("MM") năm @DateTime.Now.ToString("yyyy")</em><br>
+                    <strong>Bác sĩ điều trị</strong><br>
+                    <em>(Ký, ghi rõ họ tên)</em><br><br><br>
+                    <strong>@Model.BacSiDieuTri?.HoTen</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Tự động format khi in
+        window.onbeforeprint = function() {
+            document.body.style.fontSize = '12px';
+        }
+        window.onafterprint = function() {
+            document.body.style.fontSize = '';
+        }
+    </script>
+}

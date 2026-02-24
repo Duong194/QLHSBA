@@ -1,0 +1,223 @@
+﻿@model IEnumerable<DACS_web.Models.CuocHenKham>
+
+@{
+    ViewData["Title"] = "Danh sách cuộc hẹn khám";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="card shadow mb-4">
+        <div class="card-header bg-primary text-white py-3 d-flex justify-content-between align-items-center">
+            <h5 class="m-0 font-weight-bold">
+                <i class="fas fa-calendar-check me-2"></i>@ViewData["Title"]
+            </h5>
+            <div class="btn-group">
+                @if (User.IsInRole(SD.Role_BenhNhan))
+                {
+                    <a asp-action="XemLichTrucBacSi" class="btn btn-success">
+                        <i class="fas fa-calendar-alt me-1"></i> Xem lịch trực & Đặt lịch khám
+                    </a>
+                }
+                @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi) || User.IsInRole(SD.Role_YTa))
+                {
+                    <a asp-action="XemLichTrucBacSi" class="btn btn-info me-2">
+                        <i class="fas fa-calendar-alt me-1"></i> Xem lịch trực bác sĩ
+                    </a>
+                    <a asp-action="Create" class="btn btn-light">
+                        <i class="fas fa-plus-circle me-1"></i> Tạo cuộc hẹn mới
+                    </a>
+                }
+            </div>
+        </div>
+        <div class="card-body">
+            <!-- Bộ lọc -->
+            <div class="card mb-3 bg-light">
+                <div class="card-body">
+                    <form method="get" class="row g-3">
+                        <div class="col-md-4">
+                            <label class="form-label fw-bold">
+                                <i class="fas fa-filter me-1"></i> Lọc theo trạng thái
+                            </label>
+                            <select name="trangThaiFilter" class="form-select">
+                                <option value="">-- Tất cả trạng thái --</option>
+                                @foreach (var item in ViewBag.TrangThaiList)
+                                {
+                                    <option value="@item.Value" selected="@(item.Value == ViewBag.TrangThaiFilter)">@item.Text</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label fw-bold">
+                                <i class="fas fa-calendar me-1"></i> Lọc theo ngày
+                            </label>
+                            <input type="date" name="ngayFilter" class="form-control" value="@ViewBag.NgayFilter" />
+                        </div>
+                        <div class="col-md-4 d-flex align-items-end">
+                            <button type="submit" class="btn btn-primary me-2">
+                                <i class="fas fa-search me-1"></i> Tìm kiếm
+                            </button>
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="fas fa-redo me-1"></i> Làm mới
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show">
+                    <i class="fas fa-check-circle me-2"></i> @TempData["SuccessMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show">
+                    <i class="fas fa-exclamation-circle me-2"></i> @TempData["ErrorMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+
+            @if (!Model.Any())
+            {
+                <div class="alert alert-info text-center">
+                    <i class="fas fa-info-circle me-2"></i>
+                    <strong>Chưa có cuộc hẹn nào!</strong>
+                    @if (User.IsInRole(SD.Role_BenhNhan))
+                    {
+                        <p class="mb-0 mt-2">
+                            Nhấn vào nút <strong>"Xem lịch trực & Đặt lịch khám"</strong> để đặt lịch khám bệnh.
+                        </p>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped" id="appointmentsTable">
+                        <thead class="table-primary">
+                            <tr>
+                                <th><i class="fas fa-hashtag me-1"></i> Mã cuộc hẹn</th>
+                                <th><i class="fas fa-user-injured me-1"></i> Bệnh nhân</th>
+                                <th><i class="fas fa-clock me-1"></i> Ngày giờ hẹn</th>
+                                <th><i class="fas fa-user-md me-1"></i> Bác sĩ phụ trách</th>
+                                <th><i class="fas fa-stethoscope me-1"></i> Ca khám</th>
+                                <th><i class="fas fa-check-circle me-1"></i> Trạng thái</th>
+                                <th class="text-center"><i class="fas fa-cogs me-1"></i> Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                string badgeClass = "bg-info";
+                                if (item.TrangThaiHen == "Đã khám") badgeClass = "bg-success";
+                                else if (item.TrangThaiHen == "Đã hủy") badgeClass = "bg-danger";
+                                else if (item.TrangThaiHen == "Chờ khám") badgeClass = "bg-warning text-dark";
+                                else if (item.TrangThaiHen == "Đã xác nhận") badgeClass = "bg-primary";
+
+                                <tr>
+                                    <td class="align-middle">@item.MaCuocHen</td>
+                                    <td class="align-middle"><span class="fw-bold">@item.BenhNhan?.HoTen</span></td>
+                                    <td class="align-middle">
+                                        <i class="far fa-calendar me-1"></i>@item.NgayGioHen.ToString("dd/MM/yyyy")
+                                        <br />
+                                        @if (item.GioKhamDuKien.HasValue)
+                                        {
+                                            <small class="text-muted">
+                                                <i class="far fa-clock me-1"></i>@item.GioKhamDuKien.Value.ToString(@"hh\:mm")
+                                            </small>
+                                        }
+                                    </td>
+                                    <td class="align-middle">@item.BacSiDuKien?.HoTen</td>
+                                    <td class="align-middle">
+                                        @if (!string.IsNullOrEmpty(item.CaKham))
+                                        {
+                                            <span class="badge bg-secondary">Ca @item.CaKham</span>
+                                        }
+                                    </td>
+                                    <td class="align-middle">
+                                        <span class="badge @badgeClass">@item.TrangThaiHen</span>
+                                    </td>
+                                    <td class="text-center">
+                                        @if (User.IsInRole(SD.Role_Admin) || User.IsInRole(SD.Role_BacSi) || User.IsInRole(SD.Role_YTa))
+                                        {
+                                            <div class="btn-group" role="group">
+                                                <a asp-action="Edit" asp-route-id="@item.MaCuocHen" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Chỉnh sửa">
+                                                    <i class="fas fa-edit"></i>
+                                                </a>
+                                                <a asp-action="Delete" asp-route-id="@item.MaCuocHen" class="btn btn-sm btn-outline-danger" data-bs-toggle="tooltip" title="Xóa">
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+                                            </div>
+                                        }
+                                        @if (User.IsInRole(SD.Role_BenhNhan) && (item.TrangThaiHen == "Chờ khám" || item.TrangThaiHen == "Đã xác nhận"))
+                                        {
+                                            <form asp-action="HuyLichKham" asp-route-id="@item.MaCuocHen" method="post" style="display:inline;" onsubmit="return confirm('Bạn có chắc muốn hủy lịch khám này?');">
+                                                @Html.AntiForgeryToken()
+                                                <button type="submit" class="btn btn-sm btn-outline-warning" data-bs-toggle="tooltip" title="Hủy lịch khám">
+                                                    <i class="fas fa-times-circle"></i> Hủy
+                                                </button>
+                                            </form>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </div>
+    </div>
+
+    @if (User.IsInRole(SD.Role_BenhNhan) && Model.Any())
+    {
+        <div class="card shadow border-success">
+            <div class="card-body text-center bg-light">
+                <h5 class="text-success mb-3">
+                    <i class="fas fa-info-circle me-2"></i>Muốn đặt thêm lịch khám?
+                </h5>
+                <p class="text-muted mb-3">
+                    Xem lịch trực của các bác sĩ và chọn ca khám phù hợp với bạn
+                </p>
+                <a asp-action="XemLichTrucBacSi" class="btn btn-success btn-lg">
+                    <i class="fas fa-calendar-plus me-2"></i> Đặt lịch khám mới
+                </a>
+            </div>
+        </div>
+    }
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/cuochenkham-index.css" />
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            // Khởi tạo tooltips
+            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+
+            // Khởi tạo DataTables nếu có dữ liệu
+            if ($.fn.DataTable && $('#appointmentsTable tbody tr').length > 0) {
+                $('#appointmentsTable').DataTable({
+                    language: {
+                        url: '//cdn.datatables.net/plug-ins/1.10.25/i18n/Vietnamese.json'
+                    },
+                    "order": [[2, "desc"]], // Sắp xếp theo ngày giờ hẹn giảm dần
+                    "pageLength": 10,
+                    "responsive": true
+                });
+            }
+
+            // Tự động ẩn thông báo sau 5 giây
+            setTimeout(function() {
+                $('.alert').fadeOut('slow');
+            }, 5000);
+        });
+    </script>
+}

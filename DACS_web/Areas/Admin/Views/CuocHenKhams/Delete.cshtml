@@ -1,0 +1,43 @@
+﻿@model DACS_web.Models.CuocHenKham
+
+@{
+    ViewData["Title"] = "Xóa cuộc hẹn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h1>Xóa cuộc hẹn</h1>
+
+<h3>Bạn chắc chắn muốn xóa cuộc hẹn này?</h3>
+<div>
+    <h4>Thông tin cuộc hẹn</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Mã cuộc hẹn</dt>
+        <dd class="col-sm-10">@Model.MaCuocHen</dd>
+
+        <dt class="col-sm-2">Tên bệnh nhân</dt>
+        <dd class="col-sm-10">@Model.BenhNhan?.HoTen</dd>
+
+        <dt class="col-sm-2">Ngày giờ hẹn</dt>
+        <dd class="col-sm-10">@Model.NgayGioHen.ToString("dd/MM/yyyy HH:mm")</dd>
+
+        <dt class="col-sm-2">Bác sĩ dự kiến</dt>
+        <dd class="col-sm-10">@Model.BacSiDuKien?.HoTen</dd>
+
+        <dt class="col-sm-2">Trạng thái hẹn</dt>
+        <dd class="col-sm-10">@Model.TrangThaiHen</dd>
+    </dl>
+
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" name="id" value="@Model.MaCuocHen" />
+        <button type="submit" class="btn btn-danger">Xác nhận xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
