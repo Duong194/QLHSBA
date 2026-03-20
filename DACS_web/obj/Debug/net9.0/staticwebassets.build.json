@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fLTbaCEs9Wlcjo3nZ7ZJ0jVMFwquF2HFTBSXAqQRGOo=",
+  "Hash": "obbuc6RPXgKV0tGSI8DJHOXer+IDJL1lwm0qo3foOlg=",
   "Source": "DACS_web",
   "BasePath": "_content/DACS_web",
   "Mode": "Default",
@@ -5918,27 +5918,6 @@
       "OriginalItemSpec": "C:\\Users\\Lenovo\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.4\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\th2jkzzn1q-tazr8lzh3a.gz",
-      "SourceId": "DACS_web",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/DACS_web",
-      "RelativePath": "css/patient-detail#[.{fingerprint=tazr8lzh3a}]?.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\patient-detail.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "f7dreurf78",
-      "Integrity": "ZQ4zW4pLwJbReuWA8aWYecOpTDl93sNkaEd31HS+stk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\patient-detail.css"
-    },
-    {
       "Identity": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\to14n2fqtk-ausgxo2sd3.gz",
       "SourceId": "DACS_web",
       "SourceType": "Discovered",
@@ -6021,6 +6000,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\th2jkzzn1q-tazr8lzh3a.gz",
+      "SourceId": "DACS_web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/DACS_web",
+      "RelativePath": "css/patient-detail#[.{fingerprint=tazr8lzh3a}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\patient-detail.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "f7dreurf78",
+      "Integrity": "ZQ4zW4pLwJbReuWA8aWYecOpTDl93sNkaEd31HS+stk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\patient-detail.css"
     },
     {
       "Identity": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\u07ihgg8hd-tk7b1het42.gz",
@@ -9110,27 +9110,6 @@
       "OriginalItemSpec": "wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\autosave\\plugin.min.js"
     },
     {
-      "Identity": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js",
-      "SourceId": "DACS_web",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\",
-      "BasePath": "_content/DACS_web",
-      "RelativePath": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "drnh21th9j",
-      "Integrity": "d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js"
-    },
-    {
       "Identity": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\code\\plugin.min.js",
       "SourceId": "DACS_web",
       "SourceType": "Discovered",
@@ -9171,6 +9150,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\codesample\\plugin.min.js"
+    },
+    {
+      "Identity": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js",
+      "SourceId": "DACS_web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\",
+      "BasePath": "_content/DACS_web",
+      "RelativePath": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "drnh21th9j",
+      "Integrity": "d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js"
     },
     {
       "Identity": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\directionality\\plugin.min.js",
@@ -11420,27 +11420,6 @@
       "OriginalItemSpec": "wwwroot\\lib\\tinymce\\js\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css"
     },
     {
-      "Identity": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js",
-      "SourceId": "DACS_web",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\",
-      "BasePath": "_content/DACS_web",
-      "RelativePath": "lib/tinymce/js/tinymce/themes/silver/theme.min#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "iax3me7bjp",
-      "Integrity": "SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js"
-    },
-    {
       "Identity": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\tinymce.d.ts",
       "SourceId": "DACS_web",
       "SourceType": "Discovered",
@@ -11481,6 +11460,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\tinymce\\js\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Identity": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js",
+      "SourceId": "DACS_web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\",
+      "BasePath": "_content/DACS_web",
+      "RelativePath": "lib/tinymce/js/tinymce/themes/silver/theme.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iax3me7bjp",
+      "Integrity": "SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js"
     },
     {
       "Identity": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\uploads\\091d6af8-6aa6-4cc6-9fa2-1096c9b158a3.jpg",
@@ -51905,304 +51905,6 @@
       ]
     },
     {
-      "Route": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.drnh21th9j.js",
-      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\i47nid35zy-drnh21th9j.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000225886605"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4426"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j+XgzSZggXo/mxSTXfPuuvtlKq2vXnmGOGoV9B3mXzE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:17:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "drnh21th9j"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM="
-        }
-      ]
-    },
-    {
-      "Route": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.drnh21th9j.js",
-      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11145"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:17:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "drnh21th9j"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM="
-        }
-      ]
-    },
-    {
-      "Route": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.drnh21th9j.js.gz",
-      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\i47nid35zy-drnh21th9j.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4426"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j+XgzSZggXo/mxSTXfPuuvtlKq2vXnmGOGoV9B3mXzE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:17:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "drnh21th9j"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.js.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-j+XgzSZggXo/mxSTXfPuuvtlKq2vXnmGOGoV9B3mXzE="
-        }
-      ]
-    },
-    {
-      "Route": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.js",
-      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\i47nid35zy-drnh21th9j.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000225886605"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4426"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j+XgzSZggXo/mxSTXfPuuvtlKq2vXnmGOGoV9B3mXzE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:17:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM="
-        }
-      ]
-    },
-    {
-      "Route": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.js",
-      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11145"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:17:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM="
-        }
-      ]
-    },
-    {
-      "Route": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.js.gz",
-      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\i47nid35zy-drnh21th9j.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4426"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j+XgzSZggXo/mxSTXfPuuvtlKq2vXnmGOGoV9B3mXzE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:17:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-j+XgzSZggXo/mxSTXfPuuvtlKq2vXnmGOGoV9B3mXzE="
-        }
-      ]
-    },
-    {
       "Route": "lib/tinymce/js/tinymce/plugins/code/plugin.min.js",
       "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\ny5m4n19s3-ue4008h9wn.gz",
       "Selectors": [
@@ -52795,6 +52497,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-xJSYMg/QfXoWRE5ueY2TC6SP7rqned+J6Fi0t4SiHdE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.drnh21th9j.js",
+      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\i47nid35zy-drnh21th9j.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000225886605"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4426"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j+XgzSZggXo/mxSTXfPuuvtlKq2vXnmGOGoV9B3mXzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:17:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "drnh21th9j"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM="
+        }
+      ]
+    },
+    {
+      "Route": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.drnh21th9j.js",
+      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11145"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:17:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "drnh21th9j"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM="
+        }
+      ]
+    },
+    {
+      "Route": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.drnh21th9j.js.gz",
+      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\i47nid35zy-drnh21th9j.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4426"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j+XgzSZggXo/mxSTXfPuuvtlKq2vXnmGOGoV9B3mXzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:17:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "drnh21th9j"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j+XgzSZggXo/mxSTXfPuuvtlKq2vXnmGOGoV9B3mXzE="
+        }
+      ]
+    },
+    {
+      "Route": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.js",
+      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\i47nid35zy-drnh21th9j.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000225886605"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4426"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j+XgzSZggXo/mxSTXfPuuvtlKq2vXnmGOGoV9B3mXzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:17:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM="
+        }
+      ]
+    },
+    {
+      "Route": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.js",
+      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\plugins\\charmap\\plugin.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11145"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:17:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d3fJ2KlEMeKlKTfs+DUtnVlWAv4P4rgXCNMyHjDXKmM="
+        }
+      ]
+    },
+    {
+      "Route": "lib/tinymce/js/tinymce/plugins/charmap/plugin.min.js.gz",
+      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\i47nid35zy-drnh21th9j.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4426"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j+XgzSZggXo/mxSTXfPuuvtlKq2vXnmGOGoV9B3mXzE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:17:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j+XgzSZggXo/mxSTXfPuuvtlKq2vXnmGOGoV9B3mXzE="
         }
       ]
     },
@@ -84685,304 +84685,6 @@
       ]
     },
     {
-      "Route": "lib/tinymce/js/tinymce/themes/silver/theme.min.iax3me7bjp.js",
-      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\zw9fcagzw8-iax3me7bjp.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000007124385"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "140362"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"C6qogYUhNkDbGNwDeOvGHbdNPXpORfsfc+zs6M46vn0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:17:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iax3me7bjp"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/tinymce/js/tinymce/themes/silver/theme.min.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI="
-        }
-      ]
-    },
-    {
-      "Route": "lib/tinymce/js/tinymce/themes/silver/theme.min.iax3me7bjp.js",
-      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "440545"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:17:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iax3me7bjp"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/tinymce/js/tinymce/themes/silver/theme.min.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI="
-        }
-      ]
-    },
-    {
-      "Route": "lib/tinymce/js/tinymce/themes/silver/theme.min.iax3me7bjp.js.gz",
-      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\zw9fcagzw8-iax3me7bjp.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "140362"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"C6qogYUhNkDbGNwDeOvGHbdNPXpORfsfc+zs6M46vn0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:17:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "iax3me7bjp"
-        },
-        {
-          "Name": "label",
-          "Value": "lib/tinymce/js/tinymce/themes/silver/theme.min.js.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-C6qogYUhNkDbGNwDeOvGHbdNPXpORfsfc+zs6M46vn0="
-        }
-      ]
-    },
-    {
-      "Route": "lib/tinymce/js/tinymce/themes/silver/theme.min.js",
-      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\zw9fcagzw8-iax3me7bjp.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000007124385"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "140362"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"C6qogYUhNkDbGNwDeOvGHbdNPXpORfsfc+zs6M46vn0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:17:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI="
-        }
-      ]
-    },
-    {
-      "Route": "lib/tinymce/js/tinymce/themes/silver/theme.min.js",
-      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "440545"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:17:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI="
-        }
-      ]
-    },
-    {
-      "Route": "lib/tinymce/js/tinymce/themes/silver/theme.min.js.gz",
-      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\zw9fcagzw8-iax3me7bjp.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "140362"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"C6qogYUhNkDbGNwDeOvGHbdNPXpORfsfc+zs6M46vn0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 18:17:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-C6qogYUhNkDbGNwDeOvGHbdNPXpORfsfc+zs6M46vn0="
-        }
-      ]
-    },
-    {
       "Route": "lib/tinymce/js/tinymce/tinymce.d.drb2lza6ik.ts",
       "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\tinymce.d.ts",
       "Selectors": [],
@@ -85359,6 +85061,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-a1+muEuS0H8YjduLOQsbPBb90SR9YuHARRM58QEyQW8="
+        }
+      ]
+    },
+    {
+      "Route": "lib/tinymce/js/tinymce/themes/silver/theme.min.iax3me7bjp.js",
+      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\zw9fcagzw8-iax3me7bjp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000007124385"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140362"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C6qogYUhNkDbGNwDeOvGHbdNPXpORfsfc+zs6M46vn0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:17:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iax3me7bjp"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/tinymce/js/tinymce/themes/silver/theme.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI="
+        }
+      ]
+    },
+    {
+      "Route": "lib/tinymce/js/tinymce/themes/silver/theme.min.iax3me7bjp.js",
+      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "440545"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:17:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iax3me7bjp"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/tinymce/js/tinymce/themes/silver/theme.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI="
+        }
+      ]
+    },
+    {
+      "Route": "lib/tinymce/js/tinymce/themes/silver/theme.min.iax3me7bjp.js.gz",
+      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\zw9fcagzw8-iax3me7bjp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140362"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C6qogYUhNkDbGNwDeOvGHbdNPXpORfsfc+zs6M46vn0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:17:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iax3me7bjp"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/tinymce/js/tinymce/themes/silver/theme.min.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-C6qogYUhNkDbGNwDeOvGHbdNPXpORfsfc+zs6M46vn0="
+        }
+      ]
+    },
+    {
+      "Route": "lib/tinymce/js/tinymce/themes/silver/theme.min.js",
+      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\zw9fcagzw8-iax3me7bjp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000007124385"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140362"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C6qogYUhNkDbGNwDeOvGHbdNPXpORfsfc+zs6M46vn0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:17:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI="
+        }
+      ]
+    },
+    {
+      "Route": "lib/tinymce/js/tinymce/themes/silver/theme.min.js",
+      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\lib\\tinymce\\js\\tinymce\\themes\\silver\\theme.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "440545"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:17:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SslItscebtltY2w2AP3x+oNmK5PtWxXUXzr5kYhx3hI="
+        }
+      ]
+    },
+    {
+      "Route": "lib/tinymce/js/tinymce/themes/silver/theme.min.js.gz",
+      "AssetFile": "D:\\DACS\\DACS_web\\DACS_web\\obj\\Debug\\net9.0\\compressed\\zw9fcagzw8-iax3me7bjp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140362"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C6qogYUhNkDbGNwDeOvGHbdNPXpORfsfc+zs6M46vn0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:17:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-C6qogYUhNkDbGNwDeOvGHbdNPXpORfsfc+zs6M46vn0="
         }
       ]
     },

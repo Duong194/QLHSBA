@@ -580,3 +580,5 @@ D:\DACS\DACS_web\DACS_web\obj\Debug\net9.0\compressed\th2jkzzn1q-tazr8lzh3a.gz
 D:\DACS\DACS_web\DACS_web\obj\Debug\net9.0\compressed\5i4u6z1n1t-68hmgd142b.gz
 D:\DACS\DACS_web\DACS_web\obj\Debug\net9.0\compressed\agh2kzt6k0-l0y77kgzn4.gz
 D:\DACS\DACS_web\DACS_web\obj\Debug\net9.0\compressed\alqumnzrz4-y5200m92qx.gz
+D:\DACS\DACS_web\DACS_web\bin\Debug\net9.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\DACS\DACS_web\DACS_web\obj\Debug\net9.0\DACS_web.sourcelink.json
