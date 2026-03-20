@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\DACS\\DACS_web\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\areas\\admin\\controllers\\benhnhanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\areas\\admin\\controllers\\benhnhanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -129,10 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\models\\sd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|solutionrelative:dacs_web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BBAE5660-7C93-4087-8B3D-27CA4843CF75}|DACS_web\\DACS_web.csproj|d:\\dacs\\dacs_web\\dacs_web\\models\\catruc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -645,24 +649,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "NhanVienYTe.cs",
-              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\NhanVienYTe.cs",
-              "RelativeDocumentMoniker": "DACS_web\\Models\\NhanVienYTe.cs",
-              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\NhanVienYTe.cs",
-              "RelativeToolTip": "DACS_web\\Models\\NhanVienYTe.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Program.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Program.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Program.cs",
+              "RelativeToolTip": "DACS_web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T02:46:57.55Z",
+              "WhenOpened": "2026-03-20T06:27:25.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "NhanVienYTesController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\NhanVienYTesController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\NhanVienYTesController.cs",
@@ -670,12 +674,11 @@
               "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\NhanVienYTesController.cs",
               "ViewState": "AgIAAOYAAAAAAAAAAAAYwPQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T06:32:42.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T06:32:42.107Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Edit.cshtml",
@@ -683,12 +686,11 @@
               "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Edit.cshtml",
               "ViewState": "AgIAAIIAAAAAAAAAAAAYwLcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-26T06:41:08.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-26T06:41:08.274Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BaiBaosController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\BaiBaosController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\BaiBaosController.cs",
@@ -696,25 +698,49 @@
               "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\BaiBaosController.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAgwA4AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T04:29:51.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T04:29:51.705Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "BenhNhansController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\BenhNhansController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\BenhNhansController.cs",
               "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\BenhNhansController.cs",
               "RelativeToolTip": "DACS_web\\Areas\\Admin\\Controllers\\BenhNhansController.cs",
-              "ViewState": "AgIAANMAAAAAAAAAAAAQwOMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAAwOMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T02:50:10.67Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\appsettings.json",
+              "RelativeDocumentMoniker": "DACS_web\\appsettings.json",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\appsettings.json",
+              "RelativeToolTip": "DACS_web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-26T03:52:18.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NhanVienYTe.cs",
+              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\NhanVienYTe.cs",
+              "RelativeDocumentMoniker": "DACS_web\\Models\\NhanVienYTe.cs",
+              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\Models\\NhanVienYTe.cs",
+              "RelativeToolTip": "DACS_web\\Models\\NhanVienYTe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T02:46:57.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Edit.cshtml",
@@ -722,12 +748,11 @@
               "RelativeToolTip": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Edit.cshtml",
               "ViewState": "AgIAAPwAAAAAAAAAAAAYwBwBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-06T03:03:10.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-06T03:03:10.768Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Controllers\\HomeController.cs",
@@ -739,7 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "dashboard.css",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\dashboard.css",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\dashboard.css",
@@ -751,7 +776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "patient-detail.css",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\patient-detail.css",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\patient-detail.css",
@@ -763,7 +788,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DanhSachBacSi.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\DanhSachBacSi.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\DanhSachBacSi.cshtml",
@@ -775,7 +800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "dotkham-create.css",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\dotkham-create.css",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\dotkham-create.css",
@@ -787,7 +812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "medical-record-list.css",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\medical-record-list.css",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\medical-record-list.css",
@@ -799,7 +824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Create.cshtml",
@@ -811,7 +836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Details.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Details.cshtml",
@@ -823,7 +848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "HoSoBenhAnsController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\HoSoBenhAnsController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\HoSoBenhAnsController.cs",
@@ -835,7 +860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "XetNghiemCLSsController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\XetNghiemCLSsController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\XetNghiemCLSsController.cs",
@@ -847,7 +872,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\XetNghiemCLSs\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\XetNghiemCLSs\\Delete.cshtml",
@@ -859,7 +884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\XetNghiemCLSs\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\XetNghiemCLSs\\Create.cshtml",
@@ -871,7 +896,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Index.cshtml",
@@ -883,7 +908,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "cuochenkham-index.css",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\cuochenkham-index.css",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\cuochenkham-index.css",
@@ -895,7 +920,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Details.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Details.cshtml",
@@ -907,7 +932,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Index.cshtml",
@@ -919,7 +944,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "HoSoBenhAn.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\HoSoBenhAn.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\HoSoBenhAn.cs",
@@ -931,7 +956,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Index.cshtml",
@@ -943,7 +968,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "_DoctorAppointmentsWidget.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Views\\Shared\\_DoctorAppointmentsWidget.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Views\\Shared\\_DoctorAppointmentsWidget.cshtml",
@@ -955,7 +980,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\DashboardController.cs",
@@ -967,7 +992,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
@@ -979,7 +1004,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "_AdminShiftsToday.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Views\\Shared\\_AdminShiftsToday.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Views\\Shared\\_AdminShiftsToday.cshtml",
@@ -991,7 +1016,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "DatLichTheoCaTruc.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\DatLichTheoCaTruc.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\DatLichTheoCaTruc.cshtml",
@@ -1003,7 +1028,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "LichKhamTheoCaTruc.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\LichKhamTheoCaTruc.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\LichKhamTheoCaTruc.cshtml",
@@ -1015,7 +1040,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Create.cshtml",
@@ -1027,7 +1052,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "SD.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\SD.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\SD.cs",
@@ -1039,19 +1064,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\appsettings.json",
-              "RelativeDocumentMoniker": "DACS_web\\appsettings.json",
-              "ToolTip": "D:\\DACS\\DACS_web\\DACS_web\\appsettings.json",
-              "RelativeToolTip": "DACS_web\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-26T03:52:18.35Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "CaTruc.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\CaTruc.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\CaTruc.cs",
@@ -1063,7 +1076,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "BenhNhan.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\BenhNhan.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\BenhNhan.cs",
@@ -1075,7 +1088,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 159,
               "Title": "20251130033209_v18.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20251130033209_v18.cs",
               "RelativeDocumentMoniker": "DACS_web\\Migrations\\20251130033209_v18.cs",
@@ -1087,7 +1100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Delete.cshtml",
@@ -1099,7 +1112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Details.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Details.cshtml",
@@ -1111,7 +1124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CuocHenKhams\\Edit.cshtml",
@@ -1123,7 +1136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "CreateMultiple.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\CreateMultiple.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\CreateMultiple.cshtml",
@@ -1135,7 +1148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\User\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\User\\Edit.cshtml",
@@ -1147,7 +1160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "MyShifts.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\MyShifts.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\MyShifts.cshtml",
@@ -1159,7 +1172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\ApplicationUser.cs",
@@ -1171,7 +1184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "CaTrucsController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\CaTrucsController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\CaTrucsController.cs",
@@ -1183,7 +1196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "CaTrucOptions.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\CaTrucOptions.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\CaTrucOptions.cs",
@@ -1195,7 +1208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "ChanDoan.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ChanDoan.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\ChanDoan.cs",
@@ -1207,7 +1220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\UserController.cs",
@@ -1219,7 +1232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "Calendar.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Calendar.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Calendar.cshtml",
@@ -1231,7 +1244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "dropdown-fix.js",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\js\\dropdown-fix.js",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\js\\dropdown-fix.js",
@@ -1243,7 +1256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "site.js",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\js\\site.js",
@@ -1255,7 +1268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "CreateMultiple.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\CreateMultiple.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\CreateMultiple.cshtml",
@@ -1267,7 +1280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Edit.cshtml",
@@ -1279,7 +1292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Delete.cshtml",
@@ -1291,7 +1304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Create.cshtml",
@@ -1303,7 +1316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\CaTrucs\\Index.cshtml",
@@ -1315,7 +1328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "DoctorList.css",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\DoctorList.css",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\DoctorList.css",
@@ -1327,7 +1340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Create.cshtml",
@@ -1339,7 +1352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Create.cshtml",
@@ -1351,7 +1364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "DotKhamsController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\DotKhamsController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\DotKhamsController.cs",
@@ -1363,7 +1376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Create.cshtml",
@@ -1375,7 +1388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Details.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Details.cshtml",
@@ -1387,7 +1400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "DotKham.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\DotKham.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\DotKham.cs",
@@ -1399,7 +1412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "KetQuaKhamMat.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\KetQuaKhamMat.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\KetQuaKhamMat.cs",
@@ -1411,7 +1424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "20251115070903_v15.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20251115070903_v15.cs",
               "RelativeDocumentMoniker": "DACS_web\\Migrations\\20251115070903_v15.cs",
@@ -1423,7 +1436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "Khoa.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\Khoa.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\Khoa.cs",
@@ -1435,7 +1448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "medical-record.css",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\medical-record.css",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\medical-record.css",
@@ -1447,7 +1460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Thuocs\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Thuocs\\Index.cshtml",
@@ -1459,7 +1472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 69,
               "Title": "BaiBaos.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\BaiBaos.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\BaiBaos.cs",
@@ -1471,7 +1484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 70,
               "Title": "consistency-fix.css",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\consistency-fix.css",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\consistency-fix.css",
@@ -1483,7 +1496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "medicine-list.css",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\medicine-list.css",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\medicine-list.css",
@@ -1495,7 +1508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 71,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\TuVans\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\TuVans\\Create.cshtml",
@@ -1507,7 +1520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 68,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Create.cshtml",
@@ -1519,7 +1532,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 74,
               "Title": "ChanDoansController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\ChanDoansController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\ChanDoansController.cs",
@@ -1531,7 +1544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 75,
               "Title": "DonThuocsController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\DonThuocsController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\DonThuocsController.cs",
@@ -1543,7 +1556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 72,
               "Title": "Thuoc.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\Thuoc.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\Thuoc.cs",
@@ -1555,7 +1568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 73,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Create.cshtml",
@@ -1567,7 +1580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 79,
               "Title": "iden.css",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\iden.css",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\iden.css",
@@ -1579,7 +1592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 77,
               "Title": "NoInfo.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\NoInfo.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\NoInfo.cshtml",
@@ -1591,7 +1604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 76,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Views\\Shared\\_LoginPartial.cshtml",
@@ -1603,7 +1616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 78,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -1615,7 +1628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 80,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
@@ -1627,7 +1640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 83,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Details.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Details.cshtml",
@@ -1639,7 +1652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 81,
               "Title": "Logout.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
@@ -1651,7 +1664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 86,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Create.cshtml",
@@ -1663,7 +1676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 82,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Index.cshtml",
@@ -1675,7 +1688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 84,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Details.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Details.cshtml",
@@ -1687,7 +1700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 85,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Edit.cshtml",
@@ -1699,7 +1712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 87,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Index.cshtml",
@@ -1711,7 +1724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 88,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Index.cshtml",
@@ -1723,7 +1736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 89,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Edit.cshtml",
@@ -1735,7 +1748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 92,
               "Title": "DanhMucICD.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\DanhMucICD.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\DanhMucICD.cs",
@@ -1747,7 +1760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 91,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Create.cshtml",
@@ -1759,7 +1772,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 90,
               "Title": "KetQuaKhamMatsController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\KetQuaKhamMatsController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\KetQuaKhamMatsController.cs",
@@ -1771,7 +1784,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 93,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Index.cshtml",
@@ -1783,7 +1796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 94,
               "Title": "KhoasController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\KhoasController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\KhoasController.cs",
@@ -1795,7 +1808,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 95,
               "Title": "ThuocsController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\ThuocsController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\ThuocsController.cs",
@@ -1807,7 +1820,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 96,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Edit.cshtml",
@@ -1819,7 +1832,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 98,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Index.cshtml",
@@ -1831,7 +1844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 97,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Create.cshtml",
@@ -1843,7 +1856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 99,
               "Title": "user-list.css",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\user-list.css",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\user-list.css",
@@ -1855,7 +1868,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 101,
               "Title": "user-list.css",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\user-list.css",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\user-list.css",
@@ -1867,7 +1880,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 100,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\User\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\User\\Index.cshtml",
@@ -1879,7 +1892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 103,
               "Title": "user_edit.css",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\wwwroot\\css\\user_edit.css",
               "RelativeDocumentMoniker": "DACS_web\\wwwroot\\css\\user_edit.css",
@@ -1891,7 +1904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 102,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Create.cshtml",
@@ -1903,7 +1916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 104,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\User\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\User\\Delete.cshtml",
@@ -1915,7 +1928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 105,
               "Title": "ThongTinBenhNhansController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\ThongTinBenhNhansController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\ThongTinBenhNhansController.cs",
@@ -1927,7 +1940,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 106,
               "Title": "PhuongPhapDieuTrisController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\PhuongPhapDieuTrisController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\PhuongPhapDieuTrisController.cs",
@@ -1939,7 +1952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 107,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Edit.cshtml",
@@ -1951,7 +1964,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 108,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BaiBaos\\Delete.cshtml",
@@ -1963,7 +1976,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 109,
               "Title": "DonThuoc.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\DonThuoc.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\DonThuoc.cs",
@@ -1975,7 +1988,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 111,
               "Title": "CreateMultipleChanDoan.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\CreateMultipleChanDoan.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\CreateMultipleChanDoan.cs",
@@ -1987,7 +2000,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 110,
               "Title": "ChiTietDonThuoc.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ChiTietDonThuoc.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\ChiTietDonThuoc.cs",
@@ -1999,7 +2012,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 112,
               "Title": "ThongTinBenhNhan.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ThongTinBenhNhan.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\ThongTinBenhNhan.cs",
@@ -2011,7 +2024,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 115,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
@@ -2023,7 +2036,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 113,
               "Title": "PhuongPhapDieuTri.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\PhuongPhapDieuTri.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\PhuongPhapDieuTri.cs",
@@ -2035,7 +2048,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 116,
               "Title": "Trang Ch\u1EE7 - B\u1EC7nh Vi\u1EC7n M\u1EAFt S\u00E0i G\u00F2n.html",
               "DocumentMoniker": "D:\\Picture\\Trang Ch\u1EE7 - B\u1EC7nh Vi\u1EC7n M\u1EAFt S\u00E0i G\u00F2n.html",
               "RelativeDocumentMoniker": "..\\..\\Picture\\Trang Ch\u1EE7 - B\u1EC7nh Vi\u1EC7n M\u1EAFt S\u00E0i G\u00F2n.html",
@@ -2047,7 +2060,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 114,
               "Title": "TuVansController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\TuVansController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\TuVansController.cs",
@@ -2059,7 +2072,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 119,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\TuVans\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\TuVans\\Index.cshtml",
@@ -2071,7 +2084,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 117,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
@@ -2083,7 +2096,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 118,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
@@ -2095,7 +2108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 120,
               "Title": "TuVan.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\TuVan.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\TuVan.cs",
@@ -2107,7 +2120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 121,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Delete.cshtml",
@@ -2119,7 +2132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 123,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Edit.cshtml",
@@ -2131,7 +2144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 122,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DonThuocs\\Delete.cshtml",
@@ -2143,7 +2156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 124,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Thuocs\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Thuocs\\Create.cshtml",
@@ -2155,7 +2168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 125,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Thuocs\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Thuocs\\Edit.cshtml",
@@ -2167,7 +2180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 126,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Thuocs\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Thuocs\\Delete.cshtml",
@@ -2179,7 +2192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 127,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Delete.cshtml",
@@ -2191,7 +2204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 128,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ThongTinBenhNhans\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ThongTinBenhNhans\\Index.cshtml",
@@ -2203,7 +2216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 129,
               "Title": "DanhMucICDsController.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Controllers\\DanhMucICDsController.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Controllers\\DanhMucICDsController.cs",
@@ -2215,7 +2228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 130,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\_ViewStart.cshtml",
@@ -2227,7 +2240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 133,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Details.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Details.cshtml",
@@ -2239,7 +2252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 134,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Delete.cshtml",
@@ -2251,7 +2264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 135,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Create.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Create.cshtml",
@@ -2263,7 +2276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 131,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Index.cshtml",
@@ -2275,7 +2288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 136,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Details.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\NhanVienYTes\\Details.cshtml",
@@ -2287,7 +2300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 132,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\PhuongPhapDieuTris\\Edit.cshtml",
@@ -2299,7 +2312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 137,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Details.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Details.cshtml",
@@ -2311,7 +2324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 138,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\Khoas\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\Khoas\\Delete.cshtml",
@@ -2323,7 +2336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 139,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\KetQuaKhamMats\\Index.cshtml",
@@ -2335,7 +2348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 140,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HoSoBenhAns\\Delete.cshtml",
@@ -2347,7 +2360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 142,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Edit.cshtml",
@@ -2359,7 +2372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 143,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Delete.cshtml",
@@ -2371,7 +2384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 144,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Index.cshtml",
@@ -2383,7 +2396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 145,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DotKhams\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DotKhams\\Delete.cshtml",
@@ -2395,7 +2408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 141,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\HinhAnhYTes\\Index.cshtml",
@@ -2407,7 +2420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 146,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Details.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Details.cshtml",
@@ -2419,7 +2432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 147,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\DanhMucICDs\\Delete.cshtml",
@@ -2431,7 +2444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 148,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Index.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Index.cshtml",
@@ -2443,7 +2456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 149,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Edit.cshtml",
@@ -2455,7 +2468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 150,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Details.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Details.cshtml",
@@ -2467,7 +2480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 151,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\ChanDoans\\Delete.cshtml",
@@ -2479,7 +2492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 152,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Edit.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Edit.cshtml",
@@ -2491,7 +2504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 153,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Delete.cshtml",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Admin\\Views\\BenhNhans\\Delete.cshtml",
@@ -2503,7 +2516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
+              "DocumentIndex": 158,
               "Title": "20250504102144_Iv2.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20250504102144_Iv2.cs",
               "RelativeDocumentMoniker": "DACS_web\\Migrations\\20250504102144_Iv2.cs",
@@ -2515,7 +2528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 154,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "DACS_web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
@@ -2527,7 +2540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 155,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "DACS_web\\Models\\ErrorViewModel.cs",
@@ -2539,7 +2552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 156,
               "Title": "20250426143905_v5.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20250426143905_v5.cs",
               "RelativeDocumentMoniker": "DACS_web\\Migrations\\20250426143905_v5.cs",
@@ -2550,7 +2563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 157,
               "Title": "20250426052957_v2.cs",
               "DocumentMoniker": "D:\\DACS\\DACS_web\\DACS_web\\Migrations\\20250426052957_v2.cs",
               "RelativeDocumentMoniker": "DACS_web\\Migrations\\20250426052957_v2.cs",
